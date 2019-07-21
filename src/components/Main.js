@@ -11,6 +11,8 @@ import Xj from '../images/xj16.png'
 import Icarus from '../images/ic_lives.gif'
 import Fdlogo from '../images/fd_logo_white.png'
 import Rklogo from '../images/rfk_logo_white.png'
+import Lrlogo from '../images/whiterabbit.png'
+
 
 
 class Main extends React.Component {
@@ -86,10 +88,20 @@ class Main extends React.Component {
         <article id="design" className={`${this.props.article === 'design' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Design</h2>
           <h4>Logo work</h4>
-          <span className="logo"><img src={Fdlogo} alt="" /></span>
-          <span className="logo"><img src={Rklogo} alt="" /></span>
-          <span className="logo"><img src={Fdlogo} alt="" /></span>
-
+          <div className="logoBlock">
+            <div className="block-one">
+              <p>Future Days</p>
+              <span className="logo"><img src={Fdlogo} alt="" /></span>
+            </div>
+            <div className="block-two">
+              <p>RFK</p>
+              <span className="logo"><img src={Rklogo} alt="" /></span>
+            </div>
+            <div className="block-three">
+              <p>Lucky Rabbit</p>
+              <span className="logo"><img src={Lrlogo} alt="" /></span>
+            </div>
+          </div>
           <p>Testing</p>
             {close}
 

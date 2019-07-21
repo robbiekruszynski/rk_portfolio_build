@@ -26,6 +26,7 @@
 	justify-content: center;
 }
 
+
 .stack {
 	display:flex;
 	flex-direction: row;
@@ -52,4 +53,56 @@ li {
 	display:flex;
 	justify-content: center;
 	// border:1px solid blue;
+}
+
+
+.logoBlock{
+	// border:1px solid aqua;
+	height: auto;
+}
+
+.block-one{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	// border:1px solid pink;
+	p{
+		margin-top:20px;
+	}
+	img{
+		margin-bottom: 20px;
+	}
+}
+
+.block-two {
+	display:flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-between;
+	align-items: center;
+	// border:1px solid aqua;
+	p{
+		margin-top:20px;
+	}
+	img{
+		margin-bottom: 20px;
+	}
+}
+
+.block-three{
+	display:flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	// border:1px solid magenta;
+	img{
+		// border:1px solid blue;
+		height:150px;
+		width:auto;
+		margin-bottom: 20px;
+	}
+	p{
+		margin-top:20px;
+	}
 }

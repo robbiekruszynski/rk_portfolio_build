@@ -7,12 +7,12 @@
 /* Icon */
 
 .icon {
-	border-bottom: none;
+	//border-bottom: none;
 	position: relative;
 }
 
 .icons {
-	border-bottom: none;
+	//border-bottom: none;
 	position: relative;
 
 	> .label {
@@ -31,7 +31,7 @@
 	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
-	// border:1px solid aqua;
+	// //border:1px solid aqua;
 }
 
 li {
@@ -41,31 +41,34 @@ li {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	// border:1px solid green;
+	// //border:1px solid green;
 }
 .inner-two {
 	margin-right: 40px;
 	display:flex;
 	justify-content: center;
-	// border:1px solid pink;
+	// //border:1px solid pink;
 }
 .inner-three {
 	display:flex;
 	justify-content: center;
-	// border:1px solid blue;
+	// //border:1px solid blue;
 }
 
 
 .logoBlock{
-	// border:1px solid aqua;
+	display:flex;
+	flex-direction: column;
+	//border:1px solid aqua;
 	height: auto;
 }
 
 .block-one{
 	display:flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
-	// border:1px solid pink;
+	//border:1px solid pink;
 	p{
 		margin-top:20px;
 	}
@@ -76,51 +79,78 @@ li {
 
 .block-two {
 	display:flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-content: center;
 	justify-content: space-between;
 	align-items: center;
-	// border:1px solid aqua;
-	p{
-		margin-top:20px;
-	}
-	img{
-		margin-bottom: 20px;
-	}
+	//border:1px solid aqua;
+		img{
+			margin-bottom: 20px;
+		}
+		h4{
+			display:flex;
+			justify-content: center;
+			//border:1px solid lime;
+		}
+		p{
+			//border:1px solid blue;
+			margin-top:20px;
+		}
 }
 
 .block-three{
 	display:flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-content: center;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	// border:1px solid magenta;
+	//border:1px solid magenta;
 	img{
-		// border:1px solid blue;
+		// //border:1px solid blue;
 		height:150px;
 		width:auto;
 		margin-bottom: 20px;
 	}
+	h4{
+		display:flex;
+		justify-content: center;
+		//border:1px solid lime;
+	}
 	p{
+		//border:1px solid blue;
 		margin-top:20px;
 	}
 }
 
+
 .block-four{
 	display:flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-content: center;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	// border:1px solid magenta;
+	//border:1px solid yellow;
 	img{
-		// border:1px solid blue;
+		// //border:1px solid blue;
 		height:150px;
 		width:auto;
 		margin-bottom: 20px;
 	}
+	h4{
+		display:flex;
+		justify-content: center;
+		//border:1px solid lime;
+	}
 	p{
+		//border:1px solid blue;
 		margin-top:20px;
 	}
+}
+
+hr {
+	display:flex;
+	justify-content: center;
+	border:1px solid white;
+	height:1px;
+	width:100%;
 }

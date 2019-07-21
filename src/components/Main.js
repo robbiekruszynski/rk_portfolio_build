@@ -90,23 +90,46 @@ class Main extends React.Component {
         <article id="design" className={`${this.props.article === 'design' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Design</h2>
           <h4>Logo Creations</h4>
+            <hr></hr>
+
           <div className="logoBlock">
+
             <div className="block-two">
-              <p>RFK</p>
+              <div className="logo-text">
+                <h4>RFK</h4>
+                <p>Personal logo</p>
+              </div>
               <span className="logo"><img src={Rklogo} alt="" /></span>
             </div>
+            <hr></hr>
+
             <div className="block-one">
-              <p>Future Days</p>
               <span className="logo"><img src={Fdlogo} alt="" /></span>
+                <div className="logo-text">
+                  <h4>Future Days</h4>
+                  <p>Design for a start up software / front end start up.</p>
+                </div>
             </div>
+            <hr></hr>
+
             <div className="block-three">
-              <p>Lucky Rabbit</p>
+              <div className="logo-text">
+                <h4>Lucky Rabbit</h4>
+                <p>Design for a web-based route finding aplication.</p>
+              </div>
               <span className="logo"><img src={Lrlogo} alt="" /></span>
             </div>
+            <hr></hr>
+
             <div className="block-four">
-              <p>HammerHead</p>
               <span className="logo"><img src={Hamlogo} alt="" /></span>
+              <div className="logo-text">
+                <h4>HammerHead</h4>
+                <p>Design for a Portland Motorcycle club</p>
+              </div>
             </div>
+            <hr></hr>
+
           </div>
             {close}
 

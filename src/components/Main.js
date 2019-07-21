@@ -55,6 +55,14 @@ class Main extends React.Component {
 
         </article>
 
+        <article id="design" className={`${this.props.article === 'design' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">Design</h2>
+          <h4>Logo work</h4>
+          <p>Testing</p>
+            {close}
+
+        </article>
+
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
           <form method="post" action="#">

@@ -9,6 +9,8 @@ import pic05 from '../images/dark_bounce.gif'
 import Fd from '../images/fd.png'
 import Xj from '../images/xj16.png'
 import Icarus from '../images/ic_lives.gif'
+import Fdlogo from '../images/fd_logo_white.png'
+import Rklogo from '../images/rfk_logo_white.png'
 
 
 class Main extends React.Component {
@@ -42,7 +44,7 @@ class Main extends React.Component {
               <li>Viewable across a variety of viewports, fully responsive across desktop, tablet, and mobile</li>
               <li>Logo creation / rings house built</li>
             </ul>
-          <a ref="https://www.icarus-lives.com/#/">live deployment</a>
+          <a ref="https://www.icarus-lives.com">live deployment</a>
           {close}
         </article>
 
@@ -50,7 +52,33 @@ class Main extends React.Component {
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Stack</h2>
           <span className="image main"><img src={pic05} alt="" /></span>
-          <p>| HTML 5 | CSS | SCSS | Styled Components | JavaScript | React | PHP | mySql | Python3 | </p>
+          <div className ="stack">
+            <div class="inner-one">
+              <ul>
+                <li> HTML 5 </li>
+                <li> CSS </li>
+                <li> SCSS </li>
+                <li> Styled Components </li>
+                <li> JavaScript </li>
+              </ul>
+            </div>
+            <div class="inner-two">
+              <ul>
+                <li> React </li>
+                <li> Python </li>
+                <li> PHP </li>
+                <li> mySQL </li>
+              </ul>
+            </div>
+            <div class="inner-three">
+            <ul>
+              <li> Sketch </li>
+              <li> Figma </li>
+              <li> InVision </li>
+              <li> PhotoShop </li>
+            </ul>
+          </div>
+        </div>
             {close}
 
         </article>
@@ -58,6 +86,10 @@ class Main extends React.Component {
         <article id="design" className={`${this.props.article === 'design' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Design</h2>
           <h4>Logo work</h4>
+          <span className="logo"><img src={Fdlogo} alt="" /></span>
+          <span className="logo"><img src={Rklogo} alt="" /></span>
+          <span className="logo"><img src={Fdlogo} alt="" /></span>
+
           <p>Testing</p>
             {close}
 

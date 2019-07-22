@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+// import pic01 from '../images/pic01.jpg'
+// import pic02 from '../images/pic02.jpg'
+// import pic03 from '../images/pic03.jpg'
 import pic04 from '../images/self_bw_2.jpeg'
 import pic05 from '../images/dark_bounce.gif'
 import Fd from '../images/fd.png'
@@ -28,27 +28,28 @@ class Main extends React.Component {
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
           <span className="image main"><img src={pic04} alt="" /></span>
-              <p>| UX | UI | Development | Design | Robotics | Painting | Creative Expression </p>
-              <p>Focusing on the importance of aesthetics, relevance, and usability. Through my interest in artistic expression, I cultivate my principles through illustrative websites and creations.</p>
-              {close}
+          <div className="rk-info">
+            <p> UX | UI | Development | Design | Robotics | Painting | Creative Expression </p>
+            <p>Focusing on the importance of aesthetics, relevance, and usability. Through my interest in artistic expression, I cultivate my principles through illustrative websites and creations.</p>
+          </div>
           {close}
         </article>
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Work Examples</h2>
+          <h2 className="major">Work</h2>
+          <h4>Projects</h4>
+          <span className="image main"><img src={Icarus} alt="" /></span>
+          <h4>I C A R U S | L I V E S </h4>
+            <p>Custom built project implementing threeJS within React along with live deployment</p>
+            <p>Showcasing our solar system along with real time tracking of the ISS via API calls</p>
+            <p>Viewable across a variety of viewports, fully responsive across desktop, tablet, and mobile</p>
+            <p>Logo creation / rings house built</p>
+
+          <a href="https://www.icarus-lives.com" target="_blank">live deployment</a>
           <span className="image main"><img src={Fd} alt="" /></span>
           <p>F U T U R E D A Y S </p>
           <span className="image main"><img src={Xj} alt="" /></span>
           <p>X J 1 6</p>
-          <span className="image main"><img src={Icarus} alt="" /></span>
-          <h4>I C A R U S | L I V E S </h4>
-          <p>Custom built project implementing threeJS within React along with live deployment</p>
-            <ul>
-              <li>Showcasing our solar system along with real time tracking of the ISS via API calls</li>
-              <li>Viewable across a variety of viewports, fully responsive across desktop, tablet, and mobile</li>
-              <li>Logo creation / rings house built</li>
-            </ul>
-          <a ref="https://www.icarus-lives.com">live deployment</a>
           {close}
         </article>
 
@@ -139,11 +140,12 @@ class Main extends React.Component {
           <h2 className="major">Contact</h2>
 
           <h3>robbiekruszynski@gmail.com</h3>
-          <a href="https://docs.google.com/presentation/d/1sL75Aqez-TWTaELnlZvwG2L_hYo4UMbG_qGcOKzX3D4/edit?usp=sharing"><h4>Digital Portfolio</h4></a>
-          <a href="https://www.linkedin.com/in/robbie-k/"><h4>Linkedin</h4></a>
+          <a href="https://docs.google.com/presentation/d/1sL75Aqez-TWTaELnlZvwG2L_hYo4UMbG_qGcOKzX3D4/edit?usp=sharing"target="_blank"><h4>Digital Portfolio</h4></a>
+          <a href="https://www.linkedin.com/in/robbie-k/"target="_blank"><h4>Linkedin</h4></a>
+
           <ul className="icons">
-            <li><a href="https://www.instagram.com/_wave_dash/" className="icon"><span className="label">IG</span></a></li>
-            <li><a href="https://github.com/Robbiekruszynski" className="icon"><span className="label">GH</span></a></li>
+            <li><a href="https://www.instagram.com/_wave_dash/" className="icon"target="_blank"><span className="label">IG</span></a></li>
+            <li><a href="https://github.com/Robbiekruszynski" className="icon"target="_blank"><span className="label">GH</span></a></li>
           </ul>
           {close}
         </article>

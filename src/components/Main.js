@@ -49,13 +49,13 @@ class Main extends React.Component {
           <p>F U T U R E D A Y S </p>
           <p>Concept project for front end engineering company.</p>
           <p>Wire-frame and prototyping using Sketch</p>
-          
+
           <span className="image main"><img src={Xj} alt="" /></span>
           <p>X J 1 6</p>
           <p>Built concept for shared workspace enviorment targeting creatives.</p>
           <p>A/B testing for client utlizing Sketch for wire-framing / prototyping</p>
           <p>Responsive across a multitude of viewports</p>
-          <a href="https://github.com/Robbiekruszynski/web-design-process" target_"_blank">Github</a>
+          <a href="https://github.com/Robbiekruszynski/web-design-process" target="_blank">Github</a>
           {close}
         </article>
 

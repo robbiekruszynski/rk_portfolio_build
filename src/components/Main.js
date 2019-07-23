@@ -43,13 +43,19 @@ class Main extends React.Component {
             <p>Custom built project implementing threeJS within React along with live deployment</p>
             <p>Showcasing our solar system along with real time tracking of the ISS via API calls</p>
             <p>Viewable across a variety of viewports, fully responsive across desktop, tablet, and mobile</p>
-            <p>Logo creation / rings house built</p>
-
           <a href="https://www.icarus-lives.com" target="_blank">live deployment</a>
+
           <span className="image main"><img src={Fd} alt="" /></span>
           <p>F U T U R E D A Y S </p>
+          <p>Concept project for front end engineering company.</p>
+          <p>Wire-frame and prototyping using Sketch</p>
+          
           <span className="image main"><img src={Xj} alt="" /></span>
           <p>X J 1 6</p>
+          <p>Built concept for shared workspace enviorment targeting creatives.</p>
+          <p>A/B testing for client utlizing Sketch for wire-framing / prototyping</p>
+          <p>Responsive across a multitude of viewports</p>
+          <a href="https://github.com/Robbiekruszynski/web-design-process" target_"_blank">Github</a>
           {close}
         </article>
 
@@ -85,16 +91,13 @@ class Main extends React.Component {
           </div>
         </div>
             {close}
-
         </article>
 
         <article id="design" className={`${this.props.article === 'design' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Design</h2>
           <h4>Logo Creations</h4>
             <hr></hr>
-
           <div className="logoBlock">
-
             <div className="block-two">
               <div className="logo-text">
                 <h4>RFK</h4>
@@ -103,42 +106,36 @@ class Main extends React.Component {
               <span className="logo"><img src={Rklogo} alt="" /></span>
             </div>
             <hr></hr>
-
             <div className="block-one">
               <span className="logo"><img src={Fdlogo} alt="" /></span>
                 <div className="logo-text">
                   <h4>Future Days</h4>
-                  <p>Design for a start up software / front end start up.</p>
+                  <p> Logo design for a start up software / front end company.</p>
                 </div>
             </div>
             <hr></hr>
-
             <div className="block-three">
               <div className="logo-text">
                 <h4>Lucky Rabbit</h4>
-                <p>Design for a web-based route finding aplication.</p>
+                <p>Logo design for a web-based moto route tracking aplication.</p>
               </div>
               <span className="logo"><img src={Lrlogo} alt="" /></span>
             </div>
             <hr></hr>
-
             <div className="block-four">
               <span className="logo"><img src={Hamlogo} alt="" /></span>
               <div className="logo-text">
                 <h4>HammerHead</h4>
-                <p>Design for a Portland Motorcycle club</p>
+                <p>Logo design for a Portland motorcycle club</p>
               </div>
             </div>
             <hr></hr>
-
           </div>
             {close}
-
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-
           <h3>robbiekruszynski@gmail.com</h3>
           <a href="https://docs.google.com/presentation/d/1sL75Aqez-TWTaELnlZvwG2L_hYo4UMbG_qGcOKzX3D4/edit?usp=sharing"target="_blank"><h4>Digital Portfolio</h4></a>
           <a href="https://www.linkedin.com/in/robbie-k/"target="_blank"><h4>Linkedin</h4></a>

@@ -31,13 +31,15 @@ class Main extends React.Component {
           <div className="rk-info">
             <p> UX | UI | Development | Design | Robotics | Painting | Creative Expression </p>
             <p>Focusing on the importance of aesthetics, relevance, and usability. Through my interest in artistic expression, I cultivate my principles through illustrative websites and creations.</p>
+            <p>I’m passionate about building out concepts that positively resonate with both the user and client.</p>
+            <p>I would like to think of myself as a liaison between design and development.</p>
           </div>
           {close}
         </article>
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
-          <h4>Projects</h4>
+          <h3>Projects</h3>
           <span className="image main"><img src={Icarus} alt="" /></span>
           <h4>I C A R U S | L I V E S </h4>
             <p>Custom built project implementing threeJS within React along with live deployment</p>
@@ -46,12 +48,12 @@ class Main extends React.Component {
           <a href="https://www.icarus-lives.com" target="_blank">live deployment</a>
 
           <span className="image main"><img src={Fd} alt="" /></span>
-          <p>F U T U R E D A Y S </p>
+          <h4>F U T U R E D A Y S </h4>
           <p>Concept project for front end engineering company.</p>
           <p>Wire-frame and prototyping using Sketch</p>
 
           <span className="image main"><img src={Xj} alt="" /></span>
-          <p>X J 1 6</p>
+          <h4>X J 1 6</h4>
           <p>Built concept for shared workspace enviorment targeting creatives.</p>
           <p>A/B testing for client utlizing Sketch for wire-framing / prototyping</p>
           <p>Responsive across a multitude of viewports</p>
@@ -75,6 +77,7 @@ class Main extends React.Component {
             </div>
             <div class="inner-two">
               <ul>
+                <li> 3JS </li>
                 <li> React </li>
                 <li> Python </li>
                 <li> PHP </li>
@@ -87,6 +90,7 @@ class Main extends React.Component {
               <li> Figma </li>
               <li> InVision </li>
               <li> PhotoShop </li>
+              <li> LightRoom </li>
             </ul>
           </div>
         </div>

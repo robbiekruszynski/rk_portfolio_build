@@ -63,6 +63,8 @@ li {
 	height: auto;
 }
 
+//////LOGO WORK ON DESIGN PAGE/////////
+
 .block-one{
 	display:flex;
 	flex-direction: row;
@@ -70,8 +72,10 @@ li {
 	align-items: center;
 	// border:1px solid pink;
 	p{
-		margin-top:20px;
+		display: flex;
+		justify-content:flex-end;
 	}
+
 	h4{
 		display: flex;
 		justify-content:flex-end;
@@ -88,7 +92,7 @@ li {
 	align-content: center;
 	justify-content: space-between;
 	align-items: center;
-	//border:1px solid aqua;
+	// border:1px solid aqua;
 		img{
 			margin-bottom: 20px;
 		}
@@ -98,8 +102,9 @@ li {
 			//border:1px solid lime;
 		}
 		p{
+			display: flex;
+			justify-content:flex-end;
 			//border:1px solid blue;
-			margin-top:20px;
 		}
 }
 
@@ -109,7 +114,7 @@ li {
 	align-content: center;
 	justify-content: space-between;
 	align-items: center;
-	//border:1px solid magenta;
+	// border:1px solid magenta;
 	img{
 		// //border:1px solid blue;
 		height:150px;
@@ -123,7 +128,8 @@ li {
 	}
 	p{
 		//border:1px solid blue;
-		margin-top:20px;
+		display: flex;
+		justify-content:flex-end;
 	}
 }
 
@@ -134,7 +140,7 @@ li {
 	align-content: center;
 	justify-content: space-between;
 	align-items: center;
-	//border:1px solid yellow;
+	// border:1px solid yellow;
 	img{
 		// //border:1px solid blue;
 		height:150px;
@@ -147,8 +153,9 @@ li {
 		//border:1px solid lime;
 	}
 	p{
-		//border:1px solid blue;
-		margin-top:20px;
+
+		display: flex;
+		justify-content:flex-end;
 	}
 }
 

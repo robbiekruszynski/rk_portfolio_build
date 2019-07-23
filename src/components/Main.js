@@ -77,7 +77,7 @@ class Main extends React.Component {
             </div>
             <div class="inner-two">
               <ul>
-                <li> 3JS </li>
+                <li> ThreeJS </li>
                 <li> React </li>
                 <li> Python </li>
                 <li> PHP </li>
@@ -141,9 +141,12 @@ class Main extends React.Component {
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
           <h3>robbiekruszynski@gmail.com</h3>
-          <a href="https://docs.google.com/presentation/d/1sL75Aqez-TWTaELnlZvwG2L_hYo4UMbG_qGcOKzX3D4/edit?usp=sharing"target="_blank"><h4>Digital Portfolio</h4></a>
-          <a href="https://www.linkedin.com/in/robbie-k/"target="_blank"><h4>Linkedin</h4></a>
-
+          <div className="dig-port-one">
+            <a href="https://docs.google.com/presentation/d/1sL75Aqez-TWTaELnlZvwG2L_hYo4UMbG_qGcOKzX3D4/edit?usp=sharing"target="_blank"><h4>Digital Portfolio</h4></a>
+          </div>
+          <div className="dig-port-two">
+            <a href="https://www.linkedin.com/in/robbie-k/"target="_blank"><h4>Linkedin</h4></a>
+          </div>
           <ul className="icons">
             <li><a href="https://www.instagram.com/_wave_dash/" className="icon"target="_blank"><span className="label">IG</span></a></li>
             <li><a href="https://github.com/Robbiekruszynski" className="icon"target="_blank"><span className="label">GH</span></a></li>

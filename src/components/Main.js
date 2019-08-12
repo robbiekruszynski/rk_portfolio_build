@@ -13,7 +13,7 @@ import Fdlogo from '../images/future_logo.png'
 import Rklogo from '../images/rfk_logo_white.png'
 import Lrlogo from '../images/whiterabbit.png'
 import Hamlogo from '../images/ham_white_logo.png'
-
+import kkWeb from '../images/kkWeb.gif'
 
 
 
@@ -51,6 +51,13 @@ class Main extends React.Component {
           <h4>F U T U R E D A Y S </h4>
           <p>Concept project for front end engineering company.</p>
           <p>Wire-frame and prototyping using Sketch</p>
+
+            <span className="image main"><img src={kkWeb} alt="" /></span>
+            <h4>K A T E K R U S Z Y N S K I  </h4>
+            <p>Concept project / design for travel blog.</p>
+            <p>Sharing global travel itineraries along with trip curation</p>
+            <p>Wire-frame and prototyping using Figma</p>
+            <p>Build in house using Gatsby for foundation</p>
 
           <span className="image main"><img src={Xj} alt="" /></span>
           <h4>X J 1 6</h4>

@@ -13,7 +13,7 @@ import Fdlogo from '../images/future_logo.png'
 import Rklogo from '../images/rfk_logo_white.png'
 import Lrlogo from '../images/whiterabbit.png'
 import Hamlogo from '../images/ham_white_logo.png'
-import kkWeb from '../images/kkWeb.gif'
+import kkWeb from '../images/kkWebPic.png'
 
 
 
@@ -32,6 +32,10 @@ class Main extends React.Component {
             <p> UX | UI | Development | Design | Robotics | Painting | Creative Expression </p>
             <p>Focusing on the importance of aesthetics, relevance, and usability. Through my interest in artistic expression, I cultivate my principles through illustrative websites and creations.</p>
             <p>I’m passionate about building out concepts that positively resonate with both the user and client.</p>
+            <p>Promotion of self organization within a cross-functional collaborative and or individual effort.
+              A focus on team communication encouraging productive and positive atmospheres to successfully create quality deliverables within scope.
+              Conversations to capture brand ethos and successfully implement journey mapping strategies to build case study dialogues.
+              Problem solving, A/B testing, user research are all practices I find great value in.</p>
             <p>I would like to think of myself as a liaison between design and development.</p>
           </div>
           {close}

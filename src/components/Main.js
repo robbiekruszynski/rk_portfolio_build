@@ -46,10 +46,11 @@ class Main extends React.Component {
           <h2 className="major">Work</h2>
           <h3>Projects</h3>
           <span className="image main"><img src={Icarus} alt="" /></span>
+          <div className ="workText">
           <h4>I C A R U S | L I V E S </h4>
             <p>Custom built project implementing threeJS within React along with live deployment</p>
             <p>Showcasing our solar system along with real time tracking of the ISS via API calls</p>
-            <p>Viewable across a variety of viewports, fully responsive across desktop, tablet, and mobile</p>
+            <p>Fully responsive across desktop, tablet, and mobile</p>
           <a href="https://www.icarus-lives.com" target="_blank">live deployment</a>
 
           <span className="image main"><img src={Fd} alt="" /></span>
@@ -64,7 +65,7 @@ class Main extends React.Component {
           <p>Wire-frame and prototyping using Figma</p>
           <p>Build in house using Gatsby for foundation</p>
 
-          <span className="image main"><img src={elyDesk} alt="" /><img src={elyPhone} alt="" /></span>
+          <span className="image main"><img src={elyDesk} alt="" /></span>
           <h4>E L Y S I A N  </h4>
           <p>Client project</p>
           <p>Building out full responsive splash page acorss multiple viewports</p>
@@ -76,6 +77,7 @@ class Main extends React.Component {
           <p>A/B testing for client utlizing Sketch for wire-framing / prototyping</p>
           <p>Responsive across a multitude of viewports</p>
           <a href="https://github.com/Robbiekruszynski/web-design-process" target="_blank">Github</a>
+        </div>
           {close}
         </article>
 

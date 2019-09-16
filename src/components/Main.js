@@ -14,7 +14,8 @@ import Rklogo from '../images/rfk_logo_white.png'
 import Lrlogo from '../images/whiterabbit.png'
 import Hamlogo from '../images/ham_white_logo.png'
 import kkWeb from '../images/kkWebPic.png'
-
+import elyDesk from '../images/elysian_2.png'
+import elyPhone from '../images/elysian_1.png'
 
 
 class Main extends React.Component {
@@ -56,12 +57,18 @@ class Main extends React.Component {
           <p>Concept project for front end engineering company.</p>
           <p>Wire-frame and prototyping using Sketch</p>
 
-            <span className="image main"><img src={kkWeb} alt="" /></span>
-            <h4>K A T E K R U S Z Y N S K I  </h4>
-            <p>Concept project / design for travel blog.</p>
-            <p>Sharing global travel itineraries along with trip curation</p>
-            <p>Wire-frame and prototyping using Figma</p>
-            <p>Build in house using Gatsby for foundation</p>
+          <span className="image main"><img src={kkWeb} alt="" /></span>
+          <h4>K A T E K R U S Z Y N S K I  </h4>
+          <p>Concept project / design for travel blog.</p>
+          <p>Sharing global travel itineraries along with trip curation</p>
+          <p>Wire-frame and prototyping using Figma</p>
+          <p>Build in house using Gatsby for foundation</p>
+
+          <span className="image main"><img src={elyDesk} alt="" /><img src={elyPhone} alt="" /></span>
+          <h4>E L Y S I A N  </h4>
+          <p>Client project</p>
+          <p>Building out full responsive splash page acorss multiple viewports</p>
+          <p>Compatible with Mozilla, IE 9, Chrome, Safari, Samsung Internet</p>
 
           <span className="image main"><img src={Xj} alt="" /></span>
           <h4>X J 1 6</h4>

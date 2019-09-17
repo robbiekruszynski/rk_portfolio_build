@@ -9,6 +9,9 @@
 .icon {
 	//border-bottom: none;
 	position: relative;
+	:hover{
+		color: #a30815;
+	}
 }
 
 .icons {
@@ -186,9 +189,18 @@ hr {
 }
 }
 
-.workText{
-	p{
-		line-height: 5px;
+
+.phonePort{
+	width: auto;
+ height: 300px;
+}
+
+.flexWork{
+	display: flex;
+}
+
+.mailto{
+	:hover{
+		color: #a30815;
 	}
-	
 }

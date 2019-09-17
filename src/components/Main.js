@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
 // import pic01 from '../images/pic01.jpg'
 // import pic02 from '../images/pic02.jpg'
 // import pic03 from '../images/pic03.jpg'
@@ -15,7 +14,7 @@ import Lrlogo from '../images/whiterabbit.png'
 import Hamlogo from '../images/ham_white_logo.png'
 import kkWeb from '../images/kkWebPic.png'
 import elyDesk from '../images/elysian_2.png'
-import elyPhone from '../images/elysian_1.png'
+import elyPhone from '../images/ely_phone.png'
 
 
 class Main extends React.Component {
@@ -65,11 +64,18 @@ class Main extends React.Component {
           <p>Wire-frame and prototyping using Figma</p>
           <p>Build in house using Gatsby for foundation</p>
 
-          <span className="image main"><img src={elyDesk} alt="" /></span>
+          <div className="flexWork">
+            <span className="image main"><img src={elyDesk} alt="" /></span>
+            <img className="phonePort" src={elyPhone} alt="" />
+          </div>
+
           <h4>E L Y S I A N  </h4>
           <p>Client project</p>
           <p>Building out full responsive splash page acorss multiple viewports</p>
           <p>Compatible with Mozilla, IE 9, Chrome, Safari, Samsung Internet</p>
+          <a href="http://www.elysianwines.com/" target="_blank">live site</a>
+
+
 
           <span className="image main"><img src={Xj} alt="" /></span>
           <h4>X J 1 6</h4>
@@ -81,9 +87,16 @@ class Main extends React.Component {
           {close}
         </article>
 
+        <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <div className="logoBlock">
+          </div>
+          {close}
+      </article>
+
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Stack</h2>
+
           <span className="image main"><img src={pic05} alt="" /></span>
           <div className ="stack">
             <div class="inner-one">
@@ -158,9 +171,19 @@ class Main extends React.Component {
             {close}
         </article>
 
+          <article id="design" className={`${this.props.article === 'design' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+            <div className="logoBlock">
+            </div>
+
+            {close}
+        </article>
+
+
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <h3>robbiekruszynski@gmail.com</h3>
+
+          <a class="mailto" href="mailto:robbiekruszynski@gmail.com"><h3>robbiekruszynski@gmail.com</h3></a>
+
           <div className="dig-port-one">
             <a href="https://docs.google.com/presentation/d/1sL75Aqez-TWTaELnlZvwG2L_hYo4UMbG_qGcOKzX3D4/edit?usp=sharing"target="_blank"><h4>Digital Portfolio</h4></a>
           </div>

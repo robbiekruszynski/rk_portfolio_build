@@ -15,90 +15,180 @@ import Hamlogo from '../images/ham_white_logo.png'
 import kkWeb from '../images/kkWebPic.png'
 import elyDesk from '../images/elysian_2.png'
 import elyPhone from '../images/ely_phone.png'
-
+import devSplash from '../images/Quest 1.1.png'
+import devQuest from '../images/Quest 1.3.png'
+import devFaucet from '../images/Quest 2.12.png'
+import devCounter from '../images/devCounter.png'
+import rabbitSplash from '../images/rabbitSplash.png'
 
 class Main extends React.Component {
   render() {
-
-    let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
+    let close = (
+      <div
+        className="close"
+        onClick={() => {
+          this.props.onCloseArticle()
+        }}
+      ></div>
+    )
 
     return (
-      <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
-
-        <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+      <div
+        ref={this.props.setWrapperRef}
+        id="main"
+        style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
+      >
+        <article
+          id="intro"
+          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
           <h2 className="major">About</h2>
-          <span className="image main"><img src={pic04} alt="" /></span>
+          <span className="image main">
+            <img src={pic04} alt="" />
+          </span>
           <div className="rk-info">
-            <p> UX | UI | Development | Design | Robotics | Painting | Creative Expression </p>
-            <p>Focusing on the importance of aesthetics, relevance, and usability. Through my interest in artistic expression, I cultivate my principles through illustrative websites and creations.</p>
-            <p>I’m passionate about building out concepts that positively resonate with both the user and client.</p>
-            <p>Promotion of self organization within a cross-functional collaborative and or individual effort.
-              A focus on team communication encouraging productive and positive atmospheres to successfully create quality deliverables within scope.
-              Conversations to capture brand ethos and successfully implement journey mapping strategies to build case study dialogues.
-              Problem solving, A/B testing, user research are all practices I find great value in.</p>
-            <p>I would like to think of myself as a liaison between design and development.</p>
+            <p>
+              {' '}
+              UX | UI | Development | Design | Robotics | Painting | Creative
+              Expression{' '}
+            </p>
+            <p>
+              Focusing on the importance of aesthetics, relevance, and
+              usability. Through my interest in artistic expression, I cultivate
+              my principles through illustrative websites and creations.
+            </p>
+            <p>
+              I’m passionate about building out concepts that positively
+              resonate with both the user and client.
+            </p>
+            <p>
+              Promotion of self organization within a cross-functional
+              collaborative and or individual effort. A focus on team
+              communication encouraging productive and positive atmospheres to
+              successfully create quality deliverables within scope.
+              Conversations to capture brand ethos and successfully implement
+              journey mapping strategies to build case study dialogues. Problem
+              solving, A/B testing, user research are all practices I find great
+              value in.
+            </p>
+            <p>
+              I would like to think of myself as a liaison between design and
+              development.
+            </p>
           </div>
           {close}
         </article>
 
-        <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article
+          id="work"
+          className={`${this.props.article === 'work' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
           <h2 className="major">Work</h2>
           <h3>Projects</h3>
-          <span className="image main"><img src={Icarus} alt="" /></span>
-          <div className ="workText">
-          <h4>I C A R U S | L I V E S </h4>
-            <p>Custom built project implementing threeJS within React along with live deployment</p>
-            <p>Showcasing our solar system along with real time tracking of the ISS via API calls</p>
+          <span className="image main">
+            <img src={Icarus} alt="" />
+          </span>
+          <div className="workText">
+            <h4>I C A R U S | L I V E S </h4>
+            <p>
+              Custom built project implementing threeJS within React along with
+              live deployment
+            </p>
+            <p>
+              Showcasing our solar system along with real time tracking of the
+              ISS via API calls
+            </p>
             <p>Fully responsive across desktop, tablet, and mobile</p>
-          <a href="https://www.icarus-lives.com" target="_blank">live deployment</a>
+            <a href="https://www.icarus-lives.com" target="_blank">
+              live deployment
+            </a>
 
-          <span className="image main"><img src={Fd} alt="" /></span>
-          <h4>F U T U R E D A Y S </h4>
-          <p>Concept project for front end engineering company.</p>
-          <p>Wire-frame and prototyping using Sketch</p>
+            <span className="image main">
+              <img src={Fd} alt="" />
+            </span>
+            <h4>F U T U R E D A Y S </h4>
+            <p>Concept project for front end engineering company.</p>
+            <p>Wire-frame and prototyping using Sketch</p>
 
-          <span className="image main"><img src={kkWeb} alt="" /></span>
-          <h4>K A T E K R U S Z Y N S K I  </h4>
-          <p>Concept project / design for travel blog.</p>
-          <p>Sharing global travel itineraries along with trip curation</p>
-          <p>Wire-frame and prototyping using Figma</p>
-          <p>Build in house using Gatsby for foundation</p>
+            <span className="image main">
+              <img src={kkWeb} alt="" />
+            </span>
+            <h4>K A T E K R U S Z Y N S K I </h4>
+            <p>Concept project / design for travel blog.</p>
+            <p>Sharing global travel itineraries along with trip curation</p>
+            <p>Build in house using Gatsby for foundation</p>
 
-          <div className="flexWork">
-            <span className="image main"><img src={elyDesk} alt="" /></span>
-            <img className="phonePort" src={elyPhone} alt="" />
+            <div className="flexWork">
+              <span className="image main">
+                <img src={elyDesk} alt="" />
+              </span>
+              <img className="phonePort" src={elyPhone} alt="" />
+            </div>
+
+            <h4>E L Y S I A N </h4>
+            <p>Client project</p>
+            <p>
+              Building out full responsive splash page acorss multiple viewports
+            </p>
+            <p>
+              Compatible with Mozilla, IE 9, Chrome, Safari, Samsung Internet
+            </p>
+            <a href="http://www.elysianwines.com/" target="_blank">
+              live site
+            </a>
+
+            <span className="image main">
+              <img src={Xj} alt="" />
+            </span>
+            <h4>X J 1 6</h4>
+            <p>
+              Built concept for shared workspace enviorment targeting creatives.
+            </p>
+            <p>
+              A/B testing for client utlizing Sketch for wire-framing /
+              prototyping
+            </p>
+            <p>Responsive across a multitude of viewports</p>
+            <a
+              href="https://github.com/Robbiekruszynski/web-design-process"
+              target="_blank"
+            >
+              Github
+            </a>
           </div>
-
-          <h4>E L Y S I A N  </h4>
-          <p>Client project</p>
-          <p>Building out full responsive splash page acorss multiple viewports</p>
-          <p>Compatible with Mozilla, IE 9, Chrome, Safari, Samsung Internet</p>
-          <a href="http://www.elysianwines.com/" target="_blank">live site</a>
-
-
-
-          <span className="image main"><img src={Xj} alt="" /></span>
-          <h4>X J 1 6</h4>
-          <p>Built concept for shared workspace enviorment targeting creatives.</p>
-          <p>A/B testing for client utlizing Sketch for wire-framing / prototyping</p>
-          <p>Responsive across a multitude of viewports</p>
-          <a href="https://github.com/Robbiekruszynski/web-design-process" target="_blank">Github</a>
-        </div>
           {close}
         </article>
 
-        <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <div className="logoBlock">
-          </div>
+        <article
+          id="work"
+          className={`${this.props.article === 'work' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <div className="logoBlock"></div>
           {close}
-      </article>
+        </article>
 
-
-        <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article
+          id="about"
+          className={`${this.props.article === 'about' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
           <h2 className="major">Stack</h2>
 
-          <span className="image main"><img src={pic05} alt="" /></span>
-          <div className ="stack">
+          <span className="image main">
+            <img src={pic05} alt="" />
+          </span>
+          <div className="stack">
             <div class="inner-one">
               <ul>
                 <li> HTML 5 </li>
@@ -118,85 +208,135 @@ class Main extends React.Component {
               </ul>
             </div>
             <div class="inner-three">
-            <ul>
-              <li> Sketch </li>
-              <li> Figma </li>
-              <li> InVision </li>
-              <li> PhotoShop </li>
-              <li> LightRoom </li>
-            </ul>
+              <ul>
+                <li> Sketch </li>
+                <li> Figma </li>
+                <li> InVision </li>
+                <li> PhotoShop </li>
+                <li> LightRoom </li>
+              </ul>
+            </div>
           </div>
-        </div>
-            {close}
+          {close}
         </article>
 
-        <article id="design" className={`${this.props.article === 'design' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article
+          id="design"
+          className={`${this.props.article === 'design' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
           <h2 className="major">Design</h2>
           <h4>Logo Creations</h4>
-            <hr></hr>
+          <hr></hr>
           <div className="logoBlock">
             <div className="block-two">
               <div className="logo-text">
-                <h4>RFK</h4>
-                <p>Personal logo</p>
+                <h4>RFK Logo</h4>
+
+                <p>
+                  Personal logo Design based off tattoo work recived by Esther
+                  Garcia
+                </p>
+                <a
+                  href="http://www.butterfatstudios.com/services/"
+                  tagret="_blank"
+                >
+                  Butterfat studios
+                </a>
               </div>
-              <span className="logo"><img src={Rklogo} alt="" /></span>
+              <span className="logo">
+                <img src={Rklogo} alt="" />
+              </span>
             </div>
             <hr></hr>
             <div className="block-one">
-              <span className="logo"><img src={Fdlogo} alt="" /></span>
-                <div className="logo-text">
-                  <h4>Future Days</h4>
-                  <p> Logo design for a start up software / front end company.</p>
-                </div>
+              <span className="logo">
+                <img src={Fdlogo} alt="" />
+              </span>
+              <div className="logo-text">
+                <h4>Future Days</h4>
+                <p> Logo design for a start up software / front end company.</p>
+              </div>
             </div>
             <hr></hr>
             <div className="block-three">
               <div className="logo-text">
                 <h4>Lucky Rabbit</h4>
-                <p>Logo design for a web-based moto route tracking aplication.</p>
+                <p>
+                  Logo design for a web-based moto route tracking aplication.
+                </p>
               </div>
-              <span className="logo"><img src={Lrlogo} alt="" /></span>
-            </div>
-            <hr></hr>
-            <div className="block-four">
-              <span className="logo"><img src={Hamlogo} alt="" /></span>
-              <div className="logo-text">
-                <h4>HammerHead</h4>
-                <p>Logo design for a Portland motorcycle club</p>
-              </div>
+              <span className="logo">
+                <img src={Lrlogo} alt="" />
+              </span>
             </div>
             <hr></hr>
           </div>
-            {close}
-        </article>
-
-          <article id="design" className={`${this.props.article === 'design' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-            <div className="logoBlock">
-            </div>
-
-            {close}
-        </article>
-
-
-        <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Contact</h2>
-
-          <a class="mailto" href="mailto:robbiekruszynski@gmail.com"><h3>robbiekruszynski@gmail.com</h3></a>
-
-          <div className="dig-port-one">
-            <a href="https://docs.google.com/presentation/d/1sL75Aqez-TWTaELnlZvwG2L_hYo4UMbG_qGcOKzX3D4/edit?usp=sharing"target="_blank"><h4>Digital Portfolio</h4></a>
-          </div>
-          <div className="dig-port-two">
-            <a href="https://www.linkedin.com/in/robbie-k/"target="_blank"><h4>Linkedin</h4></a>
-          </div>
-          <ul className="icons">
-            <li><a href="https://www.instagram.com/_wave_dash/" className="icon"target="_blank"><span className="label">IG</span></a></li>
-            <li><a href="https://github.com/Robbiekruszynski" className="icon"target="_blank"><span className="label">GH</span></a></li>
-          </ul>
           {close}
         </article>
 
+        <article
+          id="design"
+          className={`${this.props.article === 'design' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <div className="logoBlock"></div>
+
+          {close}
+        </article>
+
+        <article
+          id="contact"
+          className={`${this.props.article === 'contact' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Contact</h2>
+
+          <a class="mailto" href="mailto:robbiekruszynski@gmail.com">
+            <h3>robbiekruszynski@gmail.com</h3>
+          </a>
+
+          <div className="dig-port-one">
+            <a
+              href="https://docs.google.com/presentation/d/1sL75Aqez-TWTaELnlZvwG2L_hYo4UMbG_qGcOKzX3D4/edit?usp=sharing"
+              target="_blank"
+            >
+              <h4>Digital Portfolio</h4>
+            </a>
+          </div>
+          <div className="dig-port-two">
+            <a href="https://www.linkedin.com/in/robbie-k/" target="_blank">
+              <h4>Linkedin</h4>
+            </a>
+          </div>
+          <ul className="icons">
+            <li>
+              <a
+                href="https://www.instagram.com/_wave_dash/"
+                className="icon"
+                target="_blank"
+              >
+                <span className="label">IG</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Robbiekruszynski"
+                className="icon"
+                target="_blank"
+              >
+                <span className="label">GH</span>
+              </a>
+            </li>
+          </ul>
+          {close}
+        </article>
       </div>
     )
   }

@@ -11,16 +11,13 @@ import Icarus from '../images/ic_lives.gif'
 import Fdlogo from '../images/future_logo.png'
 import Rklogo from '../images/rfk_logo_white.png'
 import Lrlogo from '../images/whiterabbit.png'
-import Hamlogo from '../images/ham_white_logo.png'
 import kkWeb from '../images/kkWebPic.png'
 import elyDesk from '../images/elysian_2.png'
 import elyPhone from '../images/ely_phone.png'
-import devSplash from '../images/Quest 1.1.png'
-import devQuest from '../images/Quest 1.3.png'
-import devFaucet from '../images/Quest 2.12.png'
-import devCounter from '../images/devCounter.png'
-import rabbitSplash from '../images/rabbitSplash.png'
-
+import conKau from '../images/conKauri.png'
+import inCo from '../images/inCo.png'
+import pegMm from '../images/pegMm.png'
+import myOmd from '../images/myOmd.png'
 class Main extends React.Component {
   render() {
     let close = (
@@ -108,21 +105,6 @@ class Main extends React.Component {
             <a href="https://www.icarus-lives.com" target="_blank">
               live deployment
             </a>
-
-            <span className="image main">
-              <img src={Fd} alt="" />
-            </span>
-            <h4>F U T U R E D A Y S </h4>
-            <p>Concept project for front end engineering company.</p>
-            <p>Wire-frame and prototyping using Sketch</p>
-
-            <span className="image main">
-              <img src={kkWeb} alt="" />
-            </span>
-            <h4>K A T E K R U S Z Y N S K I </h4>
-            <p>Concept project / design for travel blog.</p>
-            <p>Sharing global travel itineraries along with trip curation</p>
-            <p>Build in house using Gatsby for foundation</p>
 
             <div className="flexWork">
               <span className="image main">
@@ -234,17 +216,7 @@ class Main extends React.Component {
             <div className="block-two">
               <div className="logo-text">
                 <h4>RFK Logo</h4>
-
-                <p>
-                  Personal logo Design based off tattoo work recived by Esther
-                  Garcia
-                </p>
-                <a
-                  href="http://www.butterfatstudios.com/services/"
-                  tagret="_blank"
-                >
-                  Butterfat studios
-                </a>
+                <p>Personal logo Design </p>
               </div>
               <span className="logo">
                 <img src={Rklogo} alt="" />
@@ -273,10 +245,25 @@ class Main extends React.Component {
               </span>
             </div>
             <hr></hr>
+            <div className="block-five">
+              <div className="logo-text">
+                <h4>Poster Designs</h4>
+                <p> ConsenSys spoke promotion at Ethereum denver 2020</p>
+              </div>
+            </div>
+            <span className="image main">
+              <img src={conKau} alt="" />
+              <hr></hr>
+              <img src={inCo} alt="" />
+              <hr></hr>
+              <img src={pegMm} alt="" />
+              <hr></hr>
+              <img src={myOmd} alt="" />
+              <hr></hr>
+            </span>
           </div>
           {close}
         </article>
-
         <article
           id="design"
           className={`${this.props.article === 'design' ? 'active' : ''} ${
@@ -318,7 +305,7 @@ class Main extends React.Component {
           <ul className="icons">
             <li>
               <a
-                href="https://www.instagram.com/_wave_dash/"
+                href="https://www.instagram.com/robbiek.eth/"
                 className="icon"
                 target="_blank"
               >

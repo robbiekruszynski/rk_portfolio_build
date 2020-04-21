@@ -5,13 +5,10 @@ import PropTypes from 'prop-types'
 // import pic03 from '../images/pic03.jpg'
 import pic04 from '../images/self_bw_2.jpeg'
 import pic05 from '../images/dark_bounce.gif'
-import Fd from '../images/fd.png'
-import Xj from '../images/xj16.png'
 import Icarus from '../images/ic_lives.gif'
 import Fdlogo from '../images/future_logo.png'
 import Rklogo from '../images/rfk_logo_white.png'
 import Lrlogo from '../images/whiterabbit.png'
-import kkWeb from '../images/kkWebPic.png'
 import elyDesk from '../images/elysian_2.png'
 import elyPhone from '../images/ely_phone.png'
 import conKau from '../images/conKauri.png'
@@ -131,16 +128,11 @@ class Main extends React.Component {
               <img src={openCV} alt="" />
             </span>
             <h4>Emotional Portal</h4>
-            <p>
-              Real time face recognition utilizing canvas. Please allow camera
-              usage. You are able to navigate the space clicking / holding
-              outside the white box.
-            </p>
+            <p>Real time face recognition utilizing canvas.</p>
             <p>JavaScript, face-api.js (tensorflow), and ThreeJS</p>
-
             <p>
-              A/B testing for client utlizing Sketch for wire-framing /
-              prototyping
+              Please allow camera usage. You are able to navigate the
+              space/field clicking + holding outside the white parameters.
             </p>
 
             <a href="https://emotions-portal.netlify.com" target="_blank">
@@ -264,7 +256,6 @@ class Main extends React.Component {
               <img src={myOmd} alt="" />
               <hr></hr>
             </span>
-            openCV{' '}
           </div>
           {close}
         </article>

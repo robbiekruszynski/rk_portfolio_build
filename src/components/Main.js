@@ -18,6 +18,8 @@ import conKau from '../images/conKauri.png'
 import inCo from '../images/inCo.png'
 import pegMm from '../images/pegMm.png'
 import myOmd from '../images/myOmd.png'
+import openCV from '../images/openCV.gif'
+
 class Main extends React.Component {
   render() {
     let close = (
@@ -103,7 +105,7 @@ class Main extends React.Component {
             </p>
             <p>Fully responsive across desktop, tablet, and mobile</p>
             <a href="https://www.icarus-lives.com" target="_blank">
-              live deployment
+              Live deployment
             </a>
 
             <div className="flexWork">
@@ -126,22 +128,23 @@ class Main extends React.Component {
             </a>
 
             <span className="image main">
-              <img src={Xj} alt="" />
+              <img src={openCV} alt="" />
             </span>
-            <h4>X J 1 6</h4>
+            <h4>Emotional Portal</h4>
             <p>
-              Built concept for shared workspace enviorment targeting creatives.
+              Real time face recognition utilizing canvas. Please allow camera
+              usage. You are able to navigate the space clicking / holding
+              outside the white box.
             </p>
+            <p>JavaScript, face-api.js (tensorflow), and ThreeJS</p>
+
             <p>
               A/B testing for client utlizing Sketch for wire-framing /
               prototyping
             </p>
-            <p>Responsive across a multitude of viewports</p>
-            <a
-              href="https://github.com/Robbiekruszynski/web-design-process"
-              target="_blank"
-            >
-              Github
+
+            <a href="https://emotions-portal.netlify.com" target="_blank">
+              Live deployment
             </a>
           </div>
           {close}
@@ -261,6 +264,7 @@ class Main extends React.Component {
               <img src={myOmd} alt="" />
               <hr></hr>
             </span>
+            openCV{' '}
           </div>
           {close}
         </article>

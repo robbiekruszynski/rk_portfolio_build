@@ -91,7 +91,7 @@ class Main extends React.Component {
             <img src={Icarus} alt="" />
           </span>
           <div className="workText">
-            <h4>I C A R U S | L I V E S </h4>
+            <h4>ICARUS LIVES </h4>
             <p>
               Custom built project implementing threeJS within React along with
               live deployment
@@ -112,13 +112,13 @@ class Main extends React.Component {
               <img className="phonePort" src={elyPhone} alt="" />
             </div>
 
-            <h4>E L Y S I A N </h4>
+            <h4>ELYSIAN </h4>
             <p>Client project</p>
             <p>
-              Building out full responsive splash page acorss multiple viewports
+              Building out full responsive splash page across multiple viewports
             </p>
             <p>
-              Compatible with Mozilla, IE 9, Chrome, Safari, Samsung Internet
+              Compatible with Mozilla, IE9, Chrome, Safari, Samsung Internet
             </p>
             <a href="http://www.elysianwines.com/" target="_blank">
               live site

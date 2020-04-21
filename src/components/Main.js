@@ -292,7 +292,7 @@ class Main extends React.Component {
           <a class="mailto" href="mailto:robbiekruszynski@gmail.com">
             <h3>robbiekruszynski@gmail.com</h3>
           </a>
-
+          {/* 
           <div className="dig-port-one">
             <a
               href="https://docs.google.com/presentation/d/1sL75Aqez-TWTaELnlZvwG2L_hYo4UMbG_qGcOKzX3D4/edit?usp=sharing"
@@ -300,7 +300,7 @@ class Main extends React.Component {
             >
               <h4>Digital Portfolio</h4>
             </a>
-          </div>
+          </div> */}
           <div className="dig-port-two">
             <a href="https://www.linkedin.com/in/robbie-k/" target="_blank">
               <h4>Linkedin</h4>

@@ -18,7 +18,7 @@ import conKau from '../images/conKauri.png'
 import inCo from '../images/inCo.png'
 import pegMm from '../images/pegMm.png'
 import myOmd from '../images/myOmd.png'
-import openCV from '../images/openCV.gif'
+import openCV from '../images/openCv.gif'
 
 class Main extends React.Component {
   render() {

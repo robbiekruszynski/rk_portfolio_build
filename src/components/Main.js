@@ -104,7 +104,7 @@ class Main extends React.Component {
             <a href="https://www.icarus-lives.com" target="_blank">
               Live deployment
             </a>
-
+            <hr></hr>
             <div className="flexWork">
               <span className="image main">
                 <img src={elyDesk} alt="" />
@@ -123,6 +123,7 @@ class Main extends React.Component {
             <a href="http://www.elysianwines.com/" target="_blank">
               live site
             </a>
+            <hr></hr>
 
             <span className="image main">
               <img src={openCV} alt="" />
@@ -141,6 +142,7 @@ class Main extends React.Component {
           </div>
           {close}
         </article>
+        <hr></hr>
 
         <article
           id="work"
@@ -251,9 +253,9 @@ class Main extends React.Component {
               <hr></hr>
               <img src={inCo} alt="" />
               <hr></hr>
-              <img src={pegMm} alt="" />
-              <hr></hr>
               <img src={myOmd} alt="" />
+              <hr></hr>
+              <img src={pegMm} alt="" />
               <hr></hr>
             </span>
           </div>

@@ -49,13 +49,19 @@ class Main extends React.Component {
             <p>
               {' '}
               UX | UI | Development | Design | Developer Relations | Scrum
-              Master | Creative Expression{' '}
+              Master{' '}
             </p>
             <p>
-              Working within the web3 / blockchain space part of the
-              https://onemilliondevs.com/ movement along with other outreach
+              Working within the web3 / blockchain space 
+              </p>
+             <p>
+              Part of the
+              <a href=" https://onemilliondevs.com/" target="_blank">
+              movement along with other outreach
               efforts to help grow the eth ecosystem.
-            </p>
+              Giving presentations to enable and nurture the curious to explore the bleeding edge.
+              </p> 
+           
             <p>
               Focusing on the importance of aesthetics, relevance, and
               usability. Through my interest in artistic expression, I cultivate

@@ -47,21 +47,20 @@ class Main extends React.Component {
           </span>
           <div className="rk-info">
             <p>
-              {' '}
               UX | UI | Development | Design | Developer Relations | Scrum
-              Master{' '}
+              Master
             </p>
+            <p>Working within the web3 / blockchain space</p>
             <p>
-              Working within the web3 / blockchain space 
-              </p>
-             <p>
-              Part of the
-              <a href=" https://onemilliondevs.com/" target="_blank">
-              movement along with other outreach
-              efforts to help grow the eth ecosystem.
-              Giving presentations to enable and nurture the curious to explore the bleeding edge.
-              </p> 
-           
+              Part of the{' '}
+              <a href="https://onemilliondevs.com/" target="_blank">
+                One Million Developers
+              </a>{' '}
+              movement alongside other outreach efforts to help grow the eth
+              ecosystem. Giving presentations to enable the curious to explore
+              the bleeding edge.
+            </p>
+            <div></div>
             <p>
               Focusing on the importance of aesthetics, relevance, and
               usability. Through my interest in artistic expression, I cultivate

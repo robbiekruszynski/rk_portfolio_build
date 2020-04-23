@@ -48,8 +48,13 @@ class Main extends React.Component {
           <div className="rk-info">
             <p>
               {' '}
-              UX | UI | Development | Design | Robotics | Painting | Creative
-              Expression{' '}
+              UX | UI | Development | Design | Developer Relations | Scrum
+              Master | Creative Expression{' '}
+            </p>
+            <p>
+              Working within the web3 / blockchain space part of the
+              https://onemilliondevs.com/ movement along with other outreach
+              efforts to help grow the eth ecosystem.
             </p>
             <p>
               Focusing on the importance of aesthetics, relevance, and
@@ -171,7 +176,7 @@ class Main extends React.Component {
             <div class="inner-one">
               <ul>
                 <li> HTML 5 </li>
-                <li> CSS </li>
+                <li> MUI </li>
                 <li> SCSS </li>
                 <li> Styled Components </li>
                 <li> JavaScript </li>
@@ -183,7 +188,7 @@ class Main extends React.Component {
                 <li> React </li>
                 <li> Python </li>
                 <li> PHP </li>
-                <li> mySQL </li>
+                <li> Solidity </li>
               </ul>
             </div>
             <div class="inner-three">

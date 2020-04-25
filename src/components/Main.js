@@ -16,6 +16,7 @@ import inCo from '../images/inCo.png'
 import pegMm from '../images/pegMm.png'
 import myOmd from '../images/myOmd.png'
 import openCV from '../images/openCv.gif'
+import rKey from '../images/verify_key.png'
 
 class Main extends React.Component {
   render() {
@@ -267,6 +268,7 @@ class Main extends React.Component {
               <hr></hr>
               <img src={pegMm} alt="" />
               <hr></hr>
+              <img src={rKey} alt="" />
             </span>
           </div>
           {close}

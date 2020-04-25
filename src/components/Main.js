@@ -17,6 +17,7 @@ import pegMm from '../images/pegMm.png'
 import myOmd from '../images/myOmd.png'
 import openCV from '../images/openCv.gif'
 import rKey from '../images/verify_key.png'
+import rDash from '../images/r_dashboard.png'
 
 class Main extends React.Component {
   render() {
@@ -268,7 +269,15 @@ class Main extends React.Component {
               <hr></hr>
               <img src={pegMm} alt="" />
               <hr></hr>
+            </span>
+            <div className="logo-text">
+              <h4>Wire frames / Prototypes</h4>
+              <p> Built with FIGMA / Sketch </p>
+            </div>
+            <span className="image main">
               <img src={rKey} alt="" />
+              <hr></hr>
+              <img src={rDash} alt="" />
             </span>
           </div>
           {close}

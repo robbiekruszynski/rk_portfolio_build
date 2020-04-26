@@ -18,7 +18,8 @@ import myOmd from '../images/myOmd.png'
 import openCV from '../images/openCv.gif'
 import rKey from '../images/verify_key.png'
 import rDash from '../images/r_dashboard.png'
-
+import rIntro from '../images/r_intro.png'
+import r_mobile from '../images/r_mobile.png'
 class Main extends React.Component {
   render() {
     let close = (
@@ -275,9 +276,18 @@ class Main extends React.Component {
               <p> Built with FIGMA / Sketch </p>
             </div>
             <span className="image main">
+              <img src={rIntro} alt="" />
+              <hr></hr>
               <img src={rKey} alt="" />
               <hr></hr>
               <img src={rDash} alt="" />
+              <hr></hr>
+              {/* <img src={r_mobile} alt="" /> */}
+            </span>
+          </div>
+          <div className="mobile_container">
+            <span className="image main mobile">
+              <img src={r_mobile} alt="" />
             </span>
           </div>
           {close}

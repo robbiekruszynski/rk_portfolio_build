@@ -85,3 +85,19 @@
     }
   }
 }
+
+.mobile_container {
+  //   border: 5px solid blue;
+  width: 350px;
+  //   height: 300;
+  display: flex;
+  justify-content: center;
+  margin-left: 25%;
+}
+
+.mobile {
+  //   border: 1px solid red;
+  width: 100%;
+  height: auto;
+  //   margin-left: 50%;
+}

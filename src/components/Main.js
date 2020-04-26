@@ -249,7 +249,10 @@ class Main extends React.Component {
             <div className="block-five">
               <div className="logo-text">
                 <h4>Poster Designs</h4>
-                <p> ConsenSys spoke promotion at Ethereum denver 2020</p>
+                <p>
+                  {' '}
+                  ConsenSys spoke promotional material at Ethereum denver 2020
+                </p>
               </div>
             </div>
             <span className="image main">

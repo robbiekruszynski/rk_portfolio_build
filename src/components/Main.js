@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+// import { Header } from 'Header.js'
 // import pic01 from '../images/pic01.jpg'
 // import pic02 from '../images/pic02.jpg'
 // import pic03 from '../images/pic03.jpg'
@@ -20,6 +21,7 @@ import rKey from '../images/verify_key.png'
 import rDash from '../images/r_dashboard.png'
 import rIntro from '../images/r_intro.png'
 import r_mobile from '../images/r_mobile.png'
+import r_mobile_l from '../images/r_mobile_l.png'
 class Main extends React.Component {
   render() {
     let close = (
@@ -44,6 +46,8 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
+          {' '}
+          {/* <Header></Header> */}
           <h2 className="major">About</h2>
           <span className="image main">
             <img src={pic04} alt="" />
@@ -285,11 +289,12 @@ class Main extends React.Component {
               {/* <img src={r_mobile} alt="" /> */}
             </span>
           </div>
-          <div className="mobile_container">
-            <span className="image main mobile">
+          {/* <div className="mobile_container">
+            <div className="image main mobile">
               <img src={r_mobile} alt="" />
-            </span>
-          </div>
+              <img src={r_mobile_l} alt="" />
+            </div>
+          </div> */}
           {close}
         </article>
         <article

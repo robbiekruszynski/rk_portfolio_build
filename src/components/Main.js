@@ -159,7 +159,7 @@ class Main extends React.Component {
           </div>
           {close}
         </article>
-        <hr></hr>
+        {/* <hr></hr> */}
 
         <article
           id="work"
@@ -179,43 +179,30 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Stack</h2>
-
+          <h2 className="major">WireFrames and Prototypes</h2>
           <span className="image main">
-            <img src={pic05} alt="" />
+            <img src={rIntro} alt="" />
+            <hr></hr>
+            <img src={rKey} alt="" />
+            <hr></hr>
+            <img src={rDash} alt="" />
+            <hr></hr>
           </span>
-          <div className="stack">
-            <div class="inner-one">
-              <ul>
-                <li> HTML 5 </li>
-                <li> MUI </li>
-                <li> SCSS </li>
-                <li> Styled Components </li>
-                <li> JavaScript </li>
-              </ul>
-            </div>
-            <div class="inner-two">
-              <ul>
-                <li> ThreeJS </li>
-                <li> React </li>
-                <li> Python </li>
-                <li> PHP </li>
-                <li> Solidity </li>
-              </ul>
-            </div>
-            <div class="inner-three">
-              <ul>
-                <li> Sketch </li>
-                <li> Figma </li>
-                <li> InVision </li>
-                <li> PhotoShop </li>
-                <li> LightRoom </li>
-              </ul>
-            </div>
-          </div>
           {close}
         </article>
 
+        {/* <hr></hr> */}
+
+        <article
+          id="about"
+          className={`${this.props.article === 'about' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <div className="logoBlock"></div>
+          {close}
+        </article>
         <article
           id="design"
           className={`${this.props.article === 'design' ? 'active' : ''} ${
@@ -275,11 +262,11 @@ class Main extends React.Component {
               <img src={pegMm} alt="" />
               <hr></hr>
             </span>
-            <div className="logo-text">
+            {/* <div className="logo-text">
               <h4>Wire frames / Prototypes</h4>
               <p> Built with FIGMA / Sketch </p>
-            </div>
-            <span className="image main">
+            </div> */}
+            {/* <span className="image main">
               <img src={rIntro} alt="" />
               <hr></hr>
               <img src={rKey} alt="" />
@@ -287,7 +274,7 @@ class Main extends React.Component {
               <img src={rDash} alt="" />
               <hr></hr>
               {/* <img src={r_mobile} alt="" /> */}
-            </span>
+            {/* </span> */}
           </div>
           {/* <div className="mobile_container">
             <div className="image main mobile">

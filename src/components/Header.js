@@ -54,7 +54,7 @@ const Header = props => (
               props.onOpenArticle('about')
             }}
           >
-            Stack
+            WireFrame
           </a>
         </li>
 

@@ -271,7 +271,7 @@ class Main extends React.Component {
             </div> */}
             {/* <span className="image main">
               <img src={rIntro} alt="" />
-              <hr></hr>
+              <hr></hr>e
               <img src={rKey} alt="" />
               <hr></hr>
               <img src={rDash} alt="" />

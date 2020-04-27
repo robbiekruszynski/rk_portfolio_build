@@ -57,14 +57,14 @@ class Main extends React.Component {
               UX | UI | Development | Design | Developer Relations | Scrum
               Master
             </p>
-            <p>Working within the web3 / blockchain space</p>
+            <p>Working within the Web3 / Blockchain space</p>
             <p>
               Part of the{' '}
               <a href="https://onemilliondevs.com/" target="_blank">
                 One Million Developers
               </a>{' '}
-              movement alongside other outreach efforts to help grow the eth
-              ecosystem. Giving presentations to enable the curious to explore
+              movement alongside other outreach efforts to assit with ecosystem
+              development. Giving presentations to enable the curious to explore
               the bleeding edge.
             </p>
             <div></div>
@@ -187,7 +187,16 @@ class Main extends React.Component {
             <hr></hr>
             <img src={rDash} alt="" />
             <hr></hr>
+            <div className="mobile-home">
+              <div className="mobile-wire">
+                <img src={r_mobile} alt="" />
+              </div>
+              <div className="mobile-wire">
+                <img src={r_mobile_l} alt="" />
+              </div>
+            </div>{' '}
           </span>
+
           {close}
         </article>
 

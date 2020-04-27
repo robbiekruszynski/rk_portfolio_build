@@ -22,6 +22,9 @@ import rDash from '../images/r_dashboard.png'
 import rIntro from '../images/r_intro.png'
 import r_mobile from '../images/r_mobile.png'
 import r_mobile_l from '../images/r_mobile_l.png'
+import r_quest_m from '../images/r_quest_main.png'
+import r_quest from '../images/r_quest.png'
+
 class Main extends React.Component {
   render() {
     let close = (
@@ -180,6 +183,8 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">WireFrames and Prototypes</h2>
+          <h3>Collection of designs developed using Figma & Sketch</h3>
+
           <span className="image main">
             <img src={rIntro} alt="" />
             <hr></hr>
@@ -195,6 +200,11 @@ class Main extends React.Component {
                 <img src={r_mobile_l} alt="" />
               </div>
             </div>{' '}
+            <hr></hr>
+            <img src={r_quest_m} alt="" />
+            <hr></hr>
+            <img src={r_quest} alt="" />
+            <hr></hr>
           </span>
 
           {close}

@@ -24,6 +24,7 @@ import r_mobile from '../images/r_mobile.png'
 import r_mobile_l from '../images/r_mobile_l.png'
 import r_quest_m from '../images/r_quest_main.png'
 import r_quest from '../images/r_quest.png'
+import omd_poster from '../images/omd_poster.png'
 
 class Main extends React.Component {
   render() {
@@ -162,7 +163,6 @@ class Main extends React.Component {
           </div>
           {close}
         </article>
-        {/* <hr></hr> */}
 
         <article
           id="work"
@@ -209,8 +209,6 @@ class Main extends React.Component {
 
           {close}
         </article>
-
-        {/* <hr></hr> */}
 
         <article
           id="about"
@@ -284,26 +282,17 @@ class Main extends React.Component {
               <img src={pegMm} alt="" />
               <hr></hr>
             </span>
-            {/* <div className="logo-text">
-              <h4>Wire frames / Prototypes</h4>
-              <p> Built with FIGMA / Sketch </p>
-            </div> */}
-            {/* <span className="image main">
-              <img src={rIntro} alt="" />
-              <hr></hr>e
-              <img src={rKey} alt="" />
-              <hr></hr>
-              <img src={rDash} alt="" />
-              <hr></hr>
-              {/* <img src={r_mobile} alt="" /> */}
-            {/* </span> */}
-          </div>
-          {/* <div className="mobile_container">
-            <div className="image main mobile">
-              <img src={r_mobile} alt="" />
-              <img src={r_mobile_l} alt="" />
+            <div className="block-five">
+              <div className="logo-text">
+                <p> One Million Developers promotional material</p>
+              </div>
             </div>
-          </div> */}
+            <span className="image main">
+              <img src={omd_poster} alt="" />
+              <hr></hr>
+            </span>
+          </div>
+
           {close}
         </article>
         <article

@@ -86,23 +86,29 @@
   }
 }
 
-.mobile_container {
-  border: 5px solid red;
+.mobile-home {
   display: flex;
-  flex-wrap: wrap;
-  //   border: 5px solid blue;
+  justify-content: space-between;
+  //   border: 5px solid lime;
+}
+
+.mobile-wire {
+  //   border: 5px solid red;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   border: 1px solid blue;
   width: 100%;
   //   height: 300;
-  //   margin-left: 30%;
+  margin-left: 5px;
 }
 
-.mobile {
-  width: 45%;
-  border: 3px solid lime;
-  display: flex;
-  flex-wrap: wrap;
+// .mobile {
+//   width: 45%;
+//   border: 3px solid lime;
+//   display: flex;
+//   flex-wrap: wrap;
 
-  //   border: 1px solid red;
-  //   height: auto;
-  //   margin-left: 50%;
-}
+//   //   border: 1px solid red;
+//   //   height: auto;
+//   //   margin-left: 50%;
+// }

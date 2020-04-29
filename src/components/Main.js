@@ -98,6 +98,16 @@ class Main extends React.Component {
           </div>
           {close}
         </article>
+        <article
+          id="work"
+          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <div className="logoBlock"></div>
+          {close}
+        </article>
 
         <article
           id="work"

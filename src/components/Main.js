@@ -25,6 +25,7 @@ import r_mobile_l from '../images/r_mobile_l.png'
 import r_quest_m from '../images/r_quest_main.png'
 import r_quest from '../images/r_quest.png'
 import omd_poster from '../images/omd_poster.png'
+import rapid_logo from '../images/rapidLogo.png'
 
 class Main extends React.Component {
   render() {
@@ -270,6 +271,15 @@ class Main extends React.Component {
               </div>
               <span className="logo">
                 <img src={Lrlogo} alt="" />
+              </span>
+            </div>
+            <div className="bloc-four">
+              <div className="logo-text">
+                <h4>RAPID</h4>
+                <p>Logo design for internal spoke RAPID within ConsenSys</p>
+              </div>
+              <span className="logo">
+                <img src={rapid_logo} alt="" />
               </span>
             </div>
             <hr></hr>

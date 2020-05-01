@@ -254,13 +254,14 @@ class Main extends React.Component {
             <hr></hr>
             <div className="block-one">
               <span className="logo">
-                <img src={Fdlogo} alt="" />
+                <img src={rapid_logo} alt="" />
               </span>
               <div className="logo-text">
-                <h4>Future Days</h4>
-                <p> Logo design for a start up software / front end company.</p>
+                <h4>RAPID</h4>
+                <p> Logo design for internal spoke RAPID within ConsenSys</p>
               </div>
             </div>
+
             <hr></hr>
             <div className="block-three">
               <div className="logo-text">
@@ -273,15 +274,17 @@ class Main extends React.Component {
                 <img src={Lrlogo} alt="" />
               </span>
             </div>
-            <div className="bloc-four">
-              <div className="logo-text">
-                <h4>RAPID</h4>
-                <p>Logo design for internal spoke RAPID within ConsenSys</p>
-              </div>
+            <hr></hr>
+            <div className="block-one">
               <span className="logo">
-                <img src={rapid_logo} alt="" />
+                <img src={Fdlogo} alt="" />
               </span>
+              <div className="logo-text">
+                <h4>Future Days</h4>
+                <p> Logo design for a start up software / front end company.</p>
+              </div>
             </div>
+
             <hr></hr>
             <div className="block-five">
               <div className="logo-text">

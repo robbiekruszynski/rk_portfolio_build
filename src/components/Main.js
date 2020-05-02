@@ -1,11 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import { Header } from 'Header.js'
-// import pic01 from '../images/pic01.jpg'
-// import pic02 from '../images/pic02.jpg'
-// import pic03 from '../images/pic03.jpg'
 import pic04 from '../images/self_bw_2.jpeg'
-import pic05 from '../images/dark_bounce.gif'
 import Icarus from '../images/ic_lives.gif'
 import Fdlogo from '../images/future_logo.png'
 import Rklogo from '../images/rfk_logo_white.png'
@@ -60,30 +55,33 @@ class Main extends React.Component {
             <img src={pic04} alt="" />
           </span>
           <div className="rk-info">
+            <h4>Focus</h4>
             <p>
               UX | UI | Development | Design | Developer Relations | Scrum
               Master
             </p>
-            <p>Working within the Web3 / Blockchain space</p>
+            <h4>Stack</h4>
             <p>
-              Part of the{' '}
-              <a href="https://onemilliondevs.com/" target="_blank">
-                One Million Developers
-              </a>{' '}
-              movement alongside other outreach efforts to assit with ecosystem
-              development. Giving presentations to enable the curious to explore
-              the bleeding edge.
-            </p>
-            <div></div>
-            <p>
-              Focusing on the importance of aesthetics, relevance, and
-              usability. Through my interest in artistic expression, I cultivate
-              my principles through illustrative websites and creations.
+              HTML5 | SCSS | JS | React | Python | Solidity | Figma | Sketch |
+              PS
             </p>
             <p>
               I’m passionate about building out concepts that positively
-              resonate with both the user and client.
+              resonate with both the user and client. Focusing on the importance
+              of aesthetics, relevance, and usability.
             </p>
+
+            <p>
+              Working within the Web3 / Blockchain space Part of the{' '}
+              <a href="https://onemilliondevs.com/" target="_blank">
+                One Million Developers
+              </a>{' '}
+              movement alongside parallel outreach efforts contributing towards
+              ecosystem development. Giving presentations to enable the curious
+              to explore the bleeding edge.
+            </p>
+            <div></div>
+
             <p>
               Promotion of self organization within a cross-functional
               collaborative and or individual effort. A focus on team

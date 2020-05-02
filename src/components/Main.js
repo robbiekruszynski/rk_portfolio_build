@@ -23,6 +23,7 @@ import omd_poster from '../images/omd_poster.png'
 import rapid_logo from '../images/rapidLogo.png'
 import omd_badge from '../images/omd_badge.png'
 import r_3box from '../images/threeBox.png'
+import colors from '../images/colors.gif'
 
 class Main extends React.Component {
   render() {
@@ -81,7 +82,6 @@ class Main extends React.Component {
               to explore the bleeding edge.
             </p>
             <div></div>
-
             <p>
               Promotion of self organization within a cross-functional
               collaborative and or individual effort. A focus on team
@@ -137,6 +137,25 @@ class Main extends React.Component {
               Live deployment
             </a>
             <hr></hr>
+            <span className="image main">
+              <img src={colors} alt="" />
+            </span>
+            <h4>ERC-721 token generator </h4>
+            <p> Minting tokens based on #HEX color inputs</p>
+            <p>JavaScript, CSSS, HTML5, Solidity, Ganache</p>
+            <p>
+              Giving user the ability to mint tokens build in React, using MOCHA
+              / CHAI to test importing openZep contracts and using web3 imports
+              with #HEX color inputs.
+            </p>
+
+            <a
+              href="https://github.com/Robbiekruszynski/ERC721-TOKENS-NFT"
+              target="_blank"
+            >
+              Githuib
+              <hr></hr>
+            </a>
             <div className="flexWork">
               <span className="image main">
                 <img src={elyDesk} alt="" />
@@ -156,7 +175,6 @@ class Main extends React.Component {
               live site
             </a>
             <hr></hr>
-
             <span className="image main">
               <img src={openCV} alt="" />
             </span>

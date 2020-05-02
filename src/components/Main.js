@@ -143,7 +143,7 @@ class Main extends React.Component {
               <img src={colors} alt="" />
             </span>
             <p> Minting tokens based on #HEX color inputs</p>
-            <p>JavaScript, CSSS, HTML5, Solidity, Ganache</p>
+            <p>JavaScript, CSS, HTML5, Solidity, Ganache</p>
             <p>
               Giving user the ability to mint tokens build in React, using MOCHA
               / CHAI to test importing openZep contracts and using web3 imports

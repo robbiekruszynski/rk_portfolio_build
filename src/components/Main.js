@@ -154,7 +154,7 @@ class Main extends React.Component {
               href="https://github.com/Robbiekruszynski/ERC721-TOKENS-NFT"
               target="_blank"
             >
-              Githuib
+              Github
               <hr></hr>
             </a>
             <div className="flexWork">

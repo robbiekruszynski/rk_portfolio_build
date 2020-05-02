@@ -26,6 +26,7 @@ import r_quest_m from '../images/r_quest_main.png'
 import r_quest from '../images/r_quest.png'
 import omd_poster from '../images/omd_poster.png'
 import rapid_logo from '../images/rapidLogo.png'
+import omd_badge from '../images/omd_badge.png'
 
 class Main extends React.Component {
   render() {
@@ -261,7 +262,6 @@ class Main extends React.Component {
                 <p> Logo design for internal spoke RAPID within ConsenSys</p>
               </div>
             </div>
-
             <hr></hr>
             <div className="block-three">
               <div className="logo-text">
@@ -284,7 +284,16 @@ class Main extends React.Component {
                 <p> Logo design for a start up software / front end company.</p>
               </div>
             </div>
-
+            <hr></hr>
+            <div className="block-three">
+              <div className="logo-text">
+                <h4>ERC721 Kudos</h4>
+                <p>Badge / kudos design for a EthDenver 2020</p>
+              </div>
+              <span className="logo">
+                <img src={omd_badge} alt="" />
+              </span>
+            </div>
             <hr></hr>
             <div className="block-five">
               <div className="logo-text">

@@ -27,6 +27,7 @@ import r_quest from '../images/r_quest.png'
 import omd_poster from '../images/omd_poster.png'
 import rapid_logo from '../images/rapidLogo.png'
 import omd_badge from '../images/omd_badge.png'
+import r_3box from '../images/threeBox.png'
 
 class Main extends React.Component {
   render() {
@@ -199,6 +200,8 @@ class Main extends React.Component {
 
           <span className="image main">
             <img src={rIntro} alt="" />
+            <hr></hr>
+            <img src={r_3box} alt="" />
             <hr></hr>
             <img src={rKey} alt="" />
             <hr></hr>

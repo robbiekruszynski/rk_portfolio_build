@@ -138,9 +138,10 @@ class Main extends React.Component {
             </a>
             <hr></hr>
             <span className="image main">
+              <h4>ERC-721 token generator </h4>
+
               <img src={colors} alt="" />
             </span>
-            <h4>ERC-721 token generator </h4>
             <p> Minting tokens based on #HEX color inputs</p>
             <p>JavaScript, CSSS, HTML5, Solidity, Ganache</p>
             <p>

@@ -117,10 +117,9 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="title">Work</h2>
+          <h2 className="title">Work / Projects: </h2>
           <hr></hr>
-          <h2>Projects:</h2>
-          <h4>ICARUS LIVES </h4>
+          <h3>ICARUS LIVES </h3>
 
           <span className="image main">
             <img src={Icarus} alt="" />
@@ -143,7 +142,7 @@ class Main extends React.Component {
             </a>
             <hr></hr>
             <span className="image main">
-              <h4>ERC-721 token generator </h4>
+              <h3>ERC-721 token generator </h3>
 
               <img src={colors} alt="" />
             </span>
@@ -171,7 +170,7 @@ class Main extends React.Component {
 
             <div className="flexWork">
               <span className="image main">
-                <h4>ELYSIAN </h4>
+                <h3>ELYSIAN </h3>
                 <img src={elyDesk} alt="" />
               </span>
               <img className="phonePort" src={elyPhone} alt="" />

@@ -73,7 +73,7 @@ class Main extends React.Component {
             </p>
 
             <p>
-              Working within the Web3 / Blockchain space Part of the{' '}
+              Working within the Web3 / Blockchain space part of the{' '}
               <a href="https://onemilliondevs.com/" target="_blank">
                 One Million Developers
               </a>{' '}
@@ -117,22 +117,27 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
-          <h3>Projects</h3>
+          <h2 className="title">Work</h2>
+          <hr></hr>
+          <h2>Projects:</h2>
+          <h4>ICARUS LIVES </h4>
+
           <span className="image main">
             <img src={Icarus} alt="" />
           </span>
           <div className="workText">
-            <h4>ICARUS LIVES </h4>
+            <h4></h4>
             <p>
-              Custom built project implementing threeJS within React along with
-              live deployment
+              {' '}
+              <b>Experiment:</b> Showcasing our solar system along with real
+              time tracking of the ISS via API calls
             </p>
             <p>
-              Showcasing our solar system along with real time tracking of the
-              ISS via API calls
+              <b>Tech:</b> HTML5, SASS, JS, React, ThreeJS, API calls
             </p>
-            <p>Fully responsive across desktop, tablet, and mobile</p>
+            <p>
+              <b>Note: </b> Fully responsive across desktop, tablet, and mobile
+            </p>
             <a href="https://www.icarus-lives.com" target="_blank">
               Live deployment
             </a>
@@ -144,14 +149,16 @@ class Main extends React.Component {
             </span>
             <p>
               {' '}
-              Minting non fungible ERC721 tokens based on #HEX color inputs by
-              user
+              <b>Experiment:</b> Minting non fungible ERC721 tokens based on
+              #HEX color inputs by user
             </p>
-            <p>React, CSS, Solidity, Ganache</p>
             <p>
-              Giving user the ability to mint tokens build in React, using MOCHA
-              / CHAI to test importing OpenZep contracts and using web3 imports
-              with #HEX color inputs. Currently running off Ganache for testing.
+              <b>Tech:</b> HTML5, CSS, React, Solidity, Mocha, Chai Ganache
+            </p>
+            <p>
+              <b>Note: </b> Giving user the ability to mint tokens using tested
+              OpenZep contracts and using web3 imports with #HEX color inputs.
+              Currently running off Ganache for testing.
             </p>
 
             <a
@@ -164,32 +171,42 @@ class Main extends React.Component {
 
             <div className="flexWork">
               <span className="image main">
+                <h4>ELYSIAN </h4>
                 <img src={elyDesk} alt="" />
               </span>
               <img className="phonePort" src={elyPhone} alt="" />
             </div>
 
-            <h4>ELYSIAN </h4>
-            <p>Client project</p>
             <p>
-              Building out full responsive splash page across multiple viewports
+              <b>Client project:</b> Elysian Collection limited wine laucnh
             </p>
             <p>
-              Compatible with Mozilla, IE9, Chrome, Safari, Samsung Internet
+              <b>Tech: </b> HTML5, CSS, JS
+            </p>
+            <p>
+              <b>Notes:</b> Building out full responsive splash page across
+              multiple viewports Compatible with Mozilla, IE9, Chrome, Safari,
+              Samsung Internet
             </p>
             <a href="http://www.elysianwines.com/" target="_blank">
               live site
             </a>
             <hr></hr>
             <span className="image main">
+              <h3>Emotional Portal</h3>
+
               <img src={openCV} alt="" />
             </span>
-            <h4>Emotional Portal</h4>
-            <p>Real time face recognition utilizing canvas.</p>
-            <p>JavaScript, face-api.js (tensorflow), and ThreeJS</p>
             <p>
-              Please allow camera usage. You are able to navigate the
-              space/field clicking + holding outside the white parameters.
+              <b>Experiment:</b> Real time face recognition utilizing canvas.
+            </p>
+            <p>
+              <b>Tech:</b> React, JavaScript, face-api.js (tensorflow), and
+              ThreeJS
+            </p>
+            <p>
+              <b>Note:</b> Please allow camera usage. You are able to navigate
+              the space/field clicking + holding outside the white parameters.
             </p>
 
             <a href="https://emotions-portal.netlify.com" target="_blank">
@@ -217,8 +234,10 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">WireFrames and Prototypes</h2>
-          <h3>Collection of designs developed using Figma & Sketch</h3>
+          <h2 className="title">WireFrames and Prototypes</h2>
+          <hr></hr>
+          <h3>Collection of designs using Figma & Sketch</h3>
+          {/* <h3>Figma & Sketch</h3> */}
 
           <span className="image main">
             <img src={rIntro} alt="" />
@@ -264,13 +283,12 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Design</h2>
-          <h4>Logo Creations</h4>
+          <h2 className="title">Design - Logo Creations</h2>
           <hr></hr>
           <div className="logoBlock">
             <div className="block-two">
               <div className="logo-text">
-                <h4>RFK Logo</h4>
+                <h3>RFK Logo</h3>
                 <p>Personal logo Design </p>
               </div>
               <span className="logo">
@@ -283,14 +301,14 @@ class Main extends React.Component {
                 <img src={rapid_logo} alt="" />
               </span>
               <div className="logo-text">
-                <h4>RAPID</h4>
+                <h3>RAPID</h3>
                 <p> Logo design for internal spoke RAPID within ConsenSys</p>
               </div>
             </div>
             <hr></hr>
             <div className="block-three">
               <div className="logo-text">
-                <h4>Lucky Rabbit</h4>
+                <h3>Lucky Rabbit</h3>
                 <p>
                   Logo design for a web-based moto route tracking aplication.
                 </p>
@@ -305,14 +323,14 @@ class Main extends React.Component {
                 <img src={Fdlogo} alt="" />
               </span>
               <div className="logo-text">
-                <h4>Future Days</h4>
+                <h3>Future Days</h3>
                 <p> Logo design for a start up software / front end company.</p>
               </div>
             </div>
             <hr></hr>
             <div className="block-three">
               <div className="logo-text">
-                <h4>ERC721 Kudos</h4>
+                <h3>ERC721 Kudos</h3>
                 <p>Badge / kudos design for a EthDenver 2020</p>
               </div>
               <span className="logo">
@@ -320,13 +338,14 @@ class Main extends React.Component {
               </span>
             </div>
             <hr></hr>
-            <div className="block-five">
-              <div className="logo-text">
-                <h4>Poster Designs</h4>
-                <p>
-                  {' '}
+            <div className="block-four">
+              {/* <h2 className="title">Design - Poster Creations</h2> */}
+              <div className="logo-text title">
+                <h2 className="title">Design - Poster Creations</h2>
+                <hr></hr>
+                <h3>
                   ConsenSys spoke promotional material at Ethereum denver 2020
-                </p>
+                </h3>
               </div>
             </div>
             <span className="image main">
@@ -340,8 +359,8 @@ class Main extends React.Component {
               <hr></hr>
             </span>
             <div className="block-five">
-              <div className="logo-text">
-                <p> One Million Developers promotional material</p>
+              <div className="logo-text title">
+                <h3> One Million Developers promotional material</h3>
               </div>
             </div>
             <span className="image main">

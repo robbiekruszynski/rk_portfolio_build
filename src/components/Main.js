@@ -142,12 +142,16 @@ class Main extends React.Component {
 
               <img src={colors} alt="" />
             </span>
-            <p> Minting tokens based on #HEX color inputs</p>
-            <p>JavaScript, CSS, HTML5, Solidity, Ganache</p>
+            <p>
+              {' '}
+              Minting non fungible ERC721 tokens based on #HEX color inputs by
+              user
+            </p>
+            <p>React, CSS, Solidity, Ganache</p>
             <p>
               Giving user the ability to mint tokens build in React, using MOCHA
-              / CHAI to test importing openZep contracts and using web3 imports
-              with #HEX color inputs.
+              / CHAI to test importing OpenZep contracts and using web3 imports
+              with #HEX color inputs. Currently running off Ganache for testing.
             </p>
 
             <a
@@ -157,6 +161,7 @@ class Main extends React.Component {
               Github
               <hr></hr>
             </a>
+
             <div className="flexWork">
               <span className="image main">
                 <img src={elyDesk} alt="" />

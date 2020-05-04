@@ -406,12 +406,21 @@ class Main extends React.Component {
               <h4>Digital Portfolio</h4>
             </a>
           </div> */}
-          <div className="dig-port-two">
+          {/* <div className="dig-port-two">
             <a href="https://www.linkedin.com/in/robbie-k/" target="_blank">
               <h4>Linkedin</h4>
             </a>
-          </div>
+          </div> */}
           <ul className="icons">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/robbie-k/"
+                className="icon"
+                target="_blank"
+              >
+                <span className="label">LI</span>
+              </a>
+            </li>
             <li>
               <a
                 href="https://www.instagram.com/robbiek.eth/"

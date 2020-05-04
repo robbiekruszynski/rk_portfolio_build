@@ -24,6 +24,7 @@ import rapid_logo from '../images/rapidLogo.png'
 import omd_badge from '../images/omd_badge.png'
 import r_3box from '../images/threeBox.png'
 import colors from '../images/colors.gif'
+import r_d_white from '../images/r_dash_2.png'
 
 class Main extends React.Component {
   render() {
@@ -246,6 +247,8 @@ class Main extends React.Component {
             <img src={rKey} alt="" />
             <hr></hr>
             <img src={rDash} alt="" />
+            <hr></hr>
+            <img src={r_d_white} alt="" />
             <hr></hr>
             <div className="mobile-home">
               <div className="mobile-wire">

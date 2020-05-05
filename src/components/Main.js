@@ -74,7 +74,7 @@ class Main extends React.Component {
             </p>
 
             <p>
-              Working within the Web3 / Blockchain space part of the{' '}
+              Currently working within the Web3 / Blockchain space part of the{' '}
               <a href="https://onemilliondevs.com/" target="_blank">
                 One Million Developers
               </a>{' '}
@@ -84,14 +84,14 @@ class Main extends React.Component {
             </p>
             <div></div>
             <p>
-              Promotion of self organization within a cross-functional
-              collaborative and or individual effort. A focus on team
-              communication encouraging productive and positive atmospheres to
-              successfully create quality deliverables within scope.
-              Conversations to capture brand ethos and successfully implement
-              journey mapping strategies to build case study dialogues. Problem
-              solving, A/B testing, user research are all practices I find great
-              value in.
+              With an overal attitude of self organization within a
+              cross-functional collaborative and or individual effort. A focus
+              on team communication encouraging productive and positive
+              atmospheres to successfully create quality deliverables within
+              scope. Conversations to capture brand ethos and successfully
+              implement journey mapping strategies to build case study
+              dialogues. Problem solving, A/B testing, user research are all
+              practices I find great value in.
             </p>
             <p>
               I would like to think of myself as a liaison between design and

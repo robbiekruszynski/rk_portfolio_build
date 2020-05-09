@@ -222,19 +222,20 @@ class Main extends React.Component {
             <img src={py} alt="" />
           </span>
           <p>
-            <b>Experiment:</b> Real time face recognition utilizing canvas.
+            <b>Experiment:</b> Arcade style shooter game.
           </p>
           <p>
-            <b>Tech:</b> React, JavaScript, face-api.js (tensorflow), and
-            ThreeJS
+            <b>Tech:</b> Python, PyGame, Mixer
           </p>
           <p>
-            <b>Note:</b> Please allow camera usage. You are able to navigate the
-            space/field clicking + holding outside the white parameters.
+            <b>Note:</b> See README for play instructions, REPO clone advised.
           </p>
 
-          <a href="https://emotions-portal.netlify.com" target="_blank">
-            Live deployment
+          <a
+            href="https://github.com/Robbiekruszynski/py_invader"
+            target="_blank"
+          >
+            Github Link
           </a>
 
           {close}

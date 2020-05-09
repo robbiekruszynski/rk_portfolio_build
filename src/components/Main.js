@@ -27,6 +27,10 @@ import colors from '../images/colors.gif'
 import r_d_white from '../images/r_dash_2.png'
 import butler from '../images/butler_logo.png'
 import py from '../images/py.gif'
+import omdLogo from '../images/omdLogo.png'
+import aBooth from '../images/aBooth.png'
+import kBooth from '../images/kBooth.png'
+import rwest from '../images/rwest.png'
 
 class Main extends React.Component {
   render() {
@@ -135,7 +139,7 @@ class Main extends React.Component {
               time tracking of the ISS via API calls
             </p>
             <p>
-              <b>Tech:</b> HTML5, SASS, JS, React, ThreeJS, API calls
+              <b>Tech:</b> HTML5, SASS, JS, React, ThreeJS
             </p>
             <p>
               <b>Note: </b> Fully responsive across desktop, tablet, and mobile
@@ -167,7 +171,7 @@ class Main extends React.Component {
               href="https://github.com/Robbiekruszynski/ERC721-TOKENS-NFT"
               target="_blank"
             >
-              Github
+              Github Link
               <hr></hr>
             </a>
 
@@ -180,7 +184,7 @@ class Main extends React.Component {
             </div>
 
             <p>
-              <b>Client project:</b> Elysian Collection limited wine laucnh
+              <b>Client project:</b> Elysian Collection limited wine launch
             </p>
             <p>
               <b>Tech: </b> HTML5, CSS, JS
@@ -191,7 +195,7 @@ class Main extends React.Component {
               Samsung Internet
             </p>
             <a href="http://www.elysianwines.com/" target="_blank">
-              live site
+              Live deployment
             </a>
             <hr></hr>
             <span className="image main">
@@ -215,6 +219,27 @@ class Main extends React.Component {
               Live deployment
             </a>
           </div>
+          <hr></hr>
+          <span className="image main">
+            <h3>R \ West Rebuild</h3>
+
+            <img src={rwest} alt="" />
+          </span>
+          <p>
+            <b>Client Project:</b> Rebuild company website in house
+          </p>
+          <p>
+            <b>Tech:</b> HTML, CSS, PHP, SQL and JS
+          </p>
+          <p>
+            <b>Note:</b> Building out custom blocks / fields / plugins using WP
+            4.X. - 5.X.
+          </p>
+
+          <a href="https://www.rwest.com/" target="_blank">
+            Live deployment
+          </a>
+
           <hr></hr>
           <span className="image main">
             <h3>Py Invasion</h3>
@@ -261,7 +286,10 @@ class Main extends React.Component {
         >
           <h2 className="title">WireFrames and Prototypes</h2>
           <hr></hr>
-          <h3>Collection of designs using Figma & Sketch</h3>
+          <h3 className="sub-header">
+            Collection of designs using Figma & Sketch with a range in fidelity
+            to share process
+          </h3>
           <h4></h4>
           {/* <h3>Figma & Sketch</h3> */}
 
@@ -377,13 +405,24 @@ class Main extends React.Component {
               </div>
             </div>
             <hr></hr>
+
+            <div className="block-four">
+              <div className="logo-text title">
+                <h2 className="title">Design - Isometric Creations</h2>
+                <h3>Isometric designs for Ethereum Denver 2020</h3>
+                <hr></hr>
+              </div>
+            </div>
+
+            <img src={kBooth} alt="" />
+            <hr></hr>
+            <img src={aBooth} alt="" />
+            <hr></hr>
             <div className="block-four">
               <div className="logo-text title">
                 <h2 className="title">Design - Poster Creations</h2>
+                <h3>ConsenSys spoke promotional material</h3>
                 <hr></hr>
-                <h3>
-                  ConsenSys spoke promotional material at Ethereum denver 2020
-                </h3>
               </div>
             </div>
             <span className="image main">

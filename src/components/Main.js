@@ -25,6 +25,8 @@ import omd_badge from '../images/omd_badge.png'
 import r_3box from '../images/threeBox.png'
 import colors from '../images/colors.gif'
 import r_d_white from '../images/r_dash_2.png'
+import butler from '../images/butler_logo.png'
+import py from '../images/py.gif'
 
 class Main extends React.Component {
   render() {
@@ -213,6 +215,28 @@ class Main extends React.Component {
               Live deployment
             </a>
           </div>
+          <hr></hr>
+          <span className="image main">
+            <h3>Py Invasion</h3>
+
+            <img src={py} alt="" />
+          </span>
+          <p>
+            <b>Experiment:</b> Real time face recognition utilizing canvas.
+          </p>
+          <p>
+            <b>Tech:</b> React, JavaScript, face-api.js (tensorflow), and
+            ThreeJS
+          </p>
+          <p>
+            <b>Note:</b> Please allow camera usage. You are able to navigate the
+            space/field clicking + holding outside the white parameters.
+          </p>
+
+          <a href="https://emotions-portal.netlify.com" target="_blank">
+            Live deployment
+          </a>
+
           {close}
         </article>
 
@@ -340,8 +364,17 @@ class Main extends React.Component {
               </span>
             </div>
             <hr></hr>
+            <div className="block-one">
+              <span className="logo">
+                <img src={butler} alt="" />
+              </span>
+              <div className="logo-text">
+                <h3>Butler</h3>
+                <p> Logo design for a personal assistant application</p>
+              </div>
+            </div>
+            <hr></hr>
             <div className="block-four">
-              {/* <h2 className="title">Design - Poster Creations</h2> */}
               <div className="logo-text title">
                 <h2 className="title">Design - Poster Creations</h2>
                 <hr></hr>

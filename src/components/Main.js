@@ -262,6 +262,7 @@ class Main extends React.Component {
           <h2 className="title">WireFrames and Prototypes</h2>
           <hr></hr>
           <h3>Collection of designs using Figma & Sketch</h3>
+          <h4></h4>
           {/* <h3>Figma & Sketch</h3> */}
 
           <span className="image main">
@@ -311,6 +312,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="title">Design - Logo Creations</h2>
+
           <hr></hr>
           <div className="logoBlock">
             <div className="block-two">
@@ -324,7 +326,7 @@ class Main extends React.Component {
             </div>
             <hr></hr>
             <div className="block-one">
-              <span className="logo">
+              <span className="logo rapid">
                 <img src={rapid_logo} alt="" />
               </span>
               <div className="logo-text">

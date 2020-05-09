@@ -29,6 +29,12 @@
   justify-content: center;
 }
 
+.rapid {
+  // border: 1px solid red;
+  // max-width: 80%;
+  height: 20%;
+}
+
 .stack {
   display: flex;
   flex-direction: row;
@@ -71,15 +77,21 @@ li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  // border:1px solid pink;
+  // border: 1px solid pink;
   p {
     display: flex;
     justify-content: flex-end;
   }
 
-  h4 {
+  h3 {
     display: flex;
     justify-content: flex-end;
+  }
+  p {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    // border: 1px solid green;
   }
   img {
     margin-bottom: 20px;
@@ -92,7 +104,6 @@ li {
   align-content: center;
   justify-content: space-between;
   align-items: center;
-  // border:1px solid aqua;
   img {
     margin-bottom: 20px;
   }

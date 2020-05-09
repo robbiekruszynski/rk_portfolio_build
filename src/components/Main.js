@@ -31,6 +31,7 @@ import omdLogo from '../images/omdLogo.png'
 import aBooth from '../images/aBooth.png'
 import kBooth from '../images/kBooth.png'
 import rwest from '../images/rwest.png'
+import mmQuest from '../images/mmQuest.png'
 
 class Main extends React.Component {
   render() {
@@ -317,6 +318,8 @@ class Main extends React.Component {
             <hr></hr>
             <img src={r_quest} alt="" />
             <hr></hr>
+            <img src={mmQuest} alt="" />
+            <hr></hr>
           </span>
 
           {close}
@@ -381,10 +384,11 @@ class Main extends React.Component {
               </span>
               <div className="logo-text">
                 <h3>Future Days</h3>
-                <p> Logo design for a start up software / front end company.</p>
+                <p> Logo design for a start up software company.</p>
               </div>
             </div>
             <hr></hr>
+
             <div className="block-three">
               <div className="logo-text">
                 <h3>ERC721 Kudos</h3>
@@ -405,7 +409,16 @@ class Main extends React.Component {
               </div>
             </div>
             <hr></hr>
-
+            <div className="block-three">
+              <div className="logo-text">
+                <h3>One Million Developers Logo</h3>
+                <p>Badge / kudos design for a EthDenver 2020</p>
+              </div>
+              <span className="logo">
+                <img src={omdLogo} alt="" />
+              </span>
+            </div>
+            <hr></hr>
             <div className="block-four">
               <div className="logo-text title">
                 <h2 className="title">Design - Isometric Creations</h2>

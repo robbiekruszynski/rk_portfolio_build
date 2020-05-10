@@ -79,8 +79,8 @@ li {
   align-items: center;
   // border: 1px solid pink;
   p {
-    display: flex;
-    justify-content: flex-end;
+    text-align: right;
+    border: 1px solid red;
   }
 
   h3 {
@@ -115,7 +115,6 @@ li {
   p {
     display: flex;
     justify-content: flex-end;
-    //border:1px solid blue;
   }
 }
 
@@ -136,7 +135,6 @@ li {
     // border:1px solid lime;
   }
   p {
-    //border:1px solid blue;
     display: flex;
     justify-content: flex-start;
   }

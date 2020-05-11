@@ -74,35 +74,31 @@ class Main extends React.Component {
               HTML5 | SCSS | JS | React | Python | Solidity | Figma | Sketch |
               PS
             </p>
+            <h4>Statement</h4>
             <p>
               I’m passionate about building out concepts that positively
-              resonate with both the user and client. Focusing on the importance
+              resonate with both the user and client by focusing on the importance
               of aesthetics, relevance, and usability.
             </p>
 
             <p>
-              Currently working within the Web3 / Blockchain space part of the{' '}
+              I'm currently working within the Web3 / Blockchain space as part of the{' '}
               <a href="https://onemilliondevs.com/" target="_blank">
                 One Million Developers
               </a>{' '}
-              movement alongside parallel outreach efforts contributing towards
-              ecosystem development. Giving presentations to enable the curious
-              to explore the bleeding edge.
+              movement and providing outreach efforts contributing towards the
+              ecosystem development. In addition, I've presented to groups curious about Web3 and led discussions regarding the application of Blockchain and career paths available.
             </p>
             <div></div>
             <p>
-              With an overal attitude of self organization within a
-              cross-functional collaborative and or individual effort. A focus
-              on team communication encouraging productive and positive
-              atmospheres to successfully create quality deliverables within
-              scope. Conversations to capture brand ethos and successfully
+              With an overal attitude of self-organization within a
+              cross-functional team, I promote a collaborative approach with a focus
+              on team communication to encourage productive and positive
+              atmospheres. I strive to create conversations that capture brand ethos and successfully
               implement journey mapping strategies to build case study
               dialogues. Problem solving, A/B testing, user research are all
-              practices I find great value in.
-            </p>
-            <p>
-              I would like to think of myself as a liaison between design and
-              development.
+              practices I find great value in. Acting as a liaison between design and
+              development, seeing both granular and conceptual, allows me to deliver a cohesive approach to my work.
             </p>
           </div>
           {close}

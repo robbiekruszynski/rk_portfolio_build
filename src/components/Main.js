@@ -25,13 +25,16 @@ import omd_badge from '../images/omd_badge.png'
 import r_3box from '../images/threeBox.png'
 import colors from '../images/colors.gif'
 import r_d_white from '../images/r_dash_2.png'
-import butler from '../images/butler_logo.svg'
+// import butler from '../images/butler_logo.svg'
 import py from '../images/py.gif'
 import omdLogo from '../images/omdLogo.png'
 import aBooth from '../images/aBooth.png'
 import kBooth from '../images/kBooth.png'
 import rwest from '../images/rwest.png'
 import mmQuest from '../images/mmQuest.png'
+import buidl from '../images/buildB.png'
+import eda from '../images/EDA.png'
+import coinosis from '../images/coinosis.png'
 
 class Main extends React.Component {
   render() {
@@ -77,28 +80,32 @@ class Main extends React.Component {
             <h4>Statement</h4>
             <p>
               I’m passionate about building out concepts that positively
-              resonate with both the user and client by focusing on the importance
-              of aesthetics, relevance, and usability.
+              resonate with both the user and client by focusing on the
+              importance of aesthetics, relevance, and usability.
             </p>
 
             <p>
-              I'm currently working within the Web3 / Blockchain space as part of the{' '}
+              I'm currently working within the Web3 / Blockchain space as part
+              of the{' '}
               <a href="https://onemilliondevs.com/" target="_blank">
                 One Million Developers
               </a>{' '}
               movement and providing outreach efforts contributing towards the
-              ecosystem development. In addition, I've presented to groups curious about Web3 and led discussions regarding the application of Blockchain and career paths available.
+              ecosystem development. In addition, I've presented to groups
+              curious about Web3 and led discussions regarding the application
+              of Blockchain and career paths available.
             </p>
             <div></div>
             <p>
               With an overal attitude of self-organization within a
-              cross-functional team, I promote a collaborative approach with a focus
-              on team communication to encourage productive and positive
-              atmospheres. I strive to create conversations that capture brand ethos and successfully
-              implement journey mapping strategies to build case study
-              dialogues. Problem solving, A/B testing, user research are all
-              practices I find great value in. Acting as a liaison between design and
-              development, seeing both granular and conceptual, allows me to deliver a cohesive approach to my work.
+              cross-functional team, I promote a collaborative approach with a
+              focus on team communication to encourage productive and positive
+              atmospheres. I strive to create conversations that capture brand
+              ethos and successfully implement journey mapping strategies to
+              build case study dialogues. Problem solving, A/B testing, user
+              research are all practices I find great value in. Acting as a
+              liaison between design and development, seeing both granular and
+              conceptual, allows me to deliver a cohesive approach to my work.
             </p>
           </div>
           {close}
@@ -397,11 +404,11 @@ class Main extends React.Component {
             <hr></hr>
             <div className="block-one">
               <span className="logo">
-                <img src={butler} alt="" />
+                <img src={eda} alt="" />
               </span>
               <div className="logo-text">
-                <h3>Butler</h3>
-                <p> Logo design for a personal assistant application</p>
+                <h3>EDA</h3>
+                <p> Logo design for the Ethereum Developer Alliance </p>
               </div>
             </div>
             <hr></hr>
@@ -415,6 +422,7 @@ class Main extends React.Component {
               </span>
             </div>
             <hr></hr>
+
             {/* <div className="block-four">
               <div className="logo-text title">
                 <h2 className="title">Design - Isometric Creations</h2>
@@ -434,14 +442,22 @@ class Main extends React.Component {
                 <hr></hr>
               </div>
             </div>
+            <div className="block-five">
+              <div className="logo-text title">
+                <h3> BUIDL Network brochure</h3>
+              </div>
+            </div>
             <span className="image main">
-              <img src={conKau} alt="" />
+              <img src={buidl} alt="" />
               <hr></hr>
-              <img src={inCo} alt="" />
-              <hr></hr>
-              <img src={myOmd} alt="" />
-              <hr></hr>
-              <img src={pegMm} alt="" />
+            </span>
+            <div className="block-six">
+              <div className="logo-text title">
+                <h3> Coinosis promotional material</h3>
+              </div>
+            </div>
+            <span className="image main">
+              <img src={coinosis} alt="" />
               <hr></hr>
             </span>
             <div className="block-five">
@@ -451,6 +467,16 @@ class Main extends React.Component {
             </div>
             <span className="image main">
               <img src={omd_poster} alt="" />
+              <hr></hr>
+            </span>
+            <span className="image main">
+              <img src={conKau} alt="" />
+              <hr></hr>
+              <img src={inCo} alt="" />
+              <hr></hr>
+              <img src={myOmd} alt="" />
+              <hr></hr>
+              <img src={pegMm} alt="" />
               <hr></hr>
             </span>
           </div>

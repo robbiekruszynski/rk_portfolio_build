@@ -422,19 +422,6 @@ class Main extends React.Component {
               </span>
             </div>
             <hr></hr>
-
-            {/* <div className="block-four">
-              <div className="logo-text title">
-                <h2 className="title">Design - Isometric Creations</h2>
-                <h3>Isometric designs for Ethereum Denver 2020</h3>
-                <hr></hr>
-              </div>
-            </div> */}
-
-            {/* <img src={kBooth} alt="" />
-            <hr></hr>
-            <img src={aBooth} alt="" />
-            <hr></hr> */}
             <div className="block-four">
               <div className="logo-text title">
                 <h2 className="title">Design - Poster Creations</h2>

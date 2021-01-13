@@ -341,14 +341,14 @@ class Main extends React.Component {
             <img src={r_d_white} alt="" />
             <hr></hr>
             <div className="mobile-home">
-              <div className="mobile-wire">
+              {/* <div className="mobile-wire">
                 <img src={r_mobile} alt="" />
-              </div>
-              <div className="mobile-wire">
+              </div> */}
+              {/* <div className="mobile-wire">
                 <img src={r_mobile_l} alt="" />
-              </div>
+              </div> */}
             </div>{' '}
-            <hr></hr>
+            {/* <hr></hr> */}
             <img src={r_quest_m} alt="" />
             <hr></hr>
             <img src={r_quest} alt="" />
@@ -470,7 +470,7 @@ class Main extends React.Component {
               <img src={buidl} alt="" />
               <hr></hr>
             </span>
-            <div className="block-six">
+            {/* <div className="block-six">
               <div className="logo-text title">
                 <h3> Coinosis promotional material</h3>
               </div>
@@ -478,7 +478,7 @@ class Main extends React.Component {
             <span className="image main">
               <img src={coinosis} alt="" />
               <hr></hr>
-            </span>
+            </span> */}
             <div className="block-five">
               <div className="logo-text title">
                 <h3> One Million Developers promotional material</h3>

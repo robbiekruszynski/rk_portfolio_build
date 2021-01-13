@@ -30,7 +30,7 @@ import py from '../images/py.gif'
 import omdLogo from '../images/omdLogo.png'
 import aBooth from '../images/aBooth.png'
 import kBooth from '../images/kBooth.png'
-import rwest from '../images/rwest.png'
+// import rwest from '../images/rwest.png'
 import mmQuest from '../images/mmQuest.png'
 import buidl from '../images/buildB.png'
 import eda from '../images/EDA.png'
@@ -80,20 +80,14 @@ class Main extends React.Component {
             <h4>Statement</h4>
             <p>
               I’m passionate about building out concepts that positively
-              resonate with both the user and client by focusing on the
+              resonate with both the user(s) and client(s) by focusing on the
               importance of aesthetics, relevance, and usability.
             </p>
 
             <p>
-              I'm currently working within the Web3 / Blockchain space as part
-              of the{' '}
-              <a href="https://onemilliondevs.com/" target="_blank">
-                One Million Developers
-              </a>{' '}
-              movement and providing outreach efforts contributing towards the
-              ecosystem development. In addition, I've presented to groups
-              curious about Web3 and led discussions regarding the application
-              of Blockchain and career paths available.
+              I'm currently working within the Web3 space as a technical / community advocate.
+          
+              
             </p>
             <div></div>
             <p>
@@ -110,6 +104,8 @@ class Main extends React.Component {
           </div>
           {close}
         </article>
+        
+        
         <article
           id="work"
           className={`${this.props.article === 'intro' ? 'active' : ''} ${
@@ -179,7 +175,7 @@ class Main extends React.Component {
               <hr></hr>
             </a>
 
-            <div className="flexWork">
+            {/* <div className="flexWork">
               <span className="image main">
                 <h3>ELYSIAN </h3>
                 <img src={elyDesk} alt="" />
@@ -200,8 +196,8 @@ class Main extends React.Component {
             </p>
             <a href="http://www.elysianwines.com/" target="_blank">
               Live deployment
-            </a>
-            <hr></hr>
+            </a> */}
+            {/* <hr></hr> */}
             <span className="image main">
               <h3>Emotional Portal</h3>
 
@@ -224,7 +220,7 @@ class Main extends React.Component {
             </a>
           </div>
           <hr></hr>
-          <span className="image main">
+          {/* <span className="image main">
             <h3>R \ West Rebuild</h3>
 
             <img src={rwest} alt="" />
@@ -244,7 +240,7 @@ class Main extends React.Component {
             Live deployment
           </a>
 
-          <hr></hr>
+          <hr></hr> */}
           <span className="image main">
             <h3>Py Invasion</h3>
 

@@ -35,6 +35,8 @@ import mmQuest from '../images/mmQuest.png'
 import buidl from '../images/buildB.png'
 import eda from '../images/EDA.png'
 import coinosis from '../images/coinosis.png'
+import stepTwo from '../images/stepTwo.png'
+
 
 class Main extends React.Component {
   render() {
@@ -108,6 +110,39 @@ class Main extends React.Component {
         
         <article
           id="work"
+          className={`${this.props.article === 'write' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <div className="logoBlock"></div>
+          <h2 className="title">Technical writing: </h2>
+          <p>Developer Portal Step 2 </p>
+          <a href="https://consensys.net/developers/onboarding-step-2/" target="_blank">
+              Live deployment
+            </a>
+          
+          <span className="image main">
+            <img src={stepTwo} alt="" />
+          </span>
+
+          {close}
+        </article>
+        <article
+          id="write"
+          className={`${this.props.article === 'write' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <div className="logoBlock"></div>
+          {close}
+        </article>
+        
+        
+        
+        <article
+          id="work"
           className={`${this.props.article === 'intro' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
@@ -116,6 +151,7 @@ class Main extends React.Component {
           <div className="logoBlock"></div>
           {close}
         </article>
+        
 
         <article
           id="work"

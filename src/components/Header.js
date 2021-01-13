@@ -35,6 +35,16 @@ const Header = props => (
             Build
           </a>
         </li>
+        <li>
+          <a
+            href="javascript:;"
+            onClick={() => {
+              props.onOpenArticle('write')
+            }}
+          >
+            Write
+          </a>
+        </li>
 
         <li>
           <a

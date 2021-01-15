@@ -87,7 +87,7 @@ class Main extends React.Component {
             </p>
 
             <p>
-              I'm currently working within the Web3 space as a technical / community advocate.
+            I'm currently working within the Web3 space as a devrel advocate / evangelist with a focus on community development along with developing technical tutorials / documentation.
           
               
             </p>

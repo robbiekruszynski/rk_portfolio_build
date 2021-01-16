@@ -414,7 +414,7 @@ class Main extends React.Component {
               </div>
             </div>
             <hr></hr>
-            <div className="block-three">
+            {/* <div className="block-three">
               <div className="logo-text">
                 <h3>Lucky Rabbit</h3>
                 <p>
@@ -424,30 +424,31 @@ class Main extends React.Component {
               <span className="logo">
                 <img src={Lrlogo} alt="" />
               </span>
-            </div>
-            <hr></hr>
-            <div className="block-one">
-              <span className="logo">
-                <img src={Fdlogo} alt="" />
+            </div> */}
+            {/* <hr></hr> */}
+            <div className="block-two">
+              <span className="logo-text">
+              <h3>Future Days</h3>
+                <p> Logo design for a start up software company.</p>
+            
               </span>
               <div className="logo-text">
-                <h3>Future Days</h3>
-                <p> Logo design for a start up software company.</p>
+                <img src={Fdlogo} alt="" />
               </div>
             </div>
             <hr></hr>
-
-            <div className="block-three">
-              <div className="logo-text">
+{/* 
+            <div className="block-three"> */}
+              {/* <div className="logo-text">
                 <h3>ERC721 Kudos</h3>
                 <p>Badge / kudos design for a EthDenver 2020</p>
-              </div>
-              <span className="logo">
+              </div> */}
+              {/* <span className="logo">
                 <img src={omd_badge} alt="" />
-              </span>
-            </div>
-            <hr></hr>
-            <div className="block-one">
+              </span> */}
+            {/* </div>
+            <hr></hr> */}
+            <div className="block-three">
               <span className="logo">
                 <img src={eda} alt="" />
               </span>
@@ -457,7 +458,7 @@ class Main extends React.Component {
               </div>
             </div>
             <hr></hr>
-            <div className="block-three">
+            <div className="block-four">
               <div className="logo-text">
                 <h3>One Million Developers Logo</h3>
                 <p>Badge / kudos design for a EthDenver 2020</p>
@@ -506,8 +507,8 @@ class Main extends React.Component {
               <hr></hr>
               <img src={inCo} alt="" />
               <hr></hr>
-              <img src={myOmd} alt="" />
-              <hr></hr>
+              {/* <img src={myOmd} alt="" />
+              <hr></hr> */}
               <img src={pegMm} alt="" />
               <hr></hr>
             </span>

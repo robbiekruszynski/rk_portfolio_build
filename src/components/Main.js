@@ -36,6 +36,9 @@ import buidl from '../images/buildB.png'
 import eda from '../images/EDA.png'
 import coinosis from '../images/coinosis.png'
 import stepTwo from '../images/stepTwo.png'
+import stepThree from '../images/step3.png'
+
+
 
 
 class Main extends React.Component {
@@ -125,6 +128,15 @@ class Main extends React.Component {
           
           <span className="image main">
             <img src={stepTwo} alt="" />
+          </span>
+          <hr></hr>
+          <p> Developer Portal Step 3</p>
+          <a href="https://consensys.net/developers/onboarding-step-2/" target="_blank">
+              Live deployment
+            </a>
+
+            <span className="image main">
+            <img src={stepThree} alt="" />
           </span>
 
           {close}

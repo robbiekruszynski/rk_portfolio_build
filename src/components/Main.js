@@ -77,10 +77,20 @@ class Main extends React.Component {
               UX | UI | Development | Design | Developer Relations | Scrum
               Master
             </p>
-            <h4>Stack</h4>
+            <h4> Tech Stack</h4>
             <p>
-              HTML5 | SCSS | JS | React | Python | Solidity | Figma | Sketch |
-              PS
+            JS | React | SCSS | Solidity 
+        
+            </p>
+            <h5> Tech Stack in Progress</h5>
+            <p>
+           Python | Rust
+        
+            </p>
+
+            <h4> Design Stack</h4>
+            <p>
+            Figma | Sketch | PS
             </p>
             <h4>Statement</h4>
             <p>

@@ -576,6 +576,16 @@ class Main extends React.Component {
             </li>
             <li>
               <a
+                href="https://twitter.com/Ro_bbieK
+                "
+                className="icon"
+                target="_blank"
+              >
+                <span className="label">TW</span>
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://www.instagram.com/robbiek.eth/"
                 className="icon"
                 target="_blank"

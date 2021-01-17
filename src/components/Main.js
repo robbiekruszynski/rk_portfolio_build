@@ -37,6 +37,8 @@ import eda from '../images/EDA.png'
 import coinosis from '../images/coinosis.png'
 import stepTwo from '../images/stepTwo.png'
 import stepThree from '../images/step3.png'
+import infura from '../images/infura.png'
+
 
 
 
@@ -147,6 +149,14 @@ class Main extends React.Component {
 
             <span className="image main">
             <img src={stepThree} alt="" />
+          </span>
+
+          <p>Ethereum JavaScript Libraries: web3.js vs. ethers.js (Part II)</p>
+          <a href="https://blog.infura.io/ethereum-javascript-libraries-web3-js-vs-ethers-js-part-ii/" target="_blank">
+              Live deployment
+            </a>
+            <span className="image main">
+            <img src={infura} alt="" />
           </span>
 
           {close}

@@ -18,7 +18,7 @@ import r_quest_m from '../images/r_quest_main.png'
 import r_quest from '../images/r_quest.png'
 import omd_poster from '../images/omd_poster.png'
 import rapid_logo from '../images/rapidLogo.png'
-import omd_badge from '../images/omd_badge.png'
+// import omd_badge from '../images/omd_badge.png'
 import r_3box from '../images/threeBox.png'
 import colors from '../images/colors.gif'
 import r_d_white from '../images/r_dash_2.png'
@@ -145,7 +145,7 @@ class Main extends React.Component {
             <span className="image main">
             <img src={stepThree} alt="" />
           </span>
-
+          <hr></hr>
           <p>Ethereum JavaScript Libraries: web3.js vs. ethers.js (Part II)</p>
           <a href="https://blog.infura.io/ethereum-javascript-libraries-web3-js-vs-ethers-js-part-ii/" target="_blank">
               Live deployment
@@ -452,18 +452,8 @@ class Main extends React.Component {
               </div>
             </div>
             <hr></hr>
-{/* 
-            <div className="block-three"> */}
-              {/* <div className="logo-text">
-                <h3>ERC721 Kudos</h3>
-                <p>Badge / kudos design for a EthDenver 2020</p>
-              </div> */}
-              {/* <span className="logo">
-                <img src={omd_badge} alt="" />
-              </span> */}
-            {/* </div>
-            <hr></hr> */}
-            <div className="block-three">
+
+            <div className="block-one">
               <span className="logo">
                 <img src={eda} alt="" />
               </span>
@@ -476,7 +466,7 @@ class Main extends React.Component {
             <div className="block-four">
               <div className="logo-text">
                 <h3>One Million Developers Logo</h3>
-                <p>Badge / kudos design for a EthDenver 2020</p>
+                <p>Badge / kudos design for OMD community</p>
               </div>
               <span className="logo">
                 <img src={omdLogo} alt="" />
@@ -499,15 +489,6 @@ class Main extends React.Component {
               <img src={buidl} alt="" />
               <hr></hr>
             </span>
-            {/* <div className="block-six">
-              <div className="logo-text title">
-                <h3> Coinosis promotional material</h3>
-              </div>
-            </div>
-            <span className="image main">
-              <img src={coinosis} alt="" />
-              <hr></hr>
-            </span> */}
             <div className="block-five">
               <div className="logo-text title">
                 <h3> One Million Developers promotional material</h3>

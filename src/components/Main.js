@@ -209,7 +209,7 @@ class Main extends React.Component {
               <b>Note: </b> Fully responsive across desktop, tablet, and mobile
             </p>
             <a href="https://github.com/travisty12/solar-simulator" target="_blank">
-              Github
+              Github Link
             </a>
             <hr></hr>
             <span className="image main">

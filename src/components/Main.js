@@ -129,7 +129,7 @@ class Main extends React.Component {
         >
           <div className="logoBlock"></div>
           <h2 className="title">Technical writing: </h2>
-          <h3 className="title">This section is under development</h3>
+          
           <p>Developer Portal Step 2 </p>
           <a href="https://consensys.net/developers/onboarding-step-2/" target="_blank">
               Live deployment

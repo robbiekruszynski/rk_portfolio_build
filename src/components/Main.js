@@ -33,6 +33,8 @@ import eda from '../images/EDA.png'
 import stepTwo from '../images/stepTwo.png'
 import stepThree from '../images/step3.png'
 import infura from '../images/infura.png'
+import dotenv from '../images/dotenv.png'
+
 
 
 // consider clean up of r west and wine comp show off.. .
@@ -148,6 +150,17 @@ class Main extends React.Component {
           <hr></hr>
           <p>Ethereum JavaScript Libraries: web3.js vs. ethers.js (Part II)</p>
           <a href="https://blog.infura.io/ethereum-javascript-libraries-web3-js-vs-ethers-js-part-ii/" target="_blank">
+              Live deployment
+            </a>
+            <span className="image main">
+            <img src={infura} alt="" />
+          </span>
+          <span className="image main">\
+            <img src={dotenv} alt="" />
+          </span>
+          <hr></hr>
+          <p>How to Use .env to Enhance Basic Security Within Your DApp</p>
+          <a href="https://blog.infura.io/how-to-use-dotenv-to-enhance-basic-security-within-your-dapp/?utm_content=179170480&utm_medium=social&utm_source=twitter&hss_channel=tw-761372197298528256" target="_blank">
               Live deployment
             </a>
             <span className="image main">

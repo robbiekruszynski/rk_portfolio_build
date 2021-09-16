@@ -155,18 +155,16 @@ class Main extends React.Component {
             <span className="image main">
             <img src={infura} alt="" />
           </span>
-          <span className="image main">\
-            <img src={dotenv} alt="" />
-          </span>
+        
           <hr></hr>
           <p>How to Use .env to Enhance Basic Security Within Your DApp</p>
           <a href="https://blog.infura.io/how-to-use-dotenv-to-enhance-basic-security-within-your-dapp/?utm_content=179170480&utm_medium=social&utm_source=twitter&hss_channel=tw-761372197298528256" target="_blank">
               Live deployment
             </a>
             <span className="image main">
-            <img src={infura} alt="" />
+            <img src={dotenv} alt="" />
           </span>
-
+            
           {close}
         </article>
         <article

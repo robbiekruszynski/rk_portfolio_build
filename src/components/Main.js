@@ -583,7 +583,7 @@ class Main extends React.Component {
             </li>
             <li>
               <a
-                href="https://www.instagram.com/robbiek.eth/"
+                href="https://www.instagram.com/heavyarms_no.27/"
                 className="icon"
                 target="_blank"
               >

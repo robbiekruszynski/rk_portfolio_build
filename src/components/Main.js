@@ -95,11 +95,11 @@ class Main extends React.Component {
             <p>
               I’m passionate about building out concepts that positively
               resonate with both the user(s) and client(s) by focusing on the
-              importance of aesthetics, relevance, and usability.
+              importance of relevance, approachability, and scalability
             </p>
 
             <p>
-            I'm currently working within the Web3 space as a devrel advocate / evangelist with a focus on community development along with developing technical tutorials / documentation.
+            I'm currently working within the Web3 space as lead of Developer Relations with a focus on community & development growth strategies.
           
               
             </p>
@@ -112,8 +112,8 @@ class Main extends React.Component {
               ethos and successfully implement journey mapping strategies to
               build case study dialogues. Problem solving, A/B testing, user
               research are all practices I find great value in. Acting as a
-              liaison between design and development, seeing both granular and
-              conceptual, allows me to deliver a cohesive approach to my work.
+              liaison between design, development, and community 
+              allows me to deliver a cohesive approach to my work.
             </p>
           </div>
           {close}

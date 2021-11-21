@@ -93,9 +93,7 @@ class Main extends React.Component {
             </p>
             <h4>Statement</h4>
             <p>
-              I’m passionate about building out concepts that positively
-              resonate with both the user(s) and client(s) by focusing on the
-              importance of relevance, approachability, and scalability
+            I’m passionate about creating strategies with an array in range that positively resonates with both the user(s) and client(s). Focusing on the importance of relevance, approachability, and scalability allows for organic/sustainable growth.
             </p>
 
             <p>

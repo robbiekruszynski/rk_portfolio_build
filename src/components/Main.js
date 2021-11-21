@@ -73,14 +73,20 @@ class Main extends React.Component {
           <div className="rk-info">
             <h4>Focus</h4>
             <p>
-              UX | UI | Development | Design | Developer Relations | Scrum
+            Developer Relations | Community growth | Development | UX/UI | Design | Scrum
               Master
+            </p>
+            <h4> Tool Stack</h4>
+            <p>
+            Truffle / Hardhat | Web3.js / Ethers.js 
+        
             </p>
             <h4> Tech Stack</h4>
             <p>
-            JS | React | SCSS | Solidity 
+            React | Solidity 
         
             </p>
+            
             <h5> Tech Stack in Progress</h5>
             <p>
            Python | Rust
@@ -105,12 +111,13 @@ class Main extends React.Component {
             <p>
               With an overal attitude of self-organization within a
               cross-functional team, I promote a collaborative approach with a
-              focus on team communication to encourage productive and positive
-              atmospheres. I strive to create conversations that capture brand
-              ethos and successfully implement journey mapping strategies to
-              build case study dialogues. Problem solving, A/B testing, user
+              focus on communication to encourage both productive and positive
+              atmospheres. 
+              I strive to create conversations that capture strategy efforts 
+              to then successfully implement journey mapping strategies that
+              build case study dialogues. Problem solving, A/B testing, community
               research are all practices I find great value in. Acting as a
-              liaison between design, development, and community 
+              liaison between development, design, and community 
               allows me to deliver a cohesive approach to my work.
             </p>
           </div>

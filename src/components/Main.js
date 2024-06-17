@@ -76,8 +76,7 @@ class Main extends React.Component {
           <div className="rk-info">
             <h4>Focus</h4>
             <p>
-            Developer Relations | Community growth | Development | UX/UI | Design | Scrum
-              Master
+            Developer Relations | Community Growth | Development | UX/UI | Scrum Master
             </p>
             <h4> Tool Stack</h4>
             <p>
@@ -86,13 +85,13 @@ class Main extends React.Component {
             </p>
             <h4> Tech Stack</h4>
             <p>
-            React | Solidity 
+            React / Next | Solidity 
         
             </p>
             
             <h5> Tech Stack in Progress</h5>
             <p>
-           Python | Rust
+            Rust
         
             </p>
 

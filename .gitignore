@@ -4,6 +4,8 @@ node_modules
 yarn-error.log
 package-lock.json
 yarn.lock
+!node_modules/msgpackr-extract/
+!node_modules/msgpackr-extract/extract.cpp
 
 # Build directory
 /public

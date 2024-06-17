@@ -34,6 +34,9 @@ import stepTwo from '../images/stepTwo.png'
 import stepThree from '../images/step3.png'
 import infura from '../images/infura.png'
 import dotenv from '../images/dotenv.png'
+import Chron from '../images/Chronicle_docs_1.png'
+import Chron2 from '../images/Chronicle_docs_2.png'
+
 
 
 
@@ -134,6 +137,18 @@ class Main extends React.Component {
         >
           <div className="logoBlock"></div>
           <h2 className="title">Technical writing: </h2>
+
+          <p>Chronicle Labs Documentation </p>
+          <a href="https://docs.chroniclelabs.org/" target="_blank">
+              Live deployment
+            </a>
+            <span className="image main">
+            <img src={Chron2} alt="" />
+            <br></br>
+            <img src={Chron} alt="" />
+
+          </span>
+          <hr></hr>
           
           <p>Developer Portal Step 2 </p>
           <a href="https://consensys.net/developers/onboarding-step-2/" target="_blank">

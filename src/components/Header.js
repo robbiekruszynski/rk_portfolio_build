@@ -9,7 +9,7 @@ const Header = props => (
     <div className="content">
       <div className="inner">
         <h1>Robbie Kruszynski</h1>
-        <p>Design Create Develop</p>
+        <p>Developer Relations</p>
       </div>
     </div>
     <nav>
@@ -45,7 +45,16 @@ const Header = props => (
             Write
           </a>
         </li>
-
+        <li>
+          <a
+            href="javascript:;"
+            onClick={() => {
+              props.onOpenArticle('speak')
+            }}
+          >
+            Speak
+          </a>
+        </li>
         <li>
           <a
             href="javascript:;"

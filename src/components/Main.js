@@ -89,11 +89,6 @@ class Main extends React.Component {
         
             </p>
             
-            <h5> Tech Stack in Progress</h5>
-            <p>
-            Rust
-        
-            </p>
 
             <h4> Design Stack</h4>
             <p>
@@ -195,19 +190,26 @@ class Main extends React.Component {
         >
           <div className="logoBlock"></div>
           {close}
+          <hr></hr>
         </article>
-        
-        
-        
+
         <article
-          id="work"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          id="speak"
+          className={`${this.props.article === 'speak' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
           <div className="logoBlock"></div>
           {close}
+
+          <div className="logoBlock"></div>
+          <h1 className="title">Page is being updated  </h1>
+
+          {/* <h2 className="title">Events Attended </h2>
+          <p>Eth Denver 2020 - 24</p>
+          <p>Eth Amsterdam 2023</p> */}
+
         </article>
         
 
@@ -597,16 +599,16 @@ class Main extends React.Component {
                 className="icon"
                 target="_blank"
               >
-                <span className="label">TW</span>
+                <span className="label">CT</span>
               </a>
             </li>
             <li>
               <a
-                href="https://www.instagram.com/heavyarms_no.27/"
+                href="https://t.me/ro_bbiek"
                 className="icon"
                 target="_blank"
               >
-                <span className="label">IG</span>
+                <span className="label">TG</span>
               </a>
             </li>
             <li>

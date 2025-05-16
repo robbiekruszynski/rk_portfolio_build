@@ -7,41 +7,30 @@ import Rklogo from '../images/rfk_logo_white.png'
 import conKau from '../images/conKauri.png'
 import inCo from '../images/inCo.png'
 import pegMm from '../images/pegMm.png'
-// import myOmd from '../images/myOmd.png'
 import openCV from '../images/openCv.gif'
 import rKey from '../images/verify_key.png'
 import rDash from '../images/r_dashboard.png'
 import rIntro from '../images/r_intro.png'
-// import r_mobile from '../images/r_mobile.png'
-// import r_mobile_l from '../images/r_mobile_l.png'
 import r_quest_m from '../images/r_quest_main.png'
 import r_quest from '../images/r_quest.png'
 import omd_poster from '../images/omd_poster.png'
 import rapid_logo from '../images/rapidLogo.png'
-// import omd_badge from '../images/omd_badge.png'
 import r_3box from '../images/threeBox.png'
 import colors from '../images/colors.gif'
 import r_d_white from '../images/r_dash_2.png'
 import py from '../images/py.gif'
 import omdLogo from '../images/omdLogo.png'
-// import aBooth from '../images/aBooth.png'
-// import kBooth from '../images/kBooth.png'
 import mmQuest from '../images/mmQuest.png'
 import buidl from '../images/buildB.png'
 import eda from '../images/EDA.png'
-// import coinosis from '../images/coinosis.png'
 import stepTwo from '../images/stepTwo.png'
 import stepThree from '../images/step3.png'
 import infura from '../images/infura.png'
 import dotenv from '../images/dotenv.png'
 import Chron from '../images/Chronicle_docs_1.png'
 import Chron2 from '../images/Chronicle_docs_2.png'
-
-
-
-
-// consider clean up of r west and wine comp show off.. .
-
+import Ape from '../images/apechain.png'
+import ApePortal from "../images/ApePortal.png"
 
 class Main extends React.Component {
   render() {
@@ -78,11 +67,11 @@ class Main extends React.Component {
             <p>
             Developer Relations | Community Growth | Development | UX/UI | Scrum Master
             </p>
-            <h4> Tool Stack</h4>
+            {/* <h4> Tool Stack</h4>
             <p>
             Truffle / Hardhat | Web3.js / Ethers.js 
         
-            </p>
+            </p> */}
             <h4> Tech Stack</h4>
             <p>
             React / Next | Solidity 
@@ -92,11 +81,11 @@ class Main extends React.Component {
 
             <h4> Design Stack</h4>
             <p>
-            Figma | Sketch | PS
+            Figma | Sketch s
             </p>
             <h4>Statement</h4>
             <p>
-            I’m passionate about creating strategies with an array in range that positively resonates with both the user(s) and client(s). Focusing on the importance of relevance, approachability, and scalability allows for organic/sustainable growth.
+            I'm passionate about creating strategies with an array in range that positively resonates with both the user(s) and client(s). Focusing on the importance of relevance, approachability, and scalability allows for organic/sustainable growth.
             </p>
 
             <p>
@@ -132,6 +121,17 @@ class Main extends React.Component {
           <div className="logoBlock"></div>
           <h2 className="title">Technical writing: </h2>
 
+          <p>ApeChain Documentation</p>
+          <a href="https://docs.apechain.com/" target="_blank">
+          Live deployment
+          </a>       
+          <span className="image main">
+            <img src={Ape} alt="" />
+            <br></br>
+            <img src={ApePortal} alt="" />
+
+          </span>   
+          <hr></hr>
           <p>Chronicle Labs Documentation </p>
           <a href="https://docs.chroniclelabs.org/" target="_blank">
               Live deployment

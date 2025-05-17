@@ -81,7 +81,7 @@ class Main extends React.Component {
 
             <h4> Design Stack</h4>
             <p>
-            Figma | Sketch s
+            Figma | Sketch 
             </p>
             <h4>Statement</h4>
             <p>
@@ -311,7 +311,7 @@ class Main extends React.Component {
               the space/field clicking + holding outside the white parameters.
             </p>
 
-            <a href="https://emotions-portal.netlify.com" target="_blank">
+            <a href="https://emotions-portal.netlify.app/" target="_blank">
               Live deployment
             </a>
           </div>
@@ -337,7 +337,7 @@ class Main extends React.Component {
           </a>
 
           <hr></hr> */}
-          <span className="image main">
+          {/* <span className="image main">
             <h3>Py Invasion</h3>
 
             <img src={py} alt="" />
@@ -357,7 +357,7 @@ class Main extends React.Component {
             target="_blank"
           >
             Github Link
-          </a>
+          </a> */}
 
           {close}
         </article>

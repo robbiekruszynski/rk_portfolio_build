@@ -30,7 +30,7 @@ import dotenv from '../images/dotenv.png'
 import Chron from '../images/Chronicle_docs_1.png'
 import Chron2 from '../images/Chronicle_docs_2.png'
 import Ape from '../images/apechain.png'
-import ApePortal from "../images/ApePortal.png"
+import ApePortal from "../images/apePortal.png"
 
 class Main extends React.Component {
   render() {

@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+
+// Image imports
 import pic04 from '../images/self_bw_2.jpeg'
 import Icarus from '../images/ic_lives.gif'
 import Fdlogo from '../images/future_logo.png'
@@ -30,17 +32,17 @@ import dotenv from '../images/dotenv.png'
 import Chron from '../images/Chronicle_docs_1.png'
 import Chron2 from '../images/Chronicle_docs_2.png'
 import Ape from '../images/apechain.png'
-import ApePortal from "../images/apePortal.png"
+import ApePortal from '../images/apePortal.png'
 
 class Main extends React.Component {
   render() {
-    let close = (
+    const close = (
       <div
         className="close"
         onClick={() => {
           this.props.onCloseArticle()
         }}
-      ></div>
+      />
     )
 
     return (
@@ -56,141 +58,93 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          {' '}
-          {/* <Header></Header> */}
+          {close}
           <h2 className="major">About</h2>
           <span className="image main">
             <img src={pic04} alt="" />
           </span>
           <div className="rk-info">
             <h4>Focus</h4>
-            <p>
-            Developer Relations | Community Growth | Development | UX/UI | Scrum Master
-            </p>
-            {/* <h4> Tool Stack</h4>
-            <p>
-            Truffle / Hardhat | Web3.js / Ethers.js 
-        
-            </p> */}
-            <h4> Tech Stack</h4>
-            <p>
-            React / Next | Solidity 
-        
-            </p>
-            
-
-            <h4> Design Stack</h4>
-            <p>
-            Figma | Sketch 
-            </p>
+            <p>Developer Relations | Community Growth | Development | UX/UI | Scrum Master</p>
+            <h4>Tech Stack</h4>
+            <p>React / Next | Solidity</p>
+            <h4>Design Stack</h4>
+            <p>Figma | Sketch</p>
             <h4>Statement</h4>
             <p>
-            I'm passionate about creating strategies with an array in range that positively resonates with both the user(s) and client(s). Focusing on the importance of relevance, approachability, and scalability allows for organic/sustainable growth.
+              I'm passionate about creating strategies with an array in range that positively resonates with both the user(s) and client(s). Focusing on the importance of relevance, approachability, and scalability allows for organic/sustainable growth.
             </p>
-
             <p>
-            I'm currently working within the Web3 space as lead of Developer Relations with a focus on community & development growth strategies.
-          
-              
+              I'm currently working within the Web3 space as lead of Developer Relations with a focus on community & development growth strategies.
             </p>
-            <div></div>
             <p>
-              With an overal attitude of self-organization within a
-              cross-functional team, I promote a collaborative approach with a
-              focus on communication to encourage both productive and positive
-              atmospheres. 
-              I strive to create conversations that capture strategy efforts 
-              to then successfully implement journey mapping strategies that
-              build case study dialogues. Problem solving, A/B testing, community
-              research are all practices I find great value in. Acting as a
-              liaison between development, design, and community 
-              allows me to deliver a cohesive approach to my work.
+              With an overall attitude of self-organization within a cross-functional team, I promote a collaborative approach with a focus on communication to encourage both productive and positive atmospheres. I strive to create conversations that capture strategy efforts to then successfully implement journey mapping strategies that build case study dialogues. Problem solving, A/B testing, community research are all practices I find great value in. Acting as a liaison between development, design, and community allows me to deliver a cohesive approach to my work.
             </p>
           </div>
           {close}
         </article>
-        
-        
+
         <article
-          id="work"
+          id="technical-writing"
           className={`${this.props.article === 'write' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <div className="logoBlock"></div>
-          <h2 className="title">Technical writing: </h2>
-
+          {close}
+          <h2 className="title">Technical writing:</h2>
           <p>ApeChain Documentation</p>
-          <a href="https://docs.apechain.com/" target="_blank">
-          Live deployment
-          </a>       
+          <a href="https://docs.apechain.com/" target="_blank" rel="noopener noreferrer">
+            Live deployment
+          </a>
           <span className="image main">
             <img src={Ape} alt="" />
-            <br></br>
+            <br />
             <img src={ApePortal} alt="" />
-
-          </span>   
-          <hr></hr>
-          <p>Chronicle Labs Documentation </p>
-          <a href="https://docs.chroniclelabs.org/" target="_blank">
-              Live deployment
-            </a>
-            <span className="image main">
-            <img src={Chron2} alt="" />
-            <br></br>
-            <img src={Chron} alt="" />
-
           </span>
-          <hr></hr>
-          
-          <p>Developer Portal Step 2 </p>
-          <a href="https://consensys.net/developers/onboarding-step-2/" target="_blank">
-              Live deployment
-            </a>
-          
+          <hr />
+          <p>Chronicle Labs Documentation</p>
+          <a href="https://docs.chroniclelabs.org/" target="_blank" rel="noopener noreferrer">
+            Live deployment
+          </a>
+          <span className="image main">
+            <img src={Chron2} alt="" />
+            <br />
+            <img src={Chron} alt="" />
+          </span>
+          <hr />
+          <p>ConsenSys Developer Portal Step 2</p>
+          <a href="https://consensys.net/developers/onboarding-step-2/" target="_blank" rel="noopener noreferrer">
+            Live deployment
+          </a>
           <span className="image main">
             <img src={stepTwo} alt="" />
           </span>
-          <hr></hr>
-          <p> Developer Portal Step 3</p>
-          <a href="https://consensys.net/developers/onboarding-step-2/" target="_blank">
-              Live deployment
-            </a>
-
-            <span className="image main">
+          <hr />
+          <p>ConsenSys Developer Portal Step 3</p>
+          <a href="https://consensys.net/developers/onboarding-step-2/" target="_blank" rel="noopener noreferrer">
+            Live deployment
+          </a>
+          <span className="image main">
             <img src={stepThree} alt="" />
           </span>
-          <hr></hr>
-          <p>Ethereum JavaScript Libraries: web3.js vs. ethers.js (Part II)</p>
-          <a href="https://blog.infura.io/ethereum-javascript-libraries-web3-js-vs-ethers-js-part-ii/" target="_blank">
-              Live deployment
-            </a>
-            <span className="image main">
+          <hr />
+          <p>Infura Blog: Ethereum JavaScript Libraries: web3.js vs. ethers.js (Part II)</p>
+          <a href="https://blog.infura.io/ethereum-javascript-libraries-web3-js-vs-ethers-js-part-ii/" target="_blank" rel="noopener noreferrer">
+            Live deployment
+          </a>
+          <span className="image main">
             <img src={infura} alt="" />
           </span>
-        
-          <hr></hr>
-          <p>How to Use .env to Enhance Basic Security Within Your DApp</p>
-          <a href="https://blog.infura.io/how-to-use-dotenv-to-enhance-basic-security-within-your-dapp/?utm_content=179170480&utm_medium=social&utm_source=twitter&hss_channel=tw-761372197298528256" target="_blank">
-              Live deployment
-            </a>
-            <span className="image main">
+          <hr />
+          <p>Infura Blog: How to Use .env to Enhance Basic Security Within Your DApp</p>
+          <a href="https://blog.infura.io/how-to-use-dotenv-to-enhance-basic-security-within-your-dapp/?utm_content=179170480&utm_medium=social&utm_source=twitter&hss_channel=tw-761372197298528256" target="_blank" rel="noopener noreferrer">
+            Live deployment
+          </a>
+          <span className="image main">
             <img src={dotenv} alt="" />
           </span>
-            
           {close}
-        </article>
-        <article
-          id="write"
-          className={`${this.props.article === 'write' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <div className="logoBlock"></div>
-          {close}
-          <hr></hr>
         </article>
 
         <article
@@ -200,236 +154,111 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <div className="logoBlock"></div>
           {close}
-
-          <div className="logoBlock"></div>
-          <h1 className="title">Page is being updated  </h1>
-
-          {/* <h2 className="title">Events Attended </h2>
-          <p>Eth Denver 2020 - 24</p>
-          <p>Eth Amsterdam 2023</p> */}
-
+          <h1 className="title">Page is being updated</h1>
+          {close}
         </article>
-        
 
         <article
-          id="work"
+          id="projects"
           className={`${this.props.article === 'work' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="title">Work / Projects: </h2>
-          <hr></hr>
-          <h3>ICARUS LIVES </h3>
-
+          {close}
+          <h2 className="title">Work / Projects:</h2>
+          <hr />
+          <h3>ICARUS LIVES</h3>
           <span className="image main">
             <img src={Icarus} alt="" />
           </span>
           <div className="workText">
-            <h4></h4>
             <p>
-              {' '}
-              <b>Experiment:</b> Showcasing our solar system along with real
-              time tracking of the ISS via API calls
+              <b>Experiment:</b> Showcasing our solar system along with real time tracking of the ISS via API calls
             </p>
             <p>
-              <b>Tech:</b> HTML5, SASS, JS, React, ThreeJS
+              <b>Tech:</b> React, ThreeJS, iss-api
             </p>
             <p>
-              <b>Note: </b> Fully responsive across desktop, tablet, and mobile
+              <b>Note:</b> Fully responsive across desktop, tablet, and mobile
             </p>
-            <a href="https://github.com/travisty12/solar-simulator" target="_blank">
+            <a href="https://github.com/travisty12/solar-simulator" target="_blank" rel="noopener noreferrer">
               Github Link
             </a>
-            <hr></hr>
+            <hr />
             <span className="image main">
-              <h3>ERC-721 token generator </h3>
-
+              <h3>ERC-721 token generator</h3>
               <img src={colors} alt="" />
             </span>
             <p>
-              {' '}
-              <b>Experiment:</b> Minting non fungible ERC721 tokens based on
-              #HEX color inputs by user
+              <b>Experiment:</b> Minting non fungible ERC721 tokens based on #HEX color inputs by user
             </p>
             <p>
-              <b>Tech:</b> HTML5, CSS, React, Solidity, Mocha, Chai Ganache
+              <b>Tech:</b> React, Solidity, Mocha, Chai, Ganache
             </p>
             <p>
-              <b>Note: </b> Giving user the ability to mint tokens using tested
-              OpenZep contracts and using web3 imports with #HEX color inputs.
-              Currently running off Ganache for testing.
+              <b>Note:</b> Giving user the ability to mint tokens using tested OpenZep contracts and using web3 imports with #HEX color inputs. Currently running off Ganache for testing.
             </p>
-
-            <a
-              href="https://github.com/Robbiekruszynski/ERC721-TOKENS-NFT"
-              target="_blank"
-            >
+            <a href="https://github.com/Robbiekruszynski/ERC721-TOKENS-NFT" target="_blank" rel="noopener noreferrer">
               Github Link
-              <hr></hr>
             </a>
-
-            {/* <div className="flexWork">
-              <span className="image main">
-                <h3>ELYSIAN </h3>
-                <img src={elyDesk} alt="" />
-              </span>
-              <img className="phonePort" src={elyPhone} alt="" />
-            </div>
-
-            <p>
-              <b>Client project:</b> Elysian Collection limited wine launch
-            </p>
-            <p>
-              <b>Tech: </b> HTML5, CSS, JS
-            </p>
-            <p>
-              <b>Notes:</b> Building out full responsive splash page across
-              multiple viewports Compatible with Mozilla, IE9, Chrome, Safari,
-              Samsung Internet
-            </p>
-            <a href="http://www.elysianwines.com/" target="_blank">
-              Live deployment
-            </a> */}
-            {/* <hr></hr> */}
+            <hr />
             <span className="image main">
               <h3>Emotional Portal</h3>
-
               <img src={openCV} alt="" />
             </span>
             <p>
               <b>Experiment:</b> Real time face recognition utilizing canvas.
             </p>
             <p>
-              <b>Tech:</b> React, JavaScript, face-api.js (tensorflow), and
-              ThreeJS
+              <b>Tech:</b> React, JavaScript, face-api.js (tensorflow), and ThreeJS
             </p>
             <p>
-              <b>Note:</b> Please allow camera usage. You are able to navigate
-              the space/field clicking + holding outside the white parameters.
+              <b>Note:</b> Please allow camera usage. You are able to navigate the space/field clicking + holding outside the white parameters.
             </p>
-
-            <a href="https://emotions-portal.netlify.app/" target="_blank">
+            <a href="https://emotions-portal.netlify.app/" target="_blank" rel="noopener noreferrer">
               Live deployment
             </a>
           </div>
-          <hr></hr>
-          {/* <span className="image main">
-            <h3>R \ West Rebuild</h3>
-
-            <img src={rwest} alt="" />
-          </span>
-          <p>
-            <b>Client Project:</b> Rebuild company website in house
-          </p>
-          <p>
-            <b>Tech:</b> HTML, CSS, PHP, SQL and JS
-          </p>
-          <p>
-            <b>Note:</b> Building out custom blocks / fields / plugins using WP
-            4.X. - 5.X.
-          </p>
-
-          <a href="https://www.rwest.com/" target="_blank">
-            Live deployment
-          </a>
-
-          <hr></hr> */}
-          {/* <span className="image main">
-            <h3>Py Invasion</h3>
-
-            <img src={py} alt="" />
-          </span>
-          <p>
-            <b>Experiment:</b> Arcade style shooter game.
-          </p>
-          <p>
-            <b>Tech:</b> Python, PyGame, Mixer
-          </p>
-          <p>
-            <b>Note:</b> See README for play instructions, REPO clone advised.
-          </p>
-
-          <a
-            href="https://github.com/Robbiekruszynski/py_invader"
-            target="_blank"
-          >
-            Github Link
-          </a> */}
-
+          <hr />
           {close}
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <div className="logoBlock"></div>
-          {close}
-        </article>
-
-        <article
-          id="about"
+          id="wireframes"
           className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
+          {close}
           <h2 className="title">WireFrames and Prototypes</h2>
-          <hr></hr>
+          <hr />
           <h3 className="sub-header">
-            Collection of designs using Figma & Sketch with a range in fidelity
-            to share process
+            Collection of designs using Figma & Sketch with a range in fidelity to share process
           </h3>
-          <h4></h4>
-          {/* <h3>Figma & Sketch</h3> */}
-
           <span className="image main">
             <img src={rIntro} alt="" />
-            <hr></hr>
+            <hr />
             <img src={r_3box} alt="" />
-            <hr></hr>
+            <hr />
             <img src={rKey} alt="" />
-            <hr></hr>
+            <hr />
             <img src={rDash} alt="" />
-            <hr></hr>
+            <hr />
             <img src={r_d_white} alt="" />
-            <hr></hr>
-            <div className="mobile-home">
-              {/* <div className="mobile-wire">
-                <img src={r_mobile} alt="" />
-              </div> */}
-              {/* <div className="mobile-wire">
-                <img src={r_mobile_l} alt="" />
-              </div> */}
-            </div>{' '}
-            {/* <hr></hr> */}
+            <hr />
             <img src={r_quest_m} alt="" />
-            <hr></hr>
+            <hr />
             <img src={r_quest} alt="" />
-            <hr></hr>
+            <hr />
             <img src={mmQuest} alt="" />
-            <hr></hr>
+            <hr />
           </span>
-
           {close}
         </article>
 
-        <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <div className="logoBlock"></div>
-          {close}
-        </article>
         <article
           id="design"
           className={`${this.props.article === 'design' ? 'active' : ''} ${
@@ -437,64 +266,50 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
+          {close}
           <h2 className="title">Design - Logo Creations</h2>
-
-          <hr></hr>
+          <hr />
           <div className="logoBlock">
             <div className="block-two">
               <div className="logo-text">
                 <h3>RFK Logo</h3>
-                <p>Personal logo Design </p>
+                <p>Personal logo Design</p>
               </div>
               <span className="logo">
                 <img src={Rklogo} alt="" />
               </span>
             </div>
-            <hr></hr>
+            <hr />
             <div className="block-one">
               <span className="logo rapid">
                 <img src={rapid_logo} alt="" />
               </span>
               <div className="logo-text">
                 <h3>RAPID</h3>
-                <p> Logo design for internal spoke RAPID within ConsenSys</p>
+                <p>Logo design for internal spoke RAPID within ConsenSys</p>
               </div>
             </div>
-            <hr></hr>
-            {/* <div className="block-three">
-              <div className="logo-text">
-                <h3>Lucky Rabbit</h3>
-                <p>
-                  Logo design for a web-based moto route tracking aplication.
-                </p>
-              </div>
-              <span className="logo">
-                <img src={Lrlogo} alt="" />
-              </span>
-            </div> */}
-            {/* <hr></hr> */}
+            <hr />
             <div className="block-two">
               <span className="logo-text">
-              <h3>Future Days</h3>
-                <p> Logo design for a start up software company.</p>
-            
+                <h3>Future Days</h3>
+                <p>Logo design for a start up software company.</p>
               </span>
               <div className="logo-text">
                 <img src={Fdlogo} alt="" />
               </div>
             </div>
-            <hr></hr>
-
+            <hr />
             <div className="block-one">
               <span className="logo">
                 <img src={eda} alt="" />
               </span>
               <div className="logo-text">
                 <h3>EDA</h3>
-                <p> Logo design for the Ethereum Developer Alliance </p>
+                <p>Logo design for the Ethereum Developer Alliance</p>
               </div>
             </div>
-            <hr></hr>
+            <hr />
             <div className="block-four">
               <div className="logo-text">
                 <h3>One Million Developers Logo</h3>
@@ -504,55 +319,41 @@ class Main extends React.Component {
                 <img src={omdLogo} alt="" />
               </span>
             </div>
-            <hr></hr>
+            <hr />
             <div className="block-four">
               <div className="logo-text title">
                 <h2 className="title">Design - Poster Creations</h2>
                 <h3>ConsenSys spoke promotional material</h3>
-                <hr></hr>
+                <hr />
               </div>
             </div>
             <div className="block-five">
               <div className="logo-text title">
-                <h3> BUIDL Network brochure</h3>
+                <h3>BUIDL Network brochure</h3>
               </div>
             </div>
             <span className="image main">
               <img src={buidl} alt="" />
-              <hr></hr>
+              <hr />
             </span>
             <div className="block-five">
               <div className="logo-text title">
-                <h3> One Million Developers promotional material</h3>
+                <h3>One Million Developers promotional material</h3>
               </div>
             </div>
             <span className="image main">
               <img src={omd_poster} alt="" />
-              <hr></hr>
+              <hr />
             </span>
             <span className="image main">
               <img src={conKau} alt="" />
-              <hr></hr>
+              <hr />
               <img src={inCo} alt="" />
-              <hr></hr>
-              {/* <img src={myOmd} alt="" />
-              <hr></hr> */}
+              <hr />
               <img src={pegMm} alt="" />
-              <hr></hr>
+              <hr />
             </span>
           </div>
-
-          {close}
-        </article>
-        <article
-          id="design"
-          className={`${this.props.article === 'design' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <div className="logoBlock"></div>
-
           {close}
         </article>
 
@@ -563,60 +364,29 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
+          {close}
           <h2 className="major">Contact</h2>
-
-          <a class="mailto" href="mailto:robbiekruszynski@gmail.com">
+          <a className="mailto" href="mailto:robbiekruszynski@gmail.com">
             <h3>robbiekruszynski@gmail.com</h3>
           </a>
-          {/* 
-          <div className="dig-port-one">
-            <a
-              href="https://docs.google.com/presentation/d/1sL75Aqez-TWTaELnlZvwG2L_hYo4UMbG_qGcOKzX3D4/edit?usp=sharing"
-              target="_blank"
-            >
-              <h4>Digital Portfolio</h4>
-            </a>
-          </div> */}
-          {/* <div className="dig-port-two">
-            <a href="https://www.linkedin.com/in/robbie-k/" target="_blank">
-              <h4>Linkedin</h4>
-            </a>
-          </div> */}
           <ul className="icons">
             <li>
-              <a
-                href="https://www.linkedin.com/in/robbie-k/"
-                className="icon"
-                target="_blank"
-              >
+              <a href="https://www.linkedin.com/in/robbie-k/" className="icon" target="_blank" rel="noopener noreferrer">
                 <span className="label">LI</span>
               </a>
             </li>
             <li>
-              <a
-                href="https://twitter.com/Ro_bbieK
-                "
-                className="icon"
-                target="_blank"
-              >
+              <a href="https://twitter.com/Ro_bbieK" className="icon" target="_blank" rel="noopener noreferrer">
                 <span className="label">CT</span>
               </a>
             </li>
             <li>
-              <a
-                href="https://t.me/ro_bbiek"
-                className="icon"
-                target="_blank"
-              >
+              <a href="https://t.me/ro_bbiek" className="icon" target="_blank" rel="noopener noreferrer">
                 <span className="label">TG</span>
               </a>
             </li>
             <li>
-              <a
-                href="https://github.com/Robbiekruszynski"
-                className="icon"
-                target="_blank"
-              >
+              <a href="https://github.com/Robbiekruszynski" className="icon" target="_blank" rel="noopener noreferrer">
                 <span className="label">GH</span>
               </a>
             </li>
@@ -638,3 +408,4 @@ Main.propTypes = {
 }
 
 export default Main
+

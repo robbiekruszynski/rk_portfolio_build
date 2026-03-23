@@ -105,46 +105,7 @@ class Main extends React.Component {
             <img src={ethgas2} alt="" />
           </span>
           <hr />
-          <p>Chronicle Labs Documentation</p>
-          <a href="https://docs.chroniclelabs.org/" target="_blank" rel="noopener noreferrer">
-            Live deployment
-          </a>
-          <span className="image main">
-            <img src={Chron2} alt="" />
-            <br />
-            <img src={Chron} alt="" />
-          </span>
-          <hr />
-          <p>ApeChain Documentation</p>
-          <a href="https://docs.apechain.com/" target="_blank" rel="noopener noreferrer">
-            Live deployment
-          </a>
-          <span className="image main">
-            <img src={Ape} alt="" />
-            <br />
-            <img src={ApePortal} alt="" />
-          </span>
-          <hr />
-             <p>ApeChain Documentation</p>
-          <a href="https://docs.apechain.com/" target="_blank" rel="noopener noreferrer">
-            Live deployment
-          </a>
-          <span className="image main">
-            <img src={Ape} alt="" />
-            <br />
-            <img src={ApePortal} alt="" />
-          </span>
-          <hr />
-          <p>Chronicle Labs Documentation</p>
-          <a href="https://docs.chroniclelabs.org/" target="_blank" rel="noopener noreferrer">
-            Live deployment
-          </a>
-          <span className="image main">
-            <img src={Chron2} alt="" />
-            <br />
-            <img src={Chron} alt="" />
-          </span>
-          <hr />
+        
           <p>ApeChain Documentation</p>
           <a href="https://docs.apechain.com/" target="_blank" rel="noopener noreferrer">
             Live deployment
@@ -164,6 +125,7 @@ class Main extends React.Component {
             <br />
             <img src={Chron} alt="" />
           </span>
+    
           <hr />
           <p>ConsenSys Developer Portal Step 2</p>
           <a href="https://consensys.net/developers/onboarding-step-2/" target="_blank" rel="noopener noreferrer">

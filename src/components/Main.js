@@ -33,6 +33,8 @@ import Chron from '../images/Chronicle_docs_1.png'
 import Chron2 from '../images/Chronicle_docs_2.png'
 import Ape from '../images/apechain.png'
 import ApePortal from '../images/apePortal.png'
+import ethgas from '../images/ethgas.gif'
+import ethgas2 from '../images/ethgas2.png'
 
 class Main extends React.Component {
   render() {
@@ -93,6 +95,56 @@ class Main extends React.Component {
         >
           {close}
           <h2 className="title">Technical writing:</h2>
+          <p>ETHGas Documentation</p>
+          <a href="https://www.ethgas.com/" target="_blank" rel="noopener noreferrer">
+            Live deployment coming soon
+          </a>
+          <span className="image main">
+            <img src={ethgas} alt="" />
+            <br />
+            <img src={ethgas2} alt="" />
+          </span>
+          <hr />
+          <p>Chronicle Labs Documentation</p>
+          <a href="https://docs.chroniclelabs.org/" target="_blank" rel="noopener noreferrer">
+            Live deployment
+          </a>
+          <span className="image main">
+            <img src={Chron2} alt="" />
+            <br />
+            <img src={Chron} alt="" />
+          </span>
+          <hr />
+          <p>ApeChain Documentation</p>
+          <a href="https://docs.apechain.com/" target="_blank" rel="noopener noreferrer">
+            Live deployment
+          </a>
+          <span className="image main">
+            <img src={Ape} alt="" />
+            <br />
+            <img src={ApePortal} alt="" />
+          </span>
+          <hr />
+             <p>ApeChain Documentation</p>
+          <a href="https://docs.apechain.com/" target="_blank" rel="noopener noreferrer">
+            Live deployment
+          </a>
+          <span className="image main">
+            <img src={Ape} alt="" />
+            <br />
+            <img src={ApePortal} alt="" />
+          </span>
+          <hr />
+          <p>Chronicle Labs Documentation</p>
+          <a href="https://docs.chroniclelabs.org/" target="_blank" rel="noopener noreferrer">
+            Live deployment
+          </a>
+          <span className="image main">
+            <img src={Chron2} alt="" />
+            <br />
+            <img src={Chron} alt="" />
+          </span>
+          <hr />
           <p>ApeChain Documentation</p>
           <a href="https://docs.apechain.com/" target="_blank" rel="noopener noreferrer">
             Live deployment

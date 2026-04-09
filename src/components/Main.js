@@ -96,8 +96,8 @@ class Main extends React.Component {
           {close}
           <h2 className="title">Technical writing:</h2>
           <p>ETHGas Documentation</p>
-          <a href="https://www.ethgas.com/" target="_blank" rel="noopener noreferrer">
-            Live deployment coming soon
+          <a href="https://docusaurus.ethgas.com/docs/overview/" target="_blank" rel="noopener noreferrer">
+            Deployment
           </a>
           <span className="image main">
             <img src={ethgas} alt="" />

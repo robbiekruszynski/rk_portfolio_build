@@ -1,96 +1,108 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Image from '../images/rfk_logo_white.png'
+
 const Header = props => (
-  <header id="header" style={props.timeout ? { display: 'none' } : {}}>
-    <div className="icons">
-      <img src={Image} />
-    </div>
-    <div className="content">
-      <div className="inner">
-        <h1>Robbie Kruszynski</h1>
-        <p>Developer Relations Lead</p>
-        <p>I build the systems that make developers successful: clear documentation, communities worth joining, and onboarding that turns first contact into long-term trust.</p>
-      </div>
-    </div>
-    <nav>
-      <ul>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('intro')
-            }}
-          >
-            Intro
-          </a>
-        </li>
+  (() => {
+    const isLocal8000 =
+      typeof window !== 'undefined' &&
+      window.location.hostname === 'localhost' &&
+      window.location.port === '8000'
 
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Build
-          </a>
-        </li>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('write')
-            }}
-          >
-            Write
-          </a>
-        </li>
-        {/* <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('speak')
-            }}
-          >
-            Speak
-          </a>
-        </li> */}
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('design')
-            }}
-          >
-            Design
-          </a>
-        </li>
+    return (
+      <header id="header" style={props.timeout ? { display: 'none' } : {}}>
+        <div className="icons">
+          <img src={Image} />
+        </div>
+        <div className="content">
+          <div className="inner">
+            <h1>Robbie Kruszynski</h1>
+            <p>Developer Relations Lead</p>
+            <p>I build the systems that make developers successful: clear documentation, communities worth joining, and onboarding that turns first contact into long-term trust.</p>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="javascript:;"
+                onClick={() => {
+                  props.onOpenArticle('intro')
+                }}
+              >
+                Intro
+              </a>
+            </li>
 
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('about')
-            }}
-          >
-            WireFrame
-          </a>
-        </li>
+            <li>
+              <a
+                href="javascript:;"
+                onClick={() => {
+                  props.onOpenArticle('work')
+                }}
+              >
+                Build
+              </a>
+            </li>
+            <li>
+              <a
+                href="javascript:;"
+                onClick={() => {
+                  props.onOpenArticle('write')
+                }}
+              >
+                Write
+              </a>
+            </li>
+            {!isLocal8000 && (
+              <li>
+                <a
+                  href="javascript:;"
+                  onClick={() => {
+                    props.onOpenArticle('speak')
+                  }}
+                >
+                  Speak
+                </a>
+              </li>
+            )}
+            <li>
+              <a
+                href="javascript:;"
+                onClick={() => {
+                  props.onOpenArticle('design')
+                }}
+              >
+                Design
+              </a>
+            </li>
 
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('contact')
-            }}
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+            <li>
+              <a
+                href="javascript:;"
+                onClick={() => {
+                  props.onOpenArticle('about')
+                }}
+              >
+                WireFrame
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="javascript:;"
+                onClick={() => {
+                  props.onOpenArticle('contact')
+                }}
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    )
+  })()
 )
 
 Header.propTypes = {

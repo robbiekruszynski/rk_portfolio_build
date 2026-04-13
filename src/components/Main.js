@@ -67,13 +67,21 @@ class Main extends React.Component {
           </span>
           <div className="rk-info">
             <h4>Focus</h4>
-            <p>Developer Relations Lead | Community Growth | Hackathons | Technical Documentation | UX/UI</p>
+            <p>Developer Relations | Community Growth | Development | UX/UI | Scrum Master</p>
             <h4>Tech Stack</h4>
             <p>React / Next | Solidity</p>
             <h4>Design Stack</h4>
             <p>Figma | Sketch</p>
             <h4>Statement</h4>
-            <p>I've spent 7 years in Web3 DevRel — leading hackathons, building communities that actually stick, and jumping into new protocols early enough to shape how developers experience them. I've worked across ConsenSys, Blockdaemon, ApeChain, Chronicle Labs, and ETHGas, and the through-line has always been the same: sit at the intersection of developers, product, design, and users, and make sure nothing gets lost in translation.</p>
+            <p>
+              I'm passionate about creating strategies with an array in range that positively resonates with both the user(s) and client(s). Focusing on the importance of relevance, approachability, and scalability allows for organic/sustainable growth.
+            </p>
+            <p>
+              I'm currently working within the Web3 space as lead of Developer Relations with a focus on community & development growth strategies.
+            </p>
+            <p>
+              With an overall attitude of self-organization within a cross-functional team, I promote a collaborative approach with a focus on communication to encourage both productive and positive atmospheres. I strive to create conversations that capture strategy efforts to then successfully implement journey mapping strategies that build case study dialogues. Problem solving, A/B testing, community research are all practices I find great value in. Acting as a liaison between development, design, and community allows me to deliver a cohesive approach to my work.
+            </p>
           </div>
           {close}
         </article>
@@ -161,6 +169,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           {close}
+          <h1 className="title">Page is being updated</h1>
           {close}
         </article>
 

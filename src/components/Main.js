@@ -162,18 +162,6 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="speak"
-          className={`${this.props.article === 'speak' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          {close}
-          <h1 className="title">Page is being updated</h1>
-          {close}
-        </article>
-
-        <article
           id="projects"
           className={`${this.props.article === 'work' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''

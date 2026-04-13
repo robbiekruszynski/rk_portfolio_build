@@ -46,7 +46,7 @@ const Header = props => (
             Write
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             href="javascript:;"
             onClick={() => {
@@ -55,7 +55,7 @@ const Header = props => (
           >
             Speak
           </a>
-        </li>
+        </li> */}
         <li>
           <a
             href="javascript:;"

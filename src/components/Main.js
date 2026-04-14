@@ -367,23 +367,23 @@ class Main extends React.Component {
           </a>
           <ul className="icons">
             <li>
-              <a href="https://www.linkedin.com/in/robbie-k/" className="icon" target="_blank" rel="noopener noreferrer">
-                <span className="label">LI</span>
+              <a href="https://www.linkedin.com/in/robbie-k/" className="icon fa fa-linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <span className="label">LinkedIn</span>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/Ro_bbieK" className="icon" target="_blank" rel="noopener noreferrer">
-                <span className="label">X</span>
+              <a href="https://twitter.com/Ro_bbieK" className="icon fa fa-twitter" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                <span className="label">X (Twitter)</span>
               </a>
             </li>
             <li>
-              <a href="https://t.me/ro_bbiek" className="icon" target="_blank" rel="noopener noreferrer">
-                <span className="label">TG</span>
+              <a href="https://t.me/ro_bbiek" className="icon fa fa-telegram" aria-label="Telegram" target="_blank" rel="noopener noreferrer">
+                <span className="label">Telegram</span>
               </a>
             </li>
             <li>
-              <a href="https://github.com/Robbiekruszynski" className="icon" target="_blank" rel="noopener noreferrer">
-                <span className="label">GH</span>
+              <a href="https://github.com/Robbiekruszynski" className="icon fa fa-github" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <span className="label">GitHub</span>
               </a>
             </li>
           </ul>

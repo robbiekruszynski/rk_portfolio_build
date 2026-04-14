@@ -9,6 +9,11 @@
 .icon {
   //border-bottom: none;
   position: relative;
+
+  > .label {
+    display: none;
+  }
+
   :hover {
     color: #a30815;
   }

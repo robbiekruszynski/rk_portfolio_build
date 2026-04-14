@@ -69,18 +69,12 @@ class Main extends React.Component {
             <h4>Focus</h4>
             <p>Developer Relations | Community Growth | Development | UX/UI | Scrum Master</p>
             <h4>Tech Stack</h4>
-            <p>React / Next | Solidity</p>
+            <p>React : Next | Solidity</p>
             <h4>Design Stack</h4>
-            <p>Figma | Sketch</p>
+            <p>Figma</p>
             <h4>Statement</h4>
             <p>
-              I'm passionate about creating strategies with an array in range that positively resonates with both the user(s) and client(s). Focusing on the importance of relevance, approachability, and scalability allows for organic/sustainable growth.
-            </p>
-            <p>
-              I'm currently working within the Web3 space as lead of Developer Relations with a focus on community & development growth strategies.
-            </p>
-            <p>
-              With an overall attitude of self-organization within a cross-functional team, I promote a collaborative approach with a focus on communication to encourage both productive and positive atmospheres. I strive to create conversations that capture strategy efforts to then successfully implement journey mapping strategies that build case study dialogues. Problem solving, A/B testing, community research are all practices I find great value in. Acting as a liaison between development, design, and community allows me to deliver a cohesive approach to my work.
+              Technical documentation, hackathons, webinars, stage talks, community metrics, 50+ conferences — I've worked every layer of the developer journey. I lead teams and set strategy, but I stay close to the work because the details matter. What I care about most is what happens after onboarding: that developers find their footing, stay engaged, and keep building.
             </p>
           </div>
           {close}

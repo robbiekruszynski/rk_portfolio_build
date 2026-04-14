@@ -67,7 +67,7 @@ class Main extends React.Component {
           </span>
           <div className="rk-info">
             <h4>Focus</h4>
-            <p>Developer Relations | Community Growth | Development | UX/UI | Scrum Master</p>
+            <p>Developer Relations Lead | Community Strategy | Technical Documentation | Developer Onboarding | Ecosystem Growth</p>
             <h4>Tech Stack</h4>
             <p>React : Next | Solidity</p>
             <h4>Design Stack</h4>
@@ -171,7 +171,7 @@ class Main extends React.Component {
           </span>
           <div className="workText">
             <p>
-              <b>Experiment:</b> Showcasing our solar system along with real time tracking of the ISS via API calls
+              <b>Project:</b> Showcasing our solar system along with real time tracking of the ISS via API calls
             </p>
             <p>
               <b>Tech:</b> React, ThreeJS, iss-api
@@ -188,7 +188,7 @@ class Main extends React.Component {
               <img src={colors} alt="" />
             </span>
             <p>
-              <b>Experiment:</b> Minting non fungible ERC721 tokens based on #HEX color inputs by user
+              <b>Project:</b> Minting non fungible ERC721 tokens based on #HEX color inputs by user
             </p>
             <p>
               <b>Tech:</b> React, Solidity, Mocha, Chai, Ganache
@@ -205,7 +205,7 @@ class Main extends React.Component {
               <img src={openCV} alt="" />
             </span>
             <p>
-              <b>Experiment:</b> Real time face recognition utilizing canvas.
+              <b>Project:</b> Real time face recognition utilizing canvas.
             </p>
             <p>
               <b>Tech:</b> React, JavaScript, face-api.js (tensorflow), and ThreeJS
@@ -373,7 +373,7 @@ class Main extends React.Component {
             </li>
             <li>
               <a href="https://twitter.com/Ro_bbieK" className="icon" target="_blank" rel="noopener noreferrer">
-                <span className="label">CT</span>
+                <span className="label">X</span>
               </a>
             </li>
             <li>

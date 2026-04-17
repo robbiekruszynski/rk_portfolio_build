@@ -37,6 +37,7 @@ import ethgas from '../images/ethgas.gif'
 import ethgas2 from '../images/ethgas2.png'
 
 import DeepscryCarousel from './DeepscryCarousel'
+import ValspinCarousel from './ValspinCarousel'
 
 class Main extends React.Component {
   constructor(props) {
@@ -245,13 +246,8 @@ class Main extends React.Component {
             </div>
             {/* bd_discord_bot: hidden for now — restore from git history if needed */}
             <h3>Valspin</h3>
+            <ValspinCarousel />
             <div className="workText">
-              <div className="work-project-video">
-                <video controls playsInline preload="metadata" title="Valspin demo clip">
-                  <source src="/videos/warsaw_hack.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
               <p>
                 <b>Project:</b> Winning hackathon project at ETHWarsaw: Valspin—insurance and swap-style products to hedge ETH staking reward variance for validator operators, with Request Network–style settlement flows in scope. Includes Flask APIs for yield, swap, and insurance pricing plus an experimental live deployment.
               </p>
@@ -267,6 +263,9 @@ class Main extends React.Component {
               <hr />
             </div>
             <h3>SaferBridge</h3>
+            <span className="image main">
+              <img src="/images/saferbridge.png" alt="SaferBridge hackathon UI" />
+            </span>
             <div className="workText">
               <p>
                 <b>Project:</b> EthGlobal Istanbul 2023 build: SaferBridge explores a trust-minimized L2→L2 flow that moves value through L1 using each chain’s native bridge messaging—batching users to amortize gas (normal vs. fast modes) instead of relying on typical third-party relayer/LP bridge assumptions.
@@ -579,7 +578,6 @@ class Main extends React.Component {
               </a>
             </li>
           </ul>
-          {close}
         </article>
       </div>
     )

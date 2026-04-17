@@ -104,6 +104,70 @@
 				}
 			}
 
+			.design-tabs {
+				@include vendor('display', 'flex');
+				gap: 0.5rem;
+				margin: 0 0 1.5rem 0;
+				justify-content: center;
+				flex-wrap: wrap;
+
+				button {
+					cursor: pointer;
+					background: transparent;
+					border: solid _size(border-width) _palette(border);
+					color: inherit;
+					padding: 0.5em 1em;
+					border-radius: _size(border-radius);
+					font: inherit;
+					@include vendor('transition', (
+						'background-color #{_duration(transition)} ease-in-out',
+						'border-color #{_duration(transition)} ease-in-out'
+					));
+
+					&:hover {
+						background-color: _palette(border-bg);
+					}
+
+					&.is-active {
+						background-color: _palette(border-bg);
+						border-color: _palette(border);
+					}
+				}
+			}
+
+			[role='tabpanel'][hidden] {
+				display: none !important;
+			}
+
+			.design-panel-lede {
+				margin: 0 0 1.25rem 0;
+				line-height: 1.55;
+				opacity: 0.92;
+			}
+
+			.wireframes-hero {
+				margin-bottom: 1.25rem;
+			}
+
+			.work-project-video {
+				margin: 1.25rem 0 0;
+				max-width: 100%;
+				border-radius: _size(border-radius);
+				overflow: hidden;
+				background: _palette(border-bg);
+
+				video {
+					display: block;
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			.work-project-video + a {
+				display: inline-block;
+				margin-top: 0.75rem;
+			}
+
 		}
 
 		@include breakpoint(small) {

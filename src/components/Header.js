@@ -62,17 +62,6 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('about')
-            }}
-          >
-            WireFrame
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
               props.onOpenArticle('contact')
             }}
           >

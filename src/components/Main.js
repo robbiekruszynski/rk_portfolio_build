@@ -37,6 +37,17 @@ import ethgas from '../images/ethgas.gif'
 import ethgas2 from '../images/ethgas2.png'
 
 class Main extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { designTab: 'wireframes' }
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.article === 'design' && this.props.article !== 'design') {
+      this.setState({ designTab: 'wireframes' })
+    }
+  }
+
   render() {
     const close = (
       <div
@@ -130,7 +141,7 @@ class Main extends React.Component {
           </span>
           <hr />
           <p>ConsenSys Developer Portal Step 3</p>
-          <a href="https://consensys.net/developers/onboarding-step-2/" target="_blank" rel="noopener noreferrer">
+          <a href="https://consensys.io/developers/onboarding-step-3" target="_blank" rel="noopener noreferrer">
             Live deployment
           </a>
           <span className="image main">
@@ -165,6 +176,28 @@ class Main extends React.Component {
           {close}
           <h2 className="title">Work / Projects:</h2>
           <hr />
+          <h3>TG_Folder_Export</h3>
+          <div className="workText">
+            <p>
+              <b>Project:</b> Built a TypeScript Telegram bot for searching across folders and conversations — includes automated action item and calendar event detection. Designed for community managers and DevRel teams managing high-volume developer channels.
+            </p>
+            <p>
+              <b>Tech:</b> TypeScript, Node.js, Telegram Bot API
+            </p>
+            <p>
+              <b>Note:</b> Keyword search across message history, direct message deep-links, time-range filters, calendar event extraction, and action-item detection—built for real workflow in busy channels.
+            </p>
+            <div className="work-project-video">
+              <video controls playsInline preload="metadata" title="TG_Folder_Export demo clip">
+                <source src="/videos/tg_export.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <a href="https://github.com/robbiekruszynski/TG_Folder_Export" target="_blank" rel="noopener noreferrer">
+              Github Link
+            </a>
+            <hr />
+          </div>
           <h3>ICARUS LIVES</h3>
           <span className="image main">
             <img src={Icarus} alt="" />
@@ -222,40 +255,6 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="wireframes"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          {close}
-          <h2 className="title">WireFrames and Prototypes</h2>
-          <hr />
-          <h3 className="sub-header">
-            Collection of designs using Figma & Sketch with a range in fidelity to share process
-          </h3>
-          <span className="image main">
-            <img src={rIntro} alt="" />
-            <hr />
-            <img src={r_3box} alt="" />
-            <hr />
-            <img src={rKey} alt="" />
-            <hr />
-            <img src={rDash} alt="" />
-            <hr />
-            <img src={r_d_white} alt="" />
-            <hr />
-            <img src={r_quest_m} alt="" />
-            <hr />
-            <img src={r_quest} alt="" />
-            <hr />
-            <img src={mmQuest} alt="" />
-            <hr />
-          </span>
-          {close}
-        </article>
-
-        <article
           id="design"
           className={`${this.props.article === 'design' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
@@ -263,92 +262,171 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           {close}
-          <h2 className="title">Design - Logo Creations</h2>
+          <h2 className="title" id="design-section-title">
+            Design & Wireframes
+          </h2>
           <hr />
-          <div className="logoBlock">
-            <div className="block-two">
-              <div className="logo-text">
-                <h3>RFK Logo</h3>
-                <p>Personal logo Design</p>
-              </div>
-              <span className="logo">
-                <img src={Rklogo} alt="" />
-              </span>
-            </div>
+          <div
+            className="design-tabs"
+            role="tablist"
+            aria-label="Design sections"
+            aria-labelledby="design-section-title"
+          >
+            <button
+              type="button"
+              role="tab"
+              id="design-tab-wireframes"
+              aria-selected={this.state.designTab === 'wireframes'}
+              aria-controls="design-panel-wireframes"
+              tabIndex={this.state.designTab === 'wireframes' ? 0 : -1}
+              className={this.state.designTab === 'wireframes' ? 'is-active' : ''}
+              onClick={() => this.setState({ designTab: 'wireframes' })}
+            >
+              Wireframes
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="design-tab-graphic"
+              aria-selected={this.state.designTab === 'graphic'}
+              aria-controls="design-panel-graphic"
+              tabIndex={this.state.designTab === 'graphic' ? 0 : -1}
+              className={this.state.designTab === 'graphic' ? 'is-active' : ''}
+              onClick={() => this.setState({ designTab: 'graphic' })}
+            >
+              Graphic design
+            </button>
+          </div>
+
+          <div
+            id="design-panel-wireframes"
+            role="tabpanel"
+            aria-labelledby="design-section-title design-tab-wireframes"
+            hidden={this.state.designTab !== 'wireframes'}
+          >
+            <h3 className="sub-header">Wireframes &amp; prototypes</h3>
+            <p className="design-panel-lede">
+              Figma &amp; Sketch—from quick flows to polished UI—so product and engineering align before build.
+            </p>
+            <span className="image main wireframes-hero">
+              <img src="/images/wireframes-hero.png" alt="" />
+            </span>
+            <span className="image main">
+              <img src={rIntro} alt="" />
+              <hr />
+              <img src={r_3box} alt="" />
+              <hr />
+              <img src={rKey} alt="" />
+              <hr />
+              <img src={rDash} alt="" />
+              <hr />
+              <img src={r_d_white} alt="" />
+              <hr />
+              <img src={r_quest_m} alt="" />
+              <hr />
+              <img src={r_quest} alt="" />
+              <hr />
+              <img src={mmQuest} alt="" />
+              <hr />
+            </span>
+          </div>
+
+          <div
+            id="design-panel-graphic"
+            role="tabpanel"
+            aria-labelledby="design-section-title design-tab-graphic"
+            hidden={this.state.designTab !== 'graphic'}
+          >
+            <h3 className="sub-header">Graphic design &amp; branding</h3>
+            <p className="design-panel-lede">
+              Logos, posters, and collateral for internal and ecosystem programs—identity work teams could ship.
+            </p>
             <hr />
-            <div className="block-one">
-              <span className="logo rapid">
-                <img src={rapid_logo} alt="" />
-              </span>
-              <div className="logo-text">
-                <h3>RAPID</h3>
-                <p>Logo design for internal spoke RAPID within ConsenSys</p>
+            <div className="logoBlock">
+              <div className="block-two">
+                <div className="logo-text">
+                  <h3>RFK Logo</h3>
+                  <p>Personal logo Design</p>
+                </div>
+                <span className="logo">
+                  <img src={Rklogo} alt="" />
+                </span>
               </div>
-            </div>
-            <hr />
-            <div className="block-two">
-              <span className="logo-text">
-                <h3>Future Days</h3>
-                <p>Logo design for a start up software company.</p>
-              </span>
-              <div className="logo-text">
-                <img src={Fdlogo} alt="" />
+              <hr />
+              <div className="block-one">
+                <span className="logo rapid">
+                  <img src={rapid_logo} alt="" />
+                </span>
+                <div className="logo-text">
+                  <h3>RAPID</h3>
+                  <p>Logo design for internal spoke RAPID within ConsenSys</p>
+                </div>
               </div>
-            </div>
-            <hr />
-            <div className="block-one">
-              <span className="logo">
-                <img src={eda} alt="" />
-              </span>
-              <div className="logo-text">
-                <h3>EDA</h3>
-                <p>Logo design for the Ethereum Developer Alliance</p>
+              <hr />
+              <div className="block-two">
+                <span className="logo-text">
+                  <h3>Future Days</h3>
+                  <p>Logo design for a start up software company.</p>
+                </span>
+                <div className="logo-text">
+                  <img src={Fdlogo} alt="" />
+                </div>
               </div>
-            </div>
-            <hr />
-            <div className="block-four">
-              <div className="logo-text">
-                <h3>One Million Developers Logo</h3>
-                <p>Badge / kudos design for OMD community</p>
+              <hr />
+              <div className="block-one">
+                <span className="logo">
+                  <img src={eda} alt="" />
+                </span>
+                <div className="logo-text">
+                  <h3>EDA</h3>
+                  <p>Logo design for the Ethereum Developer Alliance</p>
+                </div>
               </div>
-              <span className="logo">
-                <img src={omdLogo} alt="" />
-              </span>
-            </div>
-            <hr />
-            <div className="block-four">
-              <div className="logo-text title">
-                <h2 className="title">Design - Poster Creations</h2>
-                <h3>ConsenSys spoke promotional material</h3>
+              <hr />
+              <div className="block-four">
+                <div className="logo-text">
+                  <h3>One Million Developers Logo</h3>
+                  <p>Badge / kudos design for OMD community</p>
+                </div>
+                <span className="logo">
+                  <img src={omdLogo} alt="" />
+                </span>
+              </div>
+              <hr />
+              <div className="block-four">
+                <div className="logo-text title">
+                  <h2 className="title">Design - Poster Creations</h2>
+                  <h3>ConsenSys spoke promotional material</h3>
+                  <hr />
+                </div>
+              </div>
+              <div className="block-five">
+                <div className="logo-text title">
+                  <h3>BUIDL Network brochure</h3>
+                </div>
+              </div>
+              <span className="image main">
+                <img src={buidl} alt="" />
                 <hr />
+              </span>
+              <div className="block-five">
+                <div className="logo-text title">
+                  <h3>One Million Developers promotional material</h3>
+                </div>
               </div>
+              <span className="image main">
+                <img src={omd_poster} alt="" />
+                <hr />
+              </span>
+              <span className="image main">
+                <img src={conKau} alt="" />
+                <hr />
+                <img src={inCo} alt="" />
+                <hr />
+                <img src={pegMm} alt="" />
+                <hr />
+              </span>
             </div>
-            <div className="block-five">
-              <div className="logo-text title">
-                <h3>BUIDL Network brochure</h3>
-              </div>
-            </div>
-            <span className="image main">
-              <img src={buidl} alt="" />
-              <hr />
-            </span>
-            <div className="block-five">
-              <div className="logo-text title">
-                <h3>One Million Developers promotional material</h3>
-              </div>
-            </div>
-            <span className="image main">
-              <img src={omd_poster} alt="" />
-              <hr />
-            </span>
-            <span className="image main">
-              <img src={conKau} alt="" />
-              <hr />
-              <img src={inCo} alt="" />
-              <hr />
-              <img src={pegMm} alt="" />
-              <hr />
-            </span>
           </div>
           {close}
         </article>

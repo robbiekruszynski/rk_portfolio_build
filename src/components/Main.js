@@ -36,15 +36,20 @@ import ApePortal from '../images/apePortal.png'
 import ethgas from '../images/ethgas.gif'
 import ethgas2 from '../images/ethgas2.png'
 
+import DeepscryCarousel from './DeepscryCarousel'
+
 class Main extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { designTab: 'wireframes' }
+    this.state = { designTab: 'wireframes', workTab: 'web3' }
   }
 
   componentDidUpdate(prevProps) {
     if (prevProps.article === 'design' && this.props.article !== 'design') {
       this.setState({ designTab: 'wireframes' })
+    }
+    if (prevProps.article === 'work' && this.props.article !== 'work') {
+      this.setState({ workTab: 'web3' })
     }
   }
 
@@ -174,83 +179,192 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           {close}
-          <h2 className="title">Work / Projects:</h2>
+          <h2 className="title" id="work-section-title">
+            Build
+          </h2>
           <hr />
-          <h3>TG_Folder_Export</h3>
-          <div className="workText">
-            <p>
-              <b>Project:</b> Built a TypeScript Telegram bot for searching across folders and conversations — includes automated action item and calendar event detection. Designed for community managers and DevRel teams managing high-volume developer channels.
-            </p>
-            <p>
-              <b>Tech:</b> TypeScript, Node.js, Telegram Bot API
-            </p>
-            <p>
-              <b>Note:</b> Keyword search across message history, direct message deep-links, time-range filters, calendar event extraction, and action-item detection—built for real workflow in busy channels.
-            </p>
-            <div className="work-project-video">
-              <video controls playsInline preload="metadata" title="TG_Folder_Export demo clip">
-                <source src="/videos/tg_export.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <a href="https://github.com/robbiekruszynski/TG_Folder_Export" target="_blank" rel="noopener noreferrer">
-              Github Link
-            </a>
-            <hr />
+          <div
+            className="design-tabs work-tabs"
+            role="tablist"
+            aria-label="Project categories"
+            aria-labelledby="work-section-title"
+          >
+            <button
+              type="button"
+              role="tab"
+              id="work-tab-web3"
+              aria-selected={this.state.workTab === 'web3'}
+              aria-controls="work-panel-web3"
+              tabIndex={this.state.workTab === 'web3' ? 0 : -1}
+              className={this.state.workTab === 'web3' ? 'is-active' : ''}
+              onClick={() => this.setState({ workTab: 'web3' })}
+            >
+              Web3 &amp; ecosystem
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="work-tab-personal"
+              aria-selected={this.state.workTab === 'personal'}
+              aria-controls="work-panel-personal"
+              tabIndex={this.state.workTab === 'personal' ? 0 : -1}
+              className={this.state.workTab === 'personal' ? 'is-active' : ''}
+              onClick={() => this.setState({ workTab: 'personal' })}
+            >
+              Personal projects
+            </button>
           </div>
-          <h3>ICARUS LIVES</h3>
-          <span className="image main">
-            <img src={Icarus} alt="" />
-          </span>
-          <div className="workText">
-            <p>
-              <b>Project:</b> Showcasing our solar system along with real time tracking of the ISS via API calls
-            </p>
-            <p>
-              <b>Tech:</b> React, ThreeJS, iss-api
-            </p>
-            <p>
-              <b>Note:</b> Fully responsive across desktop, tablet, and mobile
-            </p>
-            <a href="https://github.com/travisty12/solar-simulator" target="_blank" rel="noopener noreferrer">
-              Github Link
-            </a>
-            <hr />
+
+          <div
+            id="work-panel-web3"
+            role="tabpanel"
+            aria-labelledby="work-tab-web3"
+            hidden={this.state.workTab !== 'web3'}
+          >
+            <h3>TG_Folder_Export</h3>
+            <div className="workText">
+              <div className="work-project-video">
+                <video controls playsInline preload="metadata" title="TG_Folder_Export demo clip">
+                  <source src="/videos/tg_export.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <p>
+                <b>Project:</b> Built a TypeScript Telegram bot for searching across folders and conversations — includes automated action item and calendar event detection. Designed for community managers and DevRel teams managing high-volume developer channels.
+              </p>
+              <p>
+                <b>Tech:</b> TypeScript, Node.js, Telegram Bot API
+              </p>
+              <p>
+                <b>Note:</b> Keyword search across message history, direct message deep-links, time-range filters, calendar event extraction, and action-item detection—built for real workflow in busy channels.
+              </p>
+              <a href="https://github.com/robbiekruszynski/TG_Folder_Export" target="_blank" rel="noopener noreferrer">
+                Github Link
+              </a>
+              <hr />
+            </div>
+            {/* bd_discord_bot: hidden for now — restore from git history if needed */}
+            <h3>Valspin</h3>
+            <div className="workText">
+              <div className="work-project-video">
+                <video controls playsInline preload="metadata" title="Valspin demo clip">
+                  <source src="/videos/warsaw_hack.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <p>
+                <b>Project:</b> Winning hackathon project at ETHWarsaw: Valspin—insurance and swap-style products to hedge ETH staking reward variance for validator operators, with Request Network–style settlement flows in scope. Includes Flask APIs for yield, swap, and insurance pricing plus an experimental live deployment.
+              </p>
+              <p>
+                <b>Tech:</b> Python 3.10, Flask, React, Material UI (MUI), NIVO charts, HTML/CSS
+              </p>
+              <p>
+                <b>Note:</b> Companion Python notebooks and sample curl endpoints document the modelling; if the hosted build hits CORS issues, the repo suggests Firefox or running locally (Flask + npm start).
+              </p>
+              <a href="https://github.com/robbiekruszynski/warsaw_hack" target="_blank" rel="noopener noreferrer">
+                Github Link
+              </a>
+              <hr />
+            </div>
+            <h3>SaferBridge</h3>
+            <div className="workText">
+              <p>
+                <b>Project:</b> EthGlobal Istanbul 2023 build: SaferBridge explores a trust-minimized L2→L2 flow that moves value through L1 using each chain’s native bridge messaging—batching users to amortize gas (normal vs. fast modes) instead of relying on typical third-party relayer/LP bridge assumptions.
+              </p>
+              <p>
+                <b>Tech:</b> React, Redux, React Router, Ethers, Material UI, Solidity, Wagmi / Viem
+              </p>
+              <p>
+                <b>Note:</b> Hackathon prototype; the repo is explicit that this is not production-hardened code. The demo focused on proving the batched L2→L1→L2 steps on Sepolia test paths (e.g. Scroll) rather than two separate mainnet L2s.
+              </p>
+              <a href="https://github.com/robbiekruszynski/ist_bridge_2023" target="_blank" rel="noopener noreferrer">
+                Github Link
+              </a>
+              <hr />
+            </div>
+            <h3>ERC-721 token generator</h3>
             <span className="image main">
-              <h3>ERC-721 token generator</h3>
               <img src={colors} alt="" />
             </span>
-            <p>
-              <b>Project:</b> Minting non fungible ERC721 tokens based on #HEX color inputs by user
-            </p>
-            <p>
-              <b>Tech:</b> React, Solidity, Mocha, Chai, Ganache
-            </p>
-            <p>
-              <b>Note:</b> Giving user the ability to mint tokens using tested OpenZep contracts and using web3 imports with #HEX color inputs. Currently running off Ganache for testing.
-            </p>
-            <a href="https://github.com/Robbiekruszynski/ERC721-TOKENS-NFT" target="_blank" rel="noopener noreferrer">
-              Github Link
-            </a>
-            <hr />
+            <div className="workText">
+              <p>
+                <b>Project:</b> Minting non fungible ERC721 tokens based on #HEX color inputs by user
+              </p>
+              <p>
+                <b>Tech:</b> React, Solidity, Mocha, Chai, Ganache
+              </p>
+              <p>
+                <b>Note:</b> Giving user the ability to mint tokens using tested OpenZep contracts and using web3 imports with #HEX color inputs. Currently running off Ganache for testing.
+              </p>
+              <a href="https://github.com/Robbiekruszynski/ERC721-TOKENS-NFT" target="_blank" rel="noopener noreferrer">
+                Github Link
+              </a>
+              <hr />
+            </div>
+          </div>
+
+          <div
+            id="work-panel-personal"
+            role="tabpanel"
+            aria-labelledby="work-tab-personal"
+            hidden={this.state.workTab !== 'personal'}
+          >
+            <h3>Deepscry</h3>
+            <DeepscryCarousel />
+            <div className="workText">
+              <p>
+                <b>Project:</b> Deepscry (Scry) is a Magic: The Gathering deck lab—import a Commander decklist, simulate opening hands, and inspect mana curve, color spread, and draw probabilities. Compare your deck to benchmark metas (from precon-style through cEDH-style), review on-curve mana odds, and tag cards (ramp, interaction, draw, wincon) so the math matches how you actually play the deck.
+              </p>
+              <p>
+                <b>Tech:</b> Next.js, TypeScript, Tailwind CSS
+              </p>
+              <p>
+                <b>Note:</b> AI-assisted deck insight is on the roadmap; today the app focuses on simulation-backed stats, charts, and probability views for real decklists.
+              </p>
+              <a href="https://deepscry.netlify.app/" target="_blank" rel="noopener noreferrer">
+                Live deployment
+              </a>
+              <hr />
+            </div>
+            <h3>ICARUS LIVES</h3>
             <span className="image main">
-              <h3>Emotional Portal</h3>
+              <img src={Icarus} alt="" />
+            </span>
+            <div className="workText">
+              <p>
+                <b>Project:</b> Showcasing our solar system along with real time tracking of the ISS via API calls
+              </p>
+              <p>
+                <b>Tech:</b> React, ThreeJS, iss-api
+              </p>
+              <p>
+                <b>Note:</b> Fully responsive across desktop, tablet, and mobile
+              </p>
+              <a href="https://github.com/travisty12/solar-simulator" target="_blank" rel="noopener noreferrer">
+                Github Link
+              </a>
+              <hr />
+            </div>
+            <h3>Emotional Portal</h3>
+            <span className="image main">
               <img src={openCV} alt="" />
             </span>
-            <p>
-              <b>Project:</b> Real time face recognition utilizing canvas.
-            </p>
-            <p>
-              <b>Tech:</b> React, JavaScript, face-api.js (tensorflow), and ThreeJS
-            </p>
-            <p>
-              <b>Note:</b> Please allow camera usage. You are able to navigate the space/field clicking + holding outside the white parameters.
-            </p>
-            <a href="https://emotions-portal.netlify.app/" target="_blank" rel="noopener noreferrer">
-              Live deployment
-            </a>
+            <div className="workText">
+              <p>
+                <b>Project:</b> Real time face recognition utilizing canvas.
+              </p>
+              <p>
+                <b>Tech:</b> React, JavaScript, face-api.js (tensorflow), and ThreeJS
+              </p>
+              <p>
+                <b>Note:</b> Please allow camera usage. You are able to navigate the space/field clicking + holding outside the white parameters.
+              </p>
+              <a href="https://emotions-portal.netlify.app/" target="_blank" rel="noopener noreferrer">
+                Live deployment
+              </a>
+              <hr />
+            </div>
           </div>
-          <hr />
           {close}
         </article>
 

@@ -150,7 +150,7 @@
 			}
 
 			.work-project-video {
-				margin: 1.25rem 0 0;
+				margin: 0 0 1.25rem 0;
 				max-width: 100%;
 				border-radius: _size(border-radius);
 				overflow: hidden;
@@ -163,9 +163,94 @@
 				}
 			}
 
-			.work-project-video + a {
+			.work-project-video ~ a {
 				display: inline-block;
 				margin-top: 0.75rem;
+			}
+
+			.work-carousel {
+				margin: 0 0 1.25rem 0;
+				max-width: 100%;
+				outline: none;
+
+				&:focus-visible {
+					box-shadow: 0 0 0 2px _palette(border);
+					border-radius: _size(border-radius);
+				}
+			}
+
+			.work-carousel-viewport {
+				overflow: hidden;
+				border-radius: _size(border-radius);
+				background: _palette(border-bg);
+			}
+
+			.work-carousel-track {
+				display: flex;
+				@include vendor('transition', 'transform #{_duration(transition)} ease-in-out');
+			}
+
+			.work-carousel-slide {
+				flex: 0 0 100%;
+				min-width: 0;
+
+				img {
+					display: block;
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			.work-carousel-nav {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 0.75rem;
+				margin-top: 0.75rem;
+				flex-wrap: wrap;
+			}
+
+			.work-carousel-arrow {
+				cursor: pointer;
+				background: transparent;
+				border: solid _size(border-width) _palette(border);
+				color: inherit;
+				font: inherit;
+				font-size: 1.5rem;
+				line-height: 1;
+				padding: 0.2em 0.55em;
+				border-radius: _size(border-radius);
+				min-width: 2.25rem;
+
+				&:hover {
+					background-color: _palette(border-bg);
+				}
+			}
+
+			.work-carousel-dots {
+				display: flex;
+				align-items: center;
+				gap: 0.4rem;
+
+				button {
+					cursor: pointer;
+					width: 0.55rem;
+					height: 0.55rem;
+					padding: 0;
+					border-radius: 100%;
+					border: solid _size(border-width) _palette(border);
+					background: transparent;
+					font-size: 0;
+					line-height: 0;
+
+					&.is-active {
+						background-color: _palette(border-bg);
+					}
+
+					&:hover {
+						background-color: _palette(border-bg-alt);
+					}
+				}
 			}
 
 		}

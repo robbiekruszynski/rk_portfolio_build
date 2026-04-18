@@ -13,10 +13,6 @@ const SLIDES = [
     src: '/images/valspin-insurance.png',
     label: 'Insurance contract flow',
   },
-  {
-    src: '/images/valspin-swap.png',
-    label: 'Swap contract flow',
-  },
 ]
 
 const ValspinCarousel = () => {

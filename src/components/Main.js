@@ -185,9 +185,9 @@ class Main extends React.Component {
           </h2>
           <hr />
           <div
-            className="design-tabs work-tabs"
+            className="design-tabs"
             role="tablist"
-            aria-label="Project categories"
+            aria-label="Build sections"
             aria-labelledby="work-section-title"
           >
             <button
@@ -219,7 +219,7 @@ class Main extends React.Component {
           <div
             id="work-panel-web3"
             role="tabpanel"
-            aria-labelledby="work-tab-web3"
+            aria-labelledby="work-section-title work-tab-web3"
             hidden={this.state.workTab !== 'web3'}
           >
             <h3>TG_Folder_Export</h3>
@@ -305,7 +305,7 @@ class Main extends React.Component {
           <div
             id="work-panel-personal"
             role="tabpanel"
-            aria-labelledby="work-tab-personal"
+            aria-labelledby="work-section-title work-tab-personal"
             hidden={this.state.workTab !== 'personal'}
           >
             <h3>Deepscry</h3>

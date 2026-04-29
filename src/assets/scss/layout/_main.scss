@@ -377,6 +377,17 @@
 	.logo {
 		display: block;
 		text-align: center;
+
+		img {
+			max-height: 9rem;
+			object-fit: contain;
+		}
+	}
+
+	.omd-logo {
+		img {
+			max-height: 7rem;
+		}
 	}
 
 	.contact-section {

@@ -492,14 +492,14 @@ class Main extends React.Component {
                 Logos, posters, and collateral for internal and ecosystem programs—identity work teams could ship.
               </p>
               <div className="logoBlock">
-                <div className="block-two">
+                <div className="block-one">
+                  <span className="logo">
+                    <img src={Rklogo} alt="" />
+                  </span>
                   <div className="logo-text">
                     <h3>RFK Logo</h3>
                     <p>Personal logo Design</p>
                   </div>
-                  <span className="logo">
-                    <img src={Rklogo} alt="" />
-                  </span>
                 </div>
                 <hr />
                 <div className="block-one">
@@ -512,13 +512,13 @@ class Main extends React.Component {
                   </div>
                 </div>
                 <hr />
-                <div className="block-two">
-                  <span className="logo-text">
-                    <h3>Future Days</h3>
-                    <p>Logo design for a start up software company.</p>
+                <div className="block-one">
+                  <span className="logo">
+                    <img src={Fdlogo} alt="" />
                   </span>
                   <div className="logo-text">
-                    <img src={Fdlogo} alt="" />
+                    <h3>Future Days</h3>
+                    <p>Logo design for a start up software company.</p>
                   </div>
                 </div>
                 <hr />
@@ -532,14 +532,14 @@ class Main extends React.Component {
                   </div>
                 </div>
                 <hr />
-                <div className="block-four">
+                <div className="block-one">
+                  <span className="logo omd-logo">
+                    <img src={omdLogo} alt="" />
+                  </span>
                   <div className="logo-text">
                     <h3>One Million Developers Logo</h3>
                     <p>Badge / kudos design for OMD community</p>
                   </div>
-                  <span className="logo">
-                    <img src={omdLogo} alt="" />
-                  </span>
                 </div>
                 <hr />
                 <div className="block-four">

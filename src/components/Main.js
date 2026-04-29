@@ -50,11 +50,11 @@ const ProjectCard = ({ title, tags, media, children, href, cta }) => (
         </ul>
       )}
       <div className="project-description">{children}</div>
-      <a className="project-cta" href={href} target="_blank" rel="noopener noreferrer">
-        {cta}
-      </a>
     </div>
     {media && <div className="project-media">{media}</div>}
+    <a className="project-cta" href={href} target="_blank" rel="noopener noreferrer">
+      {cta}
+    </a>
   </article>
 )
 

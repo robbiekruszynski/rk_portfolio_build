@@ -1,77 +1,80 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import Image from '../images/rfk_logo_white.png'
 
-const Header = props => (
-  <header id="header" style={props.timeout ? { display: 'none' } : {}}>
-    <div className="icons">
-      <img src={Image} />
-    </div>
-    <div className="content">
-      <div className="inner">
-        <h1>Robbie Kruszynski</h1>
-        <p>Developer Relations Lead</p>
-        <p>I build the systems that make developers successful: clear documentation, communities worth joining, and onboarding that turns first contact into long-term trust.</p>
-      </div>
-    </div>
-    <nav>
-      <ul>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('intro')
-            }}
-          >
-            Intro
-          </a>
-        </li>
+const NAV_ITEMS = [
+  { id: 'intro', label: 'Intro' },
+  { id: 'build', label: 'Build' },
+  { id: 'write', label: 'Write' },
+  { id: 'design', label: 'Design' },
+  { id: 'contact', label: 'Contact' },
+]
 
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Build
-          </a>
-        </li>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('write')
-            }}
-          >
-            Write
-          </a>
-        </li>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('design')
-            }}
-          >
-            Design
-          </a>
-        </li>
+const Header = props => {
+  const [activeSection, setActiveSection] = useState('intro')
 
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('contact')
-            }}
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-)
+  useEffect(() => {
+    if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
+      return undefined
+    }
+
+    const sections = NAV_ITEMS.map(item => document.getElementById(item.id)).filter(Boolean)
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id)
+          }
+        })
+      },
+      {
+        rootMargin: '-35% 0px -55% 0px',
+        threshold: 0,
+      }
+    )
+
+    sections.forEach(section => observer.observe(section))
+
+    return () => observer.disconnect()
+  }, [])
+
+  return (
+    <header id="header" style={props.timeout ? { display: 'none' } : {}}>
+      <section className="hero-section" id="top" aria-label="Portfolio introduction">
+        <div className="icons hero-logo">
+          <img src={Image} alt="RFK logo" />
+        </div>
+        <div className="content">
+          <div className="inner fade-up">
+            <h1>Robbie Kruszynski</h1>
+            <p className="hero-title">Developer Relations Lead</p>
+            <p className="hero-subheading">
+              7 years building DevRel at the infrastructure layer of Ethereum — docs, communities, and onboarding that actually sticks.
+            </p>
+            <p className="hero-support">
+              I build the systems that make developers successful: clear documentation, communities worth joining, and onboarding that turns first contact into long-term trust.
+            </p>
+          </div>
+        </div>
+      </section>
+      <nav className="site-nav" aria-label="Primary navigation">
+        <ul>
+          {NAV_ITEMS.map(item => (
+            <li key={item.id}>
+              <a
+                href={`#${item.id}`}
+                className={activeSection === item.id ? 'is-active' : ''}
+                aria-current={activeSection === item.id ? 'true' : undefined}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
+  )
+}
 
 Header.propTypes = {
   onOpenArticle: PropTypes.func,

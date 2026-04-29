@@ -9,12 +9,12 @@
 	#wrapper {
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'column');
-		@include vendor('align-items', 'center');
-		@include vendor('justify-content', 'space-between');
+		@include vendor('align-items', 'stretch');
+		@include vendor('justify-content', 'flex-start');
 		position: relative;
 		min-height: 100vh;
 		width: 100%;
-		padding: 4rem 2rem;
+		padding: 0;
 		z-index: 3;
 
 		&:before {
@@ -23,15 +23,15 @@
 		}
 
 		@include breakpoint(xlarge) {
-			padding: 3rem 2rem;
+			padding: 0;
 		}
 
 		@include breakpoint(small) {
-			padding: 2rem 1rem;
+			padding: 0;
 		}
 
 		@include breakpoint(xsmall) {
-			padding: 1rem;
+			padding: 0;
 		}
 
 		&.page {

@@ -49,10 +49,7 @@ const Header = props => {
             <h1>Robbie Kruszynski</h1>
             <p className="hero-title">Developer Relations Lead</p>
             <p className="hero-subheading">
-              7 years building DevRel at the infrastructure layer of Ethereum — docs, communities, and onboarding that actually sticks.
-            </p>
-            <p className="hero-support">
-              I build the systems that make developers successful: clear documentation, communities worth joining, and onboarding that turns first contact into long-term trust.
+              7 years building DevRel across Ethereum — clear documentation, communities worth joining, and onboarding that turns first contact into long-term trust.
             </p>
           </div>
         </div>

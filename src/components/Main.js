@@ -587,7 +587,7 @@ class Main extends React.Component {
             <div className="contact-card">
               <div className="contact-callout">
                 <span className="availability-dot" aria-hidden="true" />
-                <p>Currently open to DevRel roles at AI and infrastructure companies — reach out.</p>
+                <p>Open to DevRel roles in Web3 and AI.</p>
               </div>
               <div className="contact-actions">
                 <a className="mailto" href="mailto:robbiekruszynski@gmail.com">

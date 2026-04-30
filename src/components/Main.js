@@ -592,7 +592,7 @@ class Main extends React.Component {
               <div className="contact-actions">
                 <a className="mailto" href="mailto:robbiekruszynski@gmail.com">
                   <span>Email me</span>
-                  <h3>robbiekruszynski@gmail.com</h3>
+                  <h3>robbiekruszynski[at]gmail.com</h3>
                 </a>
                 <ul className="icons" aria-label="Social links">
                   <li>

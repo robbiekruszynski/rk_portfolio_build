@@ -532,7 +532,7 @@
 	@include breakpoint(small) {
 		.portfolio-section {
 			padding: 4.5rem 1rem;
-			scroll-margin-top: 4.5rem;
+			scroll-margin-top: 5.75rem;
 		}
 
 		.section-title {
@@ -574,6 +574,7 @@
 	@include breakpoint(xsmall) {
 		.portfolio-section {
 			padding: 4rem 0.85rem;
+			scroll-margin-top: 6rem;
 		}
 
 		.project-card p,

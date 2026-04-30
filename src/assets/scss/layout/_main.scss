@@ -131,8 +131,9 @@
 	.project-card {
 		display: grid;
 		grid-template-columns: minmax(0, 0.9fr) minmax(18rem, 1.1fr);
+		grid-template-rows: 1fr auto;
 		gap: 1.5rem;
-		align-items: start;
+		align-items: stretch;
 		padding: 1.5rem;
 		background: rgba(255,255,255,0.045);
 		border: solid _size(border-width) rgba(255,255,255,0.12);
@@ -204,6 +205,7 @@
 		align-items: center;
 		justify-content: center;
 		margin-top: auto;
+		min-width: 10.5rem;
 		padding: 0.75rem 1rem;
 		border: solid _size(border-width) rgba(255,255,255,0.34);
 		border-radius: 999px;
@@ -221,7 +223,7 @@
 	}
 
 	.project-card > .project-cta {
-		grid-column: 1;
+		grid-column: 1 / -1;
 		justify-self: start;
 		align-self: end;
 	}

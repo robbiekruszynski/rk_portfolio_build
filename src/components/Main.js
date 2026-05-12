@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 // Image imports
 import pic04 from '../images/self_bw_2.jpeg'
 import Icarus from '../images/ic_lives.gif'
+import coffeeSpecGif from '../images/coffeespec.gif'
 import Fdlogo from '../images/future_logo.png'
 import Rklogo from '../images/rfk_logo_white.png'
 import conKau from '../images/conKauri.png'
@@ -290,6 +291,28 @@ class Main extends React.Component {
                 </p>
                 <p>
                   <b>Note:</b> Please allow camera usage. You are able to navigate the space/field clicking + holding outside the white parameters.
+                </p>
+              </ProjectCard>
+
+              <ProjectCard
+                title="coffeeSpec"
+                tags={['React 19', 'Vite', 'JavaScript', 'CSS', 'localStorage']}
+                href="https://coffeespec.netlify.app/"
+                cta="Live deployment"
+                media={
+                  <span className="image main">
+                    <img src={coffeeSpecGif} alt="" />
+                  </span>
+                }
+              >
+                <p>
+                  <b>Project:</b> A single-page coffee brewing calculator built to help dial in batch brew and espresso recipes. Estimates brew ratio, TDS, predicted extraction yield, water temperature, grind size, and brew time — then visualizes multi-stage pour schedules with cumulative volume and flow-rate diagrams. Includes a countdown brew timer, brew journaling, custom recipes, and grind notes scoped per method.
+                </p>
+                <p>
+                  <b>Tech:</b> React 19, Vite, JavaScript, CSS, localStorage
+                </p>
+                <p>
+                  <b>Note:</b> Built around Coffee Spec brewing method ratios (V60, Chemex, AeroPress, Cold Brew, Espresso, and more). All extraction/TDS/yield numbers are predictive models, not lab measurements — but they'll get you closer to a good cup than vibes alone.
                 </p>
               </ProjectCard>
             </div>

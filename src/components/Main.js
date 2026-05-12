@@ -233,6 +233,31 @@ class Main extends React.Component {
               hidden={this.state.workTab !== 'personal'}
             >
               <ProjectCard
+                title="SkunkWorks"
+                tags={['React', 'Vite', 'JavaScript', 'MediaPipe Hands', 'Canvas API']}
+                href="https://github.com/robbiekruszynski/SkunkWorks"
+                cta="Github Link"
+                media={
+                  <div className="work-project-video">
+                    <video autoPlay loop muted playsInline preload="metadata" title="SkunkWorks demo clip">
+                      <source src="/videos/skunkworks.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                }
+              >
+                <p>
+                  <b>Project:</b> A gesture-driven knowledge graph interface. Point, pinch, and drag information nodes around your screen using your webcam and hand tracking — no mouse required. Nodes connect automatically through shared tags, building a visual web of linked ideas in real time. Mouse fallback always available.
+                </p>
+                <p>
+                  <b>Tech:</b> React, Vite, JavaScript, MediaPipe Hands, Canvas API
+                </p>
+                <p>
+                  <b>Note:</b> Built with MediaPipe Hands running in-browser via WASM. Supports pinch-to-grab, pinch-to-pan, and two-handed pinch-spread zoom. A debug panel (D key) exposes live hand landmark data for calibration. Node positions reset on refresh — persistence not yet implemented, which is either a bug or a feature depending on your philosophy.
+                </p>
+              </ProjectCard>
+
+              <ProjectCard
                 title="Deepscry"
                 tags={['Next.js', 'TypeScript', 'Tailwind CSS']}
                 href="https://deepscry.netlify.app/"

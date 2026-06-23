@@ -49,7 +49,7 @@ const Header = props => {
             <h1>Robbie Kruszynski</h1>
             <p className="hero-title">Developer Relations Lead</p>
             <p className="hero-subheading">
-              7 years building DevRel across Ethereum — clear documentation, communities worth joining, and onboarding that turns first contact into long-term trust.
+              7 years building DevRel across Ethereum: clear documentation, communities worth joining, and onboarding that turns first contact into long-term trust.
             </p>
           </div>
         </div>

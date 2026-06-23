@@ -82,7 +82,7 @@ class Main extends React.Component {
                 <p>Figma</p>
                 <h4>Statement</h4>
                 <p>
-                  Technical documentation, hackathons, webinars, stage talks, community metrics, 50+ conferences — I've worked every layer of the developer journey. I lead teams and set strategy, but I stay close to the work because the details matter. What I care about most is what happens after onboarding: that developers find their footing, stay engaged, and keep building.
+                  Technical documentation, hackathons, webinars, stage talks, community metrics, 50+ conferences. I've worked every layer of the developer journey. I lead teams and set strategy, but I stay close to the work because the details matter. What I care about most is what happens after onboarding: that developers find their footing, stay engaged, and keep building.
                 </p>
               </div>
             </div>
@@ -152,13 +152,13 @@ class Main extends React.Component {
                 }
               >
                 <p>
-                  <b>Project:</b> Built a TypeScript Telegram bot for searching across folders and conversations — includes automated action item and calendar event detection. Designed for community managers and DevRel teams managing high-volume developer channels.
+                  <b>Project:</b> Built a TypeScript Telegram bot for searching across folders and conversations, including automated action item and calendar event detection. Designed for community managers and DevRel teams managing high-volume developer channels.
                 </p>
                 <p>
                   <b>Tech:</b> TypeScript, Node.js, Telegram Bot API
                 </p>
                 <p>
-                  <b>Note:</b> Keyword search across message history, direct message deep-links, time-range filters, calendar event extraction, and action-item detection—built for real workflow in busy channels.
+                  <b>Note:</b> Keyword search across message history, direct message deep-links, time-range filters, calendar event extraction, and action-item detection, built for real workflow in busy channels.
                 </p>
               </ProjectCard>
 
@@ -170,7 +170,7 @@ class Main extends React.Component {
                 media={<ValspinCarousel />}
               >
                 <p>
-                  <b>Project:</b> Winning hackathon project at ETHWarsaw: Valspin—insurance and swap-style products to hedge ETH staking reward variance for validator operators, with Request Network–style settlement flows in scope. Includes Flask APIs for yield, swap, and insurance pricing plus an experimental live deployment.
+                  <b>Project:</b> Winning hackathon project at ETHWarsaw: Valspin, insurance and swap-style products to hedge ETH staking reward variance for validator operators, with Request Network-style settlement flows in scope. Includes Flask APIs for yield, swap, and insurance pricing plus an experimental live deployment.
                 </p>
                 <p>
                   <b>Tech:</b> Python 3.10, Flask, React, Material UI (MUI), NIVO charts, HTML/CSS
@@ -192,7 +192,7 @@ class Main extends React.Component {
                 }
               >
                 <p>
-                  <b>Project:</b> EthGlobal Istanbul 2023 build: SaferBridge explores a trust-minimized L2→L2 flow that moves value through L1 using each chain’s native bridge messaging—batching users to amortize gas (normal vs. fast modes) instead of relying on typical third-party relayer/LP bridge assumptions.
+                  <b>Project:</b> EthGlobal Istanbul 2023 build: SaferBridge explores a trust-minimized L2→L2 flow that moves value through L1 using each chain’s native bridge messaging, batching users to amortize gas (normal vs. fast modes) instead of relying on typical third-party relayer/LP bridge assumptions.
                 </p>
                 <p>
                   <b>Tech:</b> React, Redux, React Router, Ethers, Material UI, Solidity, Wagmi / Viem
@@ -247,13 +247,13 @@ class Main extends React.Component {
                 }
               >
                 <p>
-                  <b>Project:</b> A gesture-driven knowledge graph interface. Point, pinch, and drag information nodes around your screen using your webcam and hand tracking — no mouse required. Nodes connect automatically through shared tags, building a visual web of linked ideas in real time. Mouse fallback always available.
+                  <b>Project:</b> A gesture-driven knowledge graph interface. Point, pinch, and drag information nodes around your screen using your webcam and hand tracking, no mouse required. Nodes connect automatically through shared tags, building a visual web of linked ideas in real time. Mouse fallback always available.
                 </p>
                 <p>
                   <b>Tech:</b> React, Vite, JavaScript, MediaPipe Hands, Canvas API
                 </p>
                 <p>
-                  <b>Note:</b> Built with MediaPipe Hands running in-browser via WASM. Supports pinch-to-grab, pinch-to-pan, and two-handed pinch-spread zoom. A debug panel (D key) exposes live hand landmark data for calibration. Node positions reset on refresh — persistence not yet implemented, which is either a bug or a feature depending on your philosophy.
+                  <b>Note:</b> Built with MediaPipe Hands running in-browser via WASM. Supports pinch-to-grab, pinch-to-pan, and two-handed pinch-spread zoom. A debug panel (D key) exposes live hand landmark data for calibration. Node positions reset on refresh. Persistence not yet implemented, which is either a bug or a feature depending on your philosophy.
                 </p>
               </ProjectCard>
 
@@ -265,7 +265,7 @@ class Main extends React.Component {
                 media={<DeepscryCarousel />}
               >
                 <p>
-                  <b>Project:</b> Deepscry (Scry) is a Magic: The Gathering deck lab—import a Commander decklist, simulate opening hands, and inspect mana curve, color spread, and draw probabilities. Compare your deck to benchmark metas (from precon-style through cEDH-style), review on-curve mana odds, and tag cards (ramp, interaction, draw, wincon) so the math matches how you actually play the deck.
+                  <b>Project:</b> Deepscry (Scry) is a Magic: The Gathering deck lab. Import a Commander decklist, simulate opening hands, and inspect mana curve, color spread, and draw probabilities. Compare your deck to benchmark metas (from precon-style through cEDH-style), review on-curve mana odds, and tag cards (ramp, interaction, draw, wincon) so the math matches how you actually play the deck.
                 </p>
                 <p>
                   <b>Tech:</b> Next.js, TypeScript, Tailwind CSS
@@ -331,13 +331,13 @@ class Main extends React.Component {
                 }
               >
                 <p>
-                  <b>Project:</b> A single-page coffee brewing calculator built to help dial in batch brew and espresso recipes. Estimates brew ratio, TDS, predicted extraction yield, water temperature, grind size, and brew time — then visualizes multi-stage pour schedules with cumulative volume and flow-rate diagrams. Includes a countdown brew timer, brew journaling, custom recipes, and grind notes scoped per method.
+                  <b>Project:</b> A single-page coffee brewing calculator built to help dial in batch brew and espresso recipes. Estimates brew ratio, TDS, predicted extraction yield, water temperature, grind size, and brew time, then visualizes multi-stage pour schedules with cumulative volume and flow-rate diagrams. Includes a countdown brew timer, brew journaling, custom recipes, and grind notes scoped per method.
                 </p>
                 <p>
                   <b>Tech:</b> React 19, Vite, JavaScript, CSS, localStorage
                 </p>
                 <p>
-                  <b>Note:</b> Built around Coffee Spec brewing method ratios (V60, Chemex, AeroPress, Cold Brew, Espresso, and more). All extraction/TDS/yield numbers are predictive models, not lab measurements — but they'll get you closer to a good cup than vibes alone.
+                  <b>Note:</b> Built around Coffee Spec brewing method ratios (V60, Chemex, AeroPress, Cold Brew, Espresso, and more). All extraction/TDS/yield numbers are predictive models, not lab measurements, but they'll get you closer to a good cup than vibes alone.
                 </p>
               </ProjectCard>
             </div>
@@ -503,7 +503,7 @@ class Main extends React.Component {
             >
               <h3 className="sub-header">Wireframes &amp; prototypes</h3>
               <p className="design-panel-lede">
-                Figma &amp; Sketch—from quick flows to polished UI—so product and engineering align before build.
+                Figma &amp; Sketch, from quick flows to polished UI, so product and engineering align before build.
               </p>
               <span className="image main wireframes-hero">
                 <img src="/images/wireframes-hero.png" alt="" />
@@ -537,7 +537,7 @@ class Main extends React.Component {
             >
               <h3 className="sub-header">Graphic design &amp; branding</h3>
               <p className="design-panel-lede">
-                Logos, posters, and collateral for internal and ecosystem programs—identity work teams could ship.
+                Logos, posters, and collateral for internal and ecosystem programs: identity work teams could ship.
               </p>
               <div className="logoBlock">
                 <div className="block-one">

@@ -493,6 +493,18 @@ class Main extends React.Component {
               >
                 Graphic design
               </button>
+              <button
+                type="button"
+                role="tab"
+                id="design-tab-visual"
+                aria-selected={this.state.designTab === 'visual'}
+                aria-controls="design-panel-visual"
+                tabIndex={this.state.designTab === 'visual' ? 0 : -1}
+                className={this.state.designTab === 'visual' ? 'is-active' : ''}
+                onClick={() => this.setState({ designTab: 'visual' })}
+              >
+                Visual
+              </button>
             </div>
 
             <div
@@ -624,6 +636,25 @@ class Main extends React.Component {
                   <img src={pegMm} alt="" />
                   <hr />
                 </span>
+              </div>
+            </div>
+
+            <div
+              id="design-panel-visual"
+              className="design-panel fade-up"
+              role="tabpanel"
+              aria-labelledby="design-section-title design-tab-visual"
+              hidden={this.state.designTab !== 'visual'}
+            >
+              <h3 className="sub-header">React &amp; Three.js</h3>
+              <p className="design-panel-lede">
+                A visual study built with React and Three.js
+              </p>
+              <div className="work-project-video">
+                <video autoPlay loop muted playsInline preload="metadata" title="React and Three.js visual study">
+                  <source src="/videos/sm.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>

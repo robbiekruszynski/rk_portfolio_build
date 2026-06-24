@@ -656,6 +656,9 @@ class Main extends React.Component {
                   Your browser does not support the video tag.
                 </video>
               </div>
+              <a className="project-cta" href="https://shadowmoses.xyz/" target="_blank" rel="noopener noreferrer">
+                Live deployment
+              </a>
             </div>
           </div>
         </section>

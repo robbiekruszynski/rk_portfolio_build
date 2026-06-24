@@ -71,18 +71,19 @@ class Main extends React.Component {
         <section id="intro" className="portfolio-section section-dark fade-up">
           <div className="section-inner intro-grid">
             <div className="section-copy">
-              <p className="eyebrow">Intro</p>
               <h2 className="section-title">About</h2>
               <div className="rk-info">
                 <h4>Focus</h4>
-                <p>Developer Relations Lead | Community Strategy | Technical Documentation | Developer Onboarding | Ecosystem Growth</p>
+                <p>Developer Relations Lead | Ecosystem Growth</p>
                 <h4>Tech Stack</h4>
-                <p>React : Next | Solidity</p>
-                <h4>Design Stack</h4>
-                <p>Figma</p>
+                <p>React, Next.js, Figma</p>
+                <h4>Web3</h4>
+                <p>Solidity</p>
+                <h4>AI Stack</h4>
+                <p>Cursor | Claude | Hermes | OpenClaw</p>
                 <h4>Statement</h4>
                 <p>
-                  Technical documentation, hackathons, webinars, stage talks, community metrics, 50+ conferences. I've worked every layer of the developer journey. I lead teams and set strategy, but I stay close to the work because the details matter. What I care about most is what happens after onboarding: that developers find their footing, stay engaged, and keep building.
+                  What I care about most is what happens after onboarding: developers finding their footing, staying engaged, and keep building. I lead teams and set strategy, but I stay close to the work because developer trust lives in the details. 50+ conferences, hackathons, docs, stage talks. I've worked every layer of the journey.
                 </p>
               </div>
             </div>

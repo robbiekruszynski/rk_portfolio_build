@@ -524,10 +524,11 @@ class Main extends React.Component {
                 </h3>
                 <div className="video-embed">
                   <iframe
-                    src="https://www.youtube.com/embed/aJaBESkGMp0"
+                    src="https://www.youtube-nocookie.com/embed/aJaBESkGMp0?rel=0"
                     title="Optimistic Schnorr Oracles 101: Unlock Verifiable Data | Robbie Kruszynski - Chronicle Labs"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
+                    referrerPolicy="strict-origin-when-cross-origin"
                   />
                 </div>
               </article>
@@ -536,10 +537,11 @@ class Main extends React.Component {
                 <h3 className="sub-header">Can The Devs Do Something?</h3>
                 <div className="video-embed">
                   <iframe
-                    src="https://www.youtube.com/embed/KH1YtMotHUo"
+                    src="https://www.youtube-nocookie.com/embed/KH1YtMotHUo?rel=0"
                     title="Can The Devs Do Something?"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
+                    referrerPolicy="strict-origin-when-cross-origin"
                   />
                 </div>
               </article>

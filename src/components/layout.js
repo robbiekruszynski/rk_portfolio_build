@@ -36,6 +36,7 @@ const Layout = ({ children, location }) => {
             meta={[
               { name: 'description', content: 'Portfolio' },
               { name: 'keywords', content: 'sample, something' },
+              { name: 'referrer', content: 'strict-origin-when-cross-origin' },
             ]}
           >
             <html lang="en" />

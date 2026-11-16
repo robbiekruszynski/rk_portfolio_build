@@ -372,6 +372,28 @@ class Main extends React.Component {
                   <b>Note:</b> Built around Coffee Spec brewing method ratios (V60, Chemex, AeroPress, Cold Brew, Espresso, and more). All extraction/TDS/yield numbers are predictive models, not lab measurements, but they'll get you closer to a good cup than vibes alone.
                 </p>
               </ProjectCard>
+
+              <ProjectCard
+                title="Josun English"
+                tags={['React', 'TypeScript', 'Vite', 'Tailwind CSS']}
+                href="https://github.com/robbiekruszynski/josunenglish"
+                cta="Github Link"
+                media={
+                  <div className="work-project-video">
+                    <video controls playsInline preload="metadata" title="Josun English demo clip">
+                      <source src="/videos/josunenglish.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                }
+              >
+                <p>
+                  <b>Project:</b> Marketing site for Josun English, phonics and language learning for young readers and writers in Hong Kong. One vertical scroll through About, Classes, Team, Gallery, Testimonials, Shop, Work With Us, and Contact.
+                </p>
+                <p>
+                  <b>Note:</b> Styled to Josun's brand palette and mascot; section copy lives in a single content module so updates stay out of the layout components. Static Vite build ready for Netlify, Vercel, or similar hosts.
+                </p>
+              </ProjectCard>
             </div>
           </div>
         </section>

@@ -457,6 +457,43 @@ class Main extends React.Component {
           </div>
         </section>
 
+        <section id="videos" className="portfolio-section section-light">
+          <div className="section-inner">
+            <p className="eyebrow">Videos</p>
+            <h2 className="section-title" id="videos-section-title">
+              Videos
+            </h2>
+
+            <div className="videos-stack fade-up">
+              <article className="design-panel video-entry">
+                <h3 className="sub-header">
+                  Optimistic Schnorr Oracles 101: Unlock Verifiable Data | Robbie Kruszynski - Chronicle Labs
+                </h3>
+                <div className="video-embed">
+                  <iframe
+                    src="https://www.youtube.com/embed/aJaBESkGMp0"
+                    title="Optimistic Schnorr Oracles 101: Unlock Verifiable Data | Robbie Kruszynski - Chronicle Labs"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
+              </article>
+
+              <article className="design-panel video-entry">
+                <h3 className="sub-header">Can The Devs Do Something?</h3>
+                <div className="video-embed">
+                  <iframe
+                    src="https://www.youtube.com/embed/KH1YtMotHUo"
+                    title="Can The Devs Do Something?"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
         <section id="design" className="portfolio-section section-light">
           <div className="section-inner">
             <p className="eyebrow">Design</p>

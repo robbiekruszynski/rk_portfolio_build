@@ -320,6 +320,13 @@
 			width: 100%;
 			height: auto;
 		}
+
+		&.work-project-video--compact {
+			width: 58.5%;
+			max-width: 58.5%;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
 	.work-carousel {

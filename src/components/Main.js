@@ -259,6 +259,37 @@ class Main extends React.Component {
               </ProjectCard>
 
               <ProjectCard
+                title="OLNs"
+                tags={[
+                  'Expo SDK 56',
+                  'React Native',
+                  '@offline-protocol/mesh-sdk',
+                  'BLE',
+                  'AsyncStorage',
+                ]}
+                href="https://github.com/robbiekruszynski/OLNsMobile"
+                cta="Github Link"
+                media={
+                  <div className="work-project-video work-project-video--compact">
+                    <video controls playsInline preload="metadata" title="OLNs demo clip">
+                      <source src="/videos/olns.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                }
+              >
+                <p>
+                  <b>Project:</b> Short notes over BLE mesh with no server, cell, or Wi-Fi. Write a note, broadcast it, and nearby phones discover the payload, save it locally, and relay it with an incremented hop count so the message can keep moving after you walk away.
+                </p>
+                <p>
+                  <b>Tech:</b> Expo SDK 56, React Native 0.85.3, @offline-protocol/mesh-sdk, AsyncStorage
+                </p>
+                <p>
+                  <b>Note:</b> Public or password-encrypted notes; optional on-device encryption before broadcast. Relay stops at six hops to limit mesh storms. Aimed at infra-free comms for field work, events, and similar scenarios.
+                </p>
+              </ProjectCard>
+
+              <ProjectCard
                 title="Deepscry"
                 tags={['Next.js', 'TypeScript', 'Tailwind CSS']}
                 href="https://deepscry.netlify.app/"
